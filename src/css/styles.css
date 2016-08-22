@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+
+.header{
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+
+	background-color: rgba(26,117,255,0.80);
+}
