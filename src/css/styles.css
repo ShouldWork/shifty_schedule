@@ -4,8 +4,10 @@
 }
 
 .header{
-	font-family: 'Roboto', sans-serif;
-    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    float: right;
 }
 
 .header_banner{
