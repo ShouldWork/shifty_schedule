@@ -1,18 +1,15 @@
 *{
     box-sizing: border-box;
+    margin: 0;
 }
 
 .header{
 	font-family: 'Roboto', sans-serif;
-    padding: 0;
-    margin: 0;
     font-size: 2em;
 }
 
 .header_banner{
 	background-color: rgba(255,69,58,0.80);
-    margin: 0;
-    padding: 0;
     top: 0;
     position: relative;
     height: 4em;
