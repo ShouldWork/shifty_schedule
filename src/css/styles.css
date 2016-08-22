@@ -23,6 +23,6 @@
 	position: fixed;
 	height: 100vh;
 	width: 100vh;
-	background: transparent url('src/resources/background/oak_wood.jpg') center no-repeat;
+	background: transparent url('../resources/background/oak_wood.jpg') center no-repeat;
 	background-size: cover;
 }
