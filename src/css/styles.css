@@ -7,6 +7,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     float: right;
+    text-shadow: 0 1px 1px white;
 }
 
 .header_banner{
