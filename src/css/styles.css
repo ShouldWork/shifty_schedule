@@ -29,3 +29,14 @@
 	background-size: cover;
 	top: 0;
 }
+
+
+.navButton{
+	padding: 15px;
+	font-style: none;
+	transition: all .25s ease-in;
+}
+
+.navButton:hover{
+	font-style: bold;
+}
