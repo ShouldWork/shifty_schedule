@@ -4,7 +4,8 @@
 
 .header{
 	font-family: 'Roboto', sans-serif;
-	font-style: italic;
+}
 
-	background-color: rgba(26,117,255,0.80);
+.header_banner{
+	background_color: rgba(255,69,58,0.80);
 }
