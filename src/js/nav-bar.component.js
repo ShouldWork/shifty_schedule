@@ -5,6 +5,7 @@
             controller: navController
         })
         function navController(){
-        	
+        	var nav = this;
+        	nav.buttons = [{text: "Home"}]
         }
 })();
