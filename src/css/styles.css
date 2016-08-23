@@ -104,16 +104,15 @@
     background: linear-gradient(-180deg,rgba(190,255,252,0.85),rgba(190,255,252,0));
     padding: 1.5em;
     cursor: pointer;
-    border: 1px solid transparent;
 
     font-size: 2em;
     transition: all .25s ease-out;
 
+    border: 1px solid black;
     font-family: 'Roboto', sans-serif;
 }
 
 .filtertile:hover{
-    border: 1px solid black;
     top: -15px;
     box-shadow: 2px 5px 10px rgba(0,0,0,0.65);
 }
