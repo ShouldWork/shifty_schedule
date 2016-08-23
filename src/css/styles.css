@@ -69,8 +69,8 @@
 
 .maincontainer{
     position: relative;
-    height: 86vh;
-    width: 98vw;
+    height: 80vh;
+    width: 80vw;
     background: linear-gradient(133deg,rgba(190,255,252,0.85),rgba(178,164,97,0.35));
     z-index: 10;
     margin: 10px 1vw;
