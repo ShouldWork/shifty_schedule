@@ -108,7 +108,6 @@
     font-size: 2em;
     transition: all .25s ease-out;
 
-    border: 1px solid black;
     font-family: 'Roboto', sans-serif;
     z-index: 15;
 }
@@ -124,5 +123,6 @@
     display: flex;
     flex-flow: row wrap;
 
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
