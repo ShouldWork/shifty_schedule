@@ -6,6 +6,6 @@
         })
         function navController(){
         	var nav = this;
-        	nav.buttons = [{text: "Home"}]
+        	nav.buttons = [{text: "Home"},{text: "Calendar"},{text: "Groups"},{text: "About"}]
         }
 })();
