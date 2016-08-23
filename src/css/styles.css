@@ -101,7 +101,6 @@
 .filtertile{
     min-height: 10vh;
     min-width: 11vh;
-    margin: .25em;
     background: linear-gradient(-180deg,rgba(190,255,252,0.85),rgba(190,255,252,0));
     padding: 1.5em;
     cursor: pointer;
