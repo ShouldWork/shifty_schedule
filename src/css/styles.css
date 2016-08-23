@@ -12,7 +12,7 @@
 
 .header_banner{
     /*background-color: rgba(255,69,58,0.80);*/
-    background: linear-gradient(133deg,transparent,rgba(255,69,58,0.80));
+    background: linear-gradient(133deg,transparent,rgba(255,239,164,0.80));
     top: 0;
     position: relative;
     height: 4em;
@@ -37,6 +37,7 @@
     font-style: none;
     transition: all .25s ease-in;
     margin: .25em;
+    cursor: pointer;
 }
 
 .navButton:hover{
