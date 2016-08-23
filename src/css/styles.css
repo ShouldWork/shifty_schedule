@@ -3,6 +3,8 @@
     margin: 0;
 }
 
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
 #header{
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
@@ -16,17 +18,21 @@
     background: linear-gradient(133deg,rgba(255,239,164,0.80),transparent);
     top: 0;
     position: relative;
-    height: 5em;
+    height: 6em;
+    z-index: 1;
+    border-bottom-right-radius: 20px;
+    padding: 1em;
 }
 
 
 .background{
-	position: fixed;
+	position: absolute;
 	height: 100vh;
 	width: 100vw;
 	background: transparent url('../resources/background/wood_back.jpg') center no-repeat;
 	background-size: cover;
 	top: 0;
+    z-index: 0;
 }
 
 
@@ -37,6 +43,7 @@
     transition: all .25s ease-in;
     margin: .25em;
     cursor: pointer;
+    z-index: 10;
 }
 
 .navButton:hover{
@@ -49,6 +56,7 @@
 	width: 50vw;
 	height: 100%;
     float: left;
+    z-index: 5;
 }
 
 .flex-row{
@@ -56,4 +64,67 @@
 	flex-flow: row nowrap;
 	align-content: flex-start;
 	align-items: center;
+}
+
+
+.maincontainer{
+    position: relative;
+    height: 86vh;
+    width: 98vw;
+    background: linear-gradient(133deg,rgba(190,255,252,0.85),rgba(178,164,97,0.35));
+    z-index: 10;
+    margin: 10px 1vw;
+    padding: 2em;
+}
+
+
+.calendarBox{
+    width: 55vw;
+    height: 80vh;
+    /*border: 2px solid white;*/
+    background: linear-gradient(133deg,rgba(255,239,164,0.80),transparent);
+    float: right;
+    border-left: 2px solid white;
+}
+
+.leftContainer{
+    width: 39vw;
+    height: 80vh;
+    /*border: 2px solid white;*/
+    float: left;
+    background: linear-gradient(-133deg,rgba(204,111,187,0.65),rgba(204,111,187,0));
+    border-right: 2px solid white;
+    padding: 1em;
+    overflow: auto;
+}
+
+.filtertile{
+    min-height: 10vh;
+    min-width: 11vh;
+    margin: .25em;
+    background: linear-gradient(-180deg,rgba(190,255,252,0.85),rgba(190,255,252,0));
+    padding: 1.5em;
+    cursor: pointer;
+    border: 1px solid transparent;
+
+    font-size: 2em;
+    transition: all .25s ease-out;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.filtertile:hover{
+    border: 1px solid black;
+    top: -15px;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.65);
+}
+
+
+.flex-row-center{
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
