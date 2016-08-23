@@ -83,7 +83,6 @@
     height: 78vh;
     /*border: 2px solid white;*/
     background: linear-gradient(133deg,rgba(255,239,164,0.80),transparent);
-    float: right;
     border-left: 2px solid white;
 }
 
@@ -91,7 +90,6 @@
     width: 39vw;
     height: 80vh;
     /*border: 2px solid white;*/
-    float: left;
     background: linear-gradient(-133deg,rgba(204,111,187,0.65),rgba(204,111,187,0));
     border-right: 2px solid white;
     padding: 1em;
@@ -116,6 +114,7 @@
     top: -15px;
     box-shadow: 2px 5px 10px rgba(0,0,0,0.65);
     z-index: 20;
+    translate: rotate;
 }
 
 
