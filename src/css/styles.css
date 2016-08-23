@@ -47,7 +47,6 @@
 .flex-row{
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: center;
 	align-content: flex-start;
 	align-items: center;
 }
