@@ -8,6 +8,7 @@
     font-size: 1em;
     float: right;
     text-shadow: 0 1px 1px white;
+    margin-right: .25em;
 }
 
 .header_banner{
@@ -37,6 +38,7 @@
     transition: all .25s ease-in;
     margin: .25em;
     cursor: pointer;
+    float: left;
 }
 
 .navButton:hover{
