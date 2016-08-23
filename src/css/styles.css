@@ -45,12 +45,15 @@
 	font-style: bold;
 }
 
+#navButtonContainer{
+	overflow: hidden;
+	width: 50vw;
+	height: 100%;
+}
 
 .flex-row{
-	width: 50vw;
 	display: flex;
 	flex-flow: row nowrap;
 	align-content: flex-start;
 	align-items: center;
-	overflow: hidden;
 }
