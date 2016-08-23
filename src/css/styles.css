@@ -47,8 +47,10 @@
 
 
 .flex-row{
+	width: 50vw;
 	display: flex;
 	flex-flow: row nowrap;
 	align-content: flex-start;
 	align-items: center;
+	overflow: hidden;
 }
