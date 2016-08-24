@@ -6,11 +6,12 @@
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
 #header{
+    float: right;
+    
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
-    float: right;
     text-shadow: 0 1px 1px white;
-    margin-right: 1em;
+    text-align: end;
 }
 
 .header_banner{
