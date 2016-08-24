@@ -124,7 +124,7 @@
 }
 
 .filtertile{
-    background: linear-gradient(-180deg,rgba(190,255,252,0.55),rgba(190,255,252,0.50));
+    background: linear-gradient(-140deg,rgba(190,255,252,0.80),rgba(190,255,252,0.30));
     padding: 1.25em;
     cursor: pointer;
 
