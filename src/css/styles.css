@@ -92,14 +92,14 @@
     height: 80vh;
     /* border: 2px solid white; */
     background: linear-gradient(-133deg,rgba(204,111,187,0.65),rgba(204,111,187,0));
-    border-right: 2px solid white;
+    /*border-right: 2px solid white;*/
     overflow: auto;
     float: left;
     padding: 1em;
 }
 
 .filterBox{
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     padding: 1em;
     height: 40%;
     overflow: auto;
