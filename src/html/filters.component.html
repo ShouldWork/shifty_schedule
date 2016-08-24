@@ -1,5 +1,5 @@
-<div class="flex-row-center">
-    <div class="filtertile" ng-repeat="filter in $ctrl.filters">
+<div class="flex-row-center filterBox">
+    <div class="filtertile" ng-repeat="filter in $ctrl.filters | orderBy: '-text':true">
         <span> {{ filter.text }} </span>
     </div>
 </div>

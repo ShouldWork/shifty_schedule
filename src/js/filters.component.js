@@ -6,6 +6,6 @@
         });
     function filterController(){
         var filter = this;
-        filter.filters = [{text: "Month"},{text: "Year"},{text: "Week"},{text: "Day"},{text: "Level"},{text: "Team"},{text: "Recent"},{text: "Custom"},{text: "Hire"},{text: "Shift"}];
+        filter.filters = [{text: "Month"},{text: "Year"},{text: "Week"},{text: "Day"},{text: "Level"},{text: "Team"},{text: "Filter"},{text: "Weekends"},{text: "Grave"},{text: "Swing"},{text: "Shift"}];
     }
 })();

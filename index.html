@@ -22,14 +22,15 @@
     
 
 <div class="background"></div>
-<div class="container maincontainer"> 
+<div class="container maincontainer">
     <nav-bar class="col-md-12 col-xs-12 col-lg-12"></nav-bar>
-    <!-- <div class="maincontainer col-lg-12"> -->
-        <!-- <div class="leftContainer col-md-6"> -->
-            <!-- <filters></filters> -->
-        <!-- </div> -->
-        <!-- <div class="calendarBox col-md-6"></div> -->
-    <!-- </div> -->
+     <div class="col-lg-12 addPad">
+         <div class="leftContainer col-md-3 flex-col">
+             <filters></filters>
+             <login></login>
+         </div>
+         <div class="calendarBox col-md-3"></div>
+     </div>
 </div>
 
 
@@ -47,16 +48,7 @@
 <!-- AngularFire -->
     <script src="https://cdn.firebase.com/libs/angularfire/2.0.2/angularfire.min.js"></script>
 
-<!--<script>-->
-    <!--// Initialize Firebase-->
-    <!--var config = {-->
-        <!--apiKey: "AIzaSyCVIUcqy1Z6piiRjoYN8qXkSDyRzN-_l0A",-->
-        <!--authDomain: "shifty-4d692.firebaseapp.com",-->
-        <!--databaseURL: "https://shifty-4d692.firebaseio.com",-->
-        <!--storageBucket: "shifty-4d692.appspot.com",-->
-    <!--};-->
-    <!--firebase.initializeApp(config);-->
-<!--</script>-->
+
 <script>
     // Initialize Firebase
     var config = {
@@ -71,5 +63,6 @@
     <script src="src/js/apps.js"></script>
     <script src="src/js/nav-bar.component.js"></script>
     <script src="src/js/filters.component.js"></script>
+    <script src="src/js/login.component.js"></script>
 </body>
 </html>

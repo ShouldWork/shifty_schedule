@@ -13,7 +13,7 @@
             syncObject.$bindTo($scope,"nav.form");
             
             nav.buttons = [{text: "Home"},{text: "Calendar"},{text: "Groups"},{text: "About"}];
-            nav.filters = [{text: "Month"},{text: "Year"},{text: "Week"},{text: "Day"},{text: "Level"},{text: "Team"}];
+            nav.filters = [{text: "Month"},{text: "Year"},{text: "Week"},{text: "Day"},{text: "Level"},{text: "Team"},{text: "Filter"},{text: "Weekends"},{text: "Grave"},{text: "Swing"},{text: "Shift"}];
             syncObject.$loaded().then(function(){
                nav.fireBase = nav.form;
             });
