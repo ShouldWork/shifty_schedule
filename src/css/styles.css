@@ -5,7 +5,7 @@
 
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
-.header{
+#header{
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     float: right;
