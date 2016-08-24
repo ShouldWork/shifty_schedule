@@ -21,11 +21,12 @@
 
 .header_banner{
     /*background-color: rgba(255,69,58,0.80);*/
-    background: linear-gradient(133deg,rgba(255,239,164,0.80),transparent);
+    /*background: linear-gradient(133deg,rgba(255,239,164,0.80),transparent);*/
     z-index: 1;
 
     overflow: hidden;
     border-bottom-left-radius: 20px;
+    color: white;
 }
 
 
