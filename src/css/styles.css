@@ -84,6 +84,7 @@
     background: linear-gradient(133deg,rgba(255,239,164,0.80),transparent);
     /*border-left: 2px solid white;*/
     float: right;
+    padding: 1em;
 }
 
 .leftContainer{
