@@ -15,6 +15,8 @@
     <link href='https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.2/ui-bootstrap-tpls.min.js"></script> -->
     <link rel="stylesheet" href="src/css/styles.css">
 </head>
@@ -22,17 +24,19 @@
     
 
 <div class="background"></div>
-<div class="container maincontainer">
-    <nav-bar class="col-md-12 col-xs-12 col-lg-12"></nav-bar>
-     <div class="col-lg-12 addPad">
-         <div class="leftContainer col-md-3 flex-col">
-             <filters></filters>
-             <login></login>
-         </div>
-         <div class="calendarBox col-md-3"></div>
-     </div>
+<div class="container">
+    <div class="col-md-12 xs sm lg xlg">
+        <nav-bar class="col-md-12 xlg lg sm xsm"></nav-bar>
+    </div>
+    <div class="container maincontainer">
+        <div class="col-md-6 col-sm-6 col-xs-12 second">
+            <filters></filters>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 third">
+            <div class="calendarBox col-md-3"></div>
+        </div>
+    </div>        
 </div>
-
 
 
 
