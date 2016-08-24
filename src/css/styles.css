@@ -7,11 +7,15 @@
 
 #header{
     float: right;
-    
+
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     text-shadow: 0 1px 1px white;
     text-align: end;
+}
+
+#header h3{
+    text-aligh: start;
 }
 
 .header_banner{
