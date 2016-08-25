@@ -7,9 +7,9 @@
     function filterController(){
         var filter = this;
         filter.filters = getFilters;
-        
+
       	function getFilters(){
-     		var ref = firebase.database().ref().child("xactware/techs");
+     		var ref = firebase.database().ref().child("xactware/filters");
             filter.filtersList = $firebaseArray(ref)
       	}
     }
