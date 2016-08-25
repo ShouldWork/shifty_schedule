@@ -12,5 +12,6 @@
      		var ref = firebase.database().ref().child("xactware/filters");
             filter.filtersList = $firebaseArray(ref)
       	}
+      	getFilters();
     }
 })();
