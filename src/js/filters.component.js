@@ -15,7 +15,7 @@
       	}
 
       	function setFilter(pass){
-      		var filters = filter.getFilters;
+      		var filters = firebase.database().ref().child("xactware/filters");
 			filters.$add({ foo: "bar" }).then(function(ref) {
 			  var id = ref.key();
 			  console.log("added record with id " + id);
