@@ -1,23 +1,34 @@
 [{
-	"name":"Month"
+	"name":"Month",
+	"set":"false"
 },{
-	"name":"Year"
+	"name":"Year",
+	"set":"false"
 },{
-	"name": "Week"
+	"name": "Week",
+	"set":"false"
 },{
-	"name":"Day"
+	"name":"Day",
+	"set":"false"
 },{
-	"name":"Level"
+	"name":"Level",
+	"set":"false"
 },{
-	"name":"Team"
+	"name":"Team",
+	"set":"false"
 },{
-	"name":"Weekends"
+	"name":"Weekends",
+	"set":"false"
 },{
-	"name":"Filter"
+	"name":"Filter",
+	"set":"false"
 },{
-	"name":"Grave"
+	"name":"Grave",
+	"set":"false"
 },{
-	"name":"Swing"
+	"name":"Swing",
+	"set":"false"
 },{
-	"name":"Shift"
+	"name":"Shift",
+	"set":"false"
 }]
