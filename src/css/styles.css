@@ -96,11 +96,12 @@
     z-index: 15;
     margin: 1px;
 
-    box-shadow: 2px 5px 15px black;
 }
 
 .calendarTile:hover{
+    box-shadow: 2px 5px 15px black;
     transform: rotate(7deg);
+    z-index: 20;
 }
 
 .leftContainer{
