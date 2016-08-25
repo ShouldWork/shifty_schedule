@@ -1,197 +1,148 @@
 [{
-	"Abraham Hurtado": {
+	"name": "Abraham Hurtado",
+	"level": "L1"
+}, {
+	"name":"Andrew Metcalf",
+	"level": "L1"
+}, {
+	"name":"Blaze Chabot",
+	"level": "L1"
+}, {
+	"name": "Brendan Stevens",
+	"level": "L2"
+}, {
+	"name":"Bret Rowan",
+	"level": "L1"
+}, {
+	"name": "Cameron Wood",
+	"level": "L1"
+}, {
+	"name":"Chaise Dale",
+	"level": "L2"
+}, {
+	"name":"Challis Gatten",
+	"level": "L1"
+}, {
+	"name": "Connie Neil",
+	"level": "L2"
+}, {
+	"name":"Dexton Armstrong",
+	"level": "L2"
+}, {
+	"name":"DJ Clements",
+	"level": "L2"
+}, {
+	"name":"Drew Merrill",
+	"level": "L1"
+}, {
+	"name":"Dutch Neerings",
+	"level": "L1"
+}, {
+	"name":"Ed Baron",
+	"level": "L2"
+}, {
+	"name":"Eric Smith",
+	"level": "L2"
+}, {
+	"name":"GL Anderson",
+	"level": "L2"
+}, {
+	"name":"Gabe Partridge",
+	"level": "L1"
+}, {
+	"name":"Ian Bathelt",
+	"level": "L2"
+}, {
+	"name":"James Mitchell",
+	"level": "L1"
+}, {
+	"name": "Jared Kartchner",
+	"level": "L2"
+}, {
+	"name": "Jason Melone",
+	"level": "L1"
+}, {
+	"name":"Jerry Hunt",
+	"level": "L1"
+}, {
+	"name":"Jesse Grant",
+	"level": "L2"
+}, {
+	"name":"Johan Scholte",
+	"level": "L1"
+}, {
+	"name":"Kaleb Hunter",
+	"level": "L2"
+}, {
+	"name":"Karla Armenta",
+	"level": "L1"
+}, {
+	"name":"Kenton Bailey",
 		"level": "L1"
-	}
 }, {
-	"Andrew Metcalf": {
-		"level": "L1"
-	}
+	"name":"Marco Escobar",
+	"level": "L2"
 }, {
-	"Blaze Chabot": {
-		"level": "L1"
-	}
+	"name":"Matt Gaskin",
+	"level": "L1"
 }, {
-	"Brendan Stevens": {
-		"level": "L2"
-	}
+	"name":"Micah Heaton",
+	"level": "L2"
 }, {
-	"Bret Rowan": {
-		"level": "L1"
-	}
+	"name":"Michael Perry",
+	"level": "L1"
 }, {
-	"Cameron Wood": {
-		"level": "L1"
-	}
+	"name":"Michael Zanandrea",
+	"level": "L1"
 }, {
-	"Chaise Dale": {
-		"level": "L2"
-	}
+	"name":"Milena Norton",
+	"level": "L2"
 }, {
-	"Challis Gatten": {
-		"level": "L1"
-	}
+	"name":"Paul Soares",
+	"level": "L2"
 }, {
-	"Connie Neil": {
-		"level": "L2"
-	}
+	"name":"Phillip Stevens",
+	"level": "L2"
 }, {
-	"Dexton Armstrong": {
-		"level": "L2"
-	}
+	"name":"Ryan Crimm",
+	"level": "L2"
 }, {
-	"DJ Clements": {
-		"level": "L2"
-	}
+	"name":"Scott Thompson",
+	"level": "L1"
 }, {
-	"Drew Merrill": {
-		"level": "L1"
-	}
+	"name":"Sean VanBuskirk",
+	"level": "L2"
 }, {
-	"Dutch Neerings": {
-		"level": "L1"
-	}
+	"name":"Spencer McCain",
+	"level": "L1"
 }, {
-	"Ed Baron": {
-		"level": "L2"
-	}
+	"name":"Taylor Stewart",
+	"level": "L2"
 }, {
-	"Eric Smith": {
-		"level": "L2"
-	}
+	"name":"Tim Hall",
+	"level": "L1"
 }, {
-	"GL Anderson": {
-		"level": "L2"
-	}
+	"name":"Tim Marshall",
+	"level": "L2"
 }, {
-	"Gabe Partridge": {
-		"level": "L1"
-	}
+	"name":"TJ Jacobs",
+	"level": "L1"
 }, {
-	"Ian Bathelt": {
-		"level": "L2"
-	}
+	"name":"Tregan Emmett",
+	"level": "L1"
 }, {
-	"James Mitchell": {
-		"level": "L1"
-	}
+	"name":"Ty Eckles",
+	"level": "L1"
 }, {
-	"Jared Kartchner": {
-		"level": "L2"
-	}
+	"name":"Tyler Faile",
+	"level": "L2"
 }, {
-	"Jason Melone": {
-		"level": "L1"
-	}
+	"name":"Westly Smyth",
+	"level": "L2"
 }, {
-	"Jerry Hunt": {
-		"level": "L1"
-	}
+	"name":"Will Burnett",
+	"level": "L1"
 }, {
-	"Jesse Grant": {
-		"level": "L2"
-	}
-}, {
-	"Johan Scholte": {
-		"level": "L1"
-	}
-}, {
-	"Kaleb Hunter": {
-		"level": "L2"
-	}
-}, {
-	"Karla Armenta": {
-		"level": "L1"
-	}
-}, {
-	"Kenton Bailey": {
-		"level": "L1"
-	}
-}, {
-	"Marco Escobar": {
-		"level": "L2"
-	}
-}, {
-	"Matt Gaskin": {
-		"level": "L1"
-	}
-}, {
-	"Micah Heaton": {
-		"level": "L2"
-	}
-}, {
-	"Michael Perry": {
-		"level": "L1"
-	}
-}, {
-	"Michael Zanandrea": {
-		"level": "L1"
-	}
-}, {
-	"Milena Norton": {
-		"level": "L2"
-	}
-}, {
-	"Paul Soares": {
-		"level": "L2"
-	}
-}, {
-	"Phillip Stevens": {
-		"level": "L2"
-	}
-}, {
-	"Ryan Crimm": {
-		"level": "L2"
-	}
-}, {
-	"Scott Thompson": {
-		"level": "L1"
-	}
-}, {
-	"Sean VanBuskirk": {
-		"level": "L2"
-	}
-}, {
-	"Spencer McCain": {
-		"level": "L1"
-	}
-}, {
-	"Taylor Stewart": {
-		"level": "L2"
-	}
-}, {
-	"Tim Hall": {
-		"level": "L1"
-	}
-}, {
-	"Tim Marshall": {
-		"level": "L2"
-	}
-}, {
-	"TJ Jacobs": {
-		"level": "L1"
-	}
-}, {
-	"Tregan Emmett": {
-		"level": "L1"
-	}
-}, {
-	"Ty Eckles": {
-		"level": "L1"
-	}
-}, {
-	"Tyler Faile": {
-		"level": "L2"
-	}
-}, {
-	"Westly Smyth": {
-		"level": "L2"
-	}
-}, {
-	"Will Burnett": {
-		"level": "L1"
-	}
-}, {
-	"Zac Winters": {
-		"level": "L1"
-	}
+	"name":"Zac Winters",
+	"level": "L1"
 }]
