@@ -4,7 +4,7 @@
             templateUrl: "src/html/filters.component.html",
             controller: filterController
         });
-    function filterController(){
+    function filterController($firebaseArray){
         var filter = this;
         filter.filters = getFilters;
 
