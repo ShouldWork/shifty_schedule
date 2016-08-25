@@ -123,12 +123,9 @@
 
 
 .loginBox{
-    border: 1px solid white;
     padding: .5em;
     height: 40%;
     overflow: hidden;
-    box-shadow: 2px 5px 15px black;
-
     align-self: flex-end;
 }
 
@@ -145,7 +142,6 @@
 
 .loginButton:hover{
     box-shadow: 2px 5px 15px black;
-    padding-left: 30%;
 }
 
 .filtertile{
