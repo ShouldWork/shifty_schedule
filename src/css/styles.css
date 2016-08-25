@@ -85,6 +85,7 @@
     padding: 1em;
     max-height: 85vh;
     overflow: auto;
+    z-index: 5;
 }
 
 .calendarTile{
