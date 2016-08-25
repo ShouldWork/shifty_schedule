@@ -162,12 +162,20 @@
     transform: rotate(7deg);
 }
 
-.flex-row-center{
+.flex-row-start{
     display: flex;
     flex-flow: row wrap;
     /* justify-content: flex-start; */
     /* align-items: flex-start; */
     align-content: flex-start;
+}
+
+.flex-row-center{
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    align-content: center;
 }
 
 
