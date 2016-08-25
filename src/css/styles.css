@@ -140,10 +140,10 @@
 
 .filtertile{
     background: linear-gradient(-140deg,rgba(190,255,252,0.80),rgba(190,255,252,0.30));
-    padding: 1.25em;
+    padding: .50em;
     cursor: pointer;
 
-    font-size: 1.5em;
+    font-size: 1.25em;
     transition: all .25s ease-out;
 
     font-family: 'Roboto', sans-serif;
