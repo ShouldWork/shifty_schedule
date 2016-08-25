@@ -15,7 +15,12 @@
       	}
 
       	function setFilter(pass){
-      		console.log(pass)
+      		var filters = filter.getFilters;
+			list.$add({ foo: "bar" }).then(function(ref) {
+			  var id = ref.key();
+			  console.log("added record with id " + id);
+			  list.$indexFor(id); // returns location in the array
+			});
       	}
       	getFilters();
     }
