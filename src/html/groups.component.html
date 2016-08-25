@@ -1,5 +1,9 @@
 <div class="col-xlg-12 lg md sm xsm calendarBox flex-row-center">
     <div ng-repeat="tech in $ctrl.techs" class="row col-lg-3 xlg md sm xsm">
-        <div class="calendarTile" ng-bind="tech.name"></div>
+        <div class="calendarTile">
+        	<h1>{{ techs.name }}</h1>
+        	<h2>{{ techs.level }}</h2>
+        	<h3>{{ techs.supervisor }}}</h3>
+        </div>
     </div>
 </div>
