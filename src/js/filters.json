@@ -1,34 +1,34 @@
 [{
 	"name":"Month",
-	"set":"false"
+	"set":false
 },{
 	"name":"Year",
-	"set":"false"
+	"set":false
 },{
 	"name": "Week",
-	"set":"false"
+	"set":false
 },{
 	"name":"Day",
-	"set":"false"
+	"set":false
 },{
 	"name":"Level",
-	"set":"false"
+	"set":false
 },{
 	"name":"Team",
-	"set":"false"
+	"set":false
 },{
 	"name":"Weekends",
-	"set":"false"
+	"set":false
 },{
 	"name":"Filter",
-	"set":"false"
+	"set":false
 },{
 	"name":"Grave",
-	"set":"false"
+	"set":false
 },{
 	"name":"Swing",
-	"set":"false"
+	"set":false
 },{
 	"name":"Shift",
-	"set":"false"
+	"set":false
 }]
