@@ -10,7 +10,7 @@
         login.testData = [{text: "Month"},{text: "Year"},{text: "Week"},{text: "Day"},{text: "Level"},{text: "Team"},{text: "Filter"},{text: "Weekends"},{text: "Grave"},{text: "Swing"},{text: "Shift"}];
         login.login = login; 
         
-        var ref = firebase.database().ref().child("filters");
+        var ref = firebase.database().ref().child("users");
         syncObject = $firebaseObject(ref);
         syncObject.$bindTo($scope,"login.form");
         syncObject.$loaded().then(function(){

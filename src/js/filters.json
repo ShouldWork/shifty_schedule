@@ -1,0 +1,23 @@
+[{
+	"name":"Month"
+},{
+	"name":"Year"
+},{
+	"name": "Week"
+},{
+	"name":"Day"
+},{
+	"name":"Level"
+},{
+	"name":"Team"
+},{
+	"name":"Weekends"
+},{
+	"name":"Filter"
+},{
+	"name":"Grave"
+},{
+	"name":"Swing"
+},{
+	"name":"Shift"
+}]

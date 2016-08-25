@@ -6,6 +6,11 @@
         });
     function filterController(){
         var filter = this;
-        filter.filters = [{text: "Month"},{text: "Year"},{text: "Week"},{text: "Day"},{text: "Level"},{text: "Team"},{text: "Filter"},{text: "Weekends"},{text: "Grave"},{text: "Swing"},{text: "Shift"}];
+        filter.filters = getFilters;
+        
+      	function getFilters(){
+     		var ref = firebase.database().ref().child("xactware/techs");
+            filter.filtersList = $firebaseArray(ref)
+      	}
     }
 })();
