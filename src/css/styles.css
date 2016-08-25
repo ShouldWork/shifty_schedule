@@ -31,12 +31,12 @@
 .background{
 	background: transparent url('../resources/background/warped_wood.jpg') center no-repeat;
 	background-size: cover;
-    padding-bottom: 5em;
+    padding-bottom: 50vh;
 }
 
 
 .navButton{
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 15px;
     font-style: none;
     transition: all .25s ease-in;
@@ -44,11 +44,16 @@
     cursor: pointer;
     z-index: 10;
     float: left;
+    background: transparent;
+    box-shadow: none;
 }
 
 .navButton:hover{
 	font-style: bold;
-    border: 1px solid white;
+    border: 2px solid white;
+    color: white;
+    /*background: linear-gradient(-183deg,rgba(0,0,0,0.10),rgba(0,0,0,0.30));*/
+    box-shadow: 2px 5px 15px black;
 }
 
 #navButtonContainer{
@@ -75,9 +80,25 @@
 
 
 .calendarBox{
-    height: 80vh;
+    height: auto;
     background: linear-gradient(133deg,rgba(255,239,164,0.80),transparent);
     padding: 1em;
+    max-height: 85vh;
+    overflow: auto;
+}
+
+.calendarTile{
+    background: linear-gradient(-140deg,rgba(190,255,252,0.80),rgba(190,255,252,0.30));
+    padding: 2em;
+    cursor: pointer;
+    transition: all .25s ease-out;
+    font-family: 'Roboto', sans-serif;
+    z-index: 15;
+    margin: 1px;
+}
+
+.calendarTile:hover{
+    transform: rotate(7deg);
 }
 
 .leftContainer{
@@ -152,9 +173,9 @@
 .flex-row-center{
     display: flex;
     flex-flow: row wrap;
-
-    justify-content: flex-start;
-    align-items: center;
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    align-content: flex-start;
 }
 
 
