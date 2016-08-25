@@ -89,19 +89,20 @@
 
 .calendarTile{
     background: linear-gradient(-140deg,rgba(190,255,252,0.80),rgba(190,255,252,0.30));
-    padding: 2em;
+    padding: 1.5em;
     cursor: pointer;
-    transition: all .25s ease-out;
     font-family: 'Roboto', sans-serif;
     z-index: 15;
     margin: 1px;
+
+    transition: all .25s ease-out;
 
 }
 
 .calendarTile:hover{
     box-shadow: 2px 5px 15px black;
     transform: rotate(7deg);
-    z-index: 20;
+    z-index: 200;
 }
 
 .leftContainer{
@@ -162,11 +163,9 @@
 }
 
 .filtertile:hover{
-    top: -15px;
     box-shadow: 2px 5px 10px rgba(0,0,0,0.65);
     z-index: 20;
     transform: rotate(7deg);
-
 }
 
 .filtertile_clicked{
