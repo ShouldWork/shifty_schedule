@@ -17,7 +17,7 @@
       	function setFilter(pass){
       		var filters = firebase.database().ref().child("xactware/filters");
       		filters = $firebaseArray(filters);
-			filters.$add({ name: "New Filter",set: "false"}).then(function(ref) {
+			filters.$add({ name: "New Filter",set: false}).then(function(ref) {
 			filters.$indexFor(id); // returns location in the array
 			});
       	}
