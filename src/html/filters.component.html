@@ -11,7 +11,17 @@
     </label>
 </form>
 
+<div layout-fill id="toast-container">
+  <md-content>
+    I can have lots of content and scroll!
+  </md-content>
+</div>
 
+<div ng-controller="MyController">
+  <md-button ng-click="showToast()">
+    Open a Toast!
+  </md-button>
+</div>
 
 <!-- ng-class="{filtertile_clicked: filter.set}" -->
 <!--<div class="clearBtn" ng-click="$ctrl.addFilter('test',false)">-->
