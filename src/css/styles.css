@@ -51,7 +51,8 @@
 
 
 .navButton{
-    padding: .25em;
+    margin: .25em;
+    padding: .75em;
     z-index: 10;
     background: transparent;
     box-shadow: none;
