@@ -14,11 +14,17 @@
             return $firebaseArray(ref);
       	}
 
-      	function addFilter(pass){
+      	function addFilter(){
       		var filters = getFilters();
 			filters.$add({ name: "New Filter",set: false}).then(function(ref) {
 				filters.$indexFor(id); // returns location in the array
 			});
+      	}
+
+      	function setListProperty(prop){
+      		var filters = getFilters();
+      		var prop = filters.$indexFor(prop);
+      		console.log(prop);
       	}
     }
 })();
