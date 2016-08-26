@@ -122,16 +122,11 @@
 
 
 .loginBox{
-<<<<<<< HEAD
-    /*border: 1px solid white;*/
-=======
->>>>>>> 4bf285c5a3f3e8296c96b46fc42c8124486e36ee
+    border: 1px solid white;
     padding: .5em;
     overflow: hidden;
-<<<<<<< HEAD
     align-self: flex-end;
-=======
->>>>>>> 4bf285c5a3f3e8296c96b46fc42c8124486e36ee
+    margin: 10px;
 }
 
 .loginButton{
