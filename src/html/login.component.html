@@ -1,8 +1,8 @@
 <div>
     <div class="clearBtn">
-        <div ng-click="$ctrl.signIn('google')"  ng-click="$ctrl.login">Sign in!</div>
+        <div ng-if="$ctrl.user" ng-click="$ctrl.signIn('google')"  ng-click="$ctrl.login">Sign in!</div>
     </div>
     <div class="clearBtn">
-        <div ng-click="$ctrl.logout()"  ng-click="$ctrl.login">Sign out!</div>
+        <div ng-if="!$ctrl.user" ng-click="$ctrl.logout()"  ng-click="$ctrl.login">Sign out!</div>
     </div>
 </div>
