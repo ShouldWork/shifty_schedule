@@ -147,17 +147,19 @@
 }
 
 .filtertile{
-    background: linear-gradient(-140deg,rgba(190,255,252,0.80),rgba(190,255,252,0.30));
-    padding: .50em;
     cursor: pointer;
-
-    font-size: 1.25em;
-    transition: all .25s ease-out;
-    outline: 0;
     font-family: 'Roboto', sans-serif;
-    z-index: 15;
-
+    text-shadow: 0 0 2px black;
+    
+    padding: .50em;
     margin: 1px;
+    z-index: 15;
+    
+    color: ghostWhite;
+    border-radius: 5px;
+    border: 2px solid ghostWhite;
+    
+    transition: all .25s ease-out;
 }
 .filtertile:hover{
     box-shadow: 2px 5px 10px rgba(0,0,0,0.65);
