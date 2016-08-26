@@ -227,6 +227,10 @@
 .techTile h2{font-size: 80%;}
 
 
-.calendarBox::-webkit-scrollbar body::-webkit-scrollbar{ 
+.calendarBox::-webkit-scrollbar{ 
     display: none; 
+}
+
+.container::-webkit-scrollbar{
+    display: none;
 }
