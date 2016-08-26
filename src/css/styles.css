@@ -201,9 +201,6 @@
 
 .techTile{
     background: linear-gradient(-140deg,rgba(190,255,252,0.80),rgba(190,255,252,0.30));
-    padding: .5em;
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
     z-index: 15;
     margin: 1px;
     transition: all .25s ease-out;
