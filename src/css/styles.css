@@ -172,11 +172,15 @@
 }
 
 .addFilter , .addFilter:active , .addFilter:hover{
-    background: linear-gradient(-90deg,transparent,rgba(0,0,0,0.15));
+    /*background: linear-gradient(-90deg,transparent,rgba(0,0,0,0.15));*/
+    background: transparent;
     outline: 0;
     border: none;
     border-bottom: 2px solid black;
     color: white;
+    text-shadow: 0 0 1px black;
+    font-size: 1.25em;
+    padding: .25em;
 }
 
 .flex-row-start{
