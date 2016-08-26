@@ -26,6 +26,7 @@
         
         function user(){
             var user = $localStorage.user; 
+            console.log(user);
             if (user !== undefined){
                 return user; 
             }
@@ -78,7 +79,7 @@
             $log.log(user + " logged out");
             auth.$signOut();
             $localStorage.user = login.user = undefined;
-            login.showToast("Come back soon, " + user +  "ya' hear?!")
+            login.showToast("Come back soon, " + user +  " ya' hear?!")
         }
     }
 })();
