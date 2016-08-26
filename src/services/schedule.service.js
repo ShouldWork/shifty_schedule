@@ -18,7 +18,7 @@
 			};
 		self.toastPos = angular.extend({},last);
 		self.showToast = showToast;
-		self.getToastPos = getToastPos;
+		// self.getToastPos = getToastPos;
 		self.getToastMsg = getToastMsg; 
 		
 		// Toast setup and functions
