@@ -10,17 +10,21 @@
     
     function shiftyService($q, $log, $sessionStorage, $localStorage,$state,$mdToast,$firebaseObject,$firebaseArray,$firebaseAuth) {
 		var self = this,
-			last = {
-				bottom: true,
-				top: false,
-				left: true,
-				right: false
-			};
-		self.toastPos = angular.extend({},last);
-		self.showToast = showToast;
+		self.showToast   = showToast;
 		self.getToastMsg = getToastMsg; 
+		self.getList     = getList; 
+		
+
+
 		
 		// Toast setup and functions
+		last = {
+			bottom: true,
+			top: false,
+			left: true,
+			right: false
+		};
+		self.toastPos    = angular.extend({},last);
 		self.getToastPos = function (){
 			cleanUp();
 			return Object.keys(self.toastPos)
@@ -50,6 +54,13 @@
 			if ( current.left && last.right ) current.right = false;
 			last = angular.extend({},current);
 		}
+
+
+		// getting lists
+		function getList(toGet){
+     		var ref = firebase.database().ref().child(toGet);
+            return $firebaseArray(ref);
+      	}
     };
 }());
 

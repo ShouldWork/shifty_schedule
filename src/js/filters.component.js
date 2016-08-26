@@ -13,8 +13,8 @@
 		filter.newListName = "";
 
       	function getFilters(){
-     		var ref = firebase.database().ref().child("xactware/filters");
-            return $firebaseArray(ref);
+      		var filters = shiftyService.getList("xactware/filters")
+      		return filters;
       	}
 
       	function addFilter(name,set){
