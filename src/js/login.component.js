@@ -57,7 +57,7 @@
             }).catch(function (error) {
                 $log.log("Authentication failed:", error);
             });
-            login.user = login.providerUser.displayName;
+            console.log(login.user = login.providerUser.displayName);
         }
         function logout() {
             var auth = $firebaseAuth();
