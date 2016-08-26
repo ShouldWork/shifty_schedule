@@ -4,13 +4,13 @@
             templateUrl: "src/html/login.component.html",
             controller: loginController
         });
-    function loginController($firebaseObject,$scope,$firebaseArray,$firebaseAuth,$log,shiftyService){
+    function loginController($firebaseObject,$scope,$firebaseArray,$firebaseAuth,$log,shiftyService,$localStorage){
         var login = this;
         
         // local functions
         login.signIn = signIn;
         login.logout = logout;
-        login.user = undefined; 
+        login.user = user; 
 
         // From service
         login.showToast = shiftyService.showToast; 
@@ -24,7 +24,12 @@
             login.fireBase = login.form;
         });
         
-        
+        function user(){
+            var user = $localStorage.user; 
+            (user) ? console.log("yes " + user) : console.lo("no " + user);
+        }
+
+
         login.testSave = function (){
             console.log("saving...");
             console.log(JSON.stringify(login.testData));
@@ -58,7 +63,7 @@
                     } else {
                         login.showToast('user already created! Logging in as ' + login.providerUser.displayName);
                     }
-                    login.user = login.providerUser.displayName; 
+                    $localStorage.user = login.user = login.providerUser.displayName; 
                     login.signedIn = true;
                 });
             }).catch(function (error) {
@@ -69,7 +74,7 @@
             var auth = $firebaseAuth();
             $log.log(login.displayName + " logged out");
             auth.$signOut();
-            login.user = undefined;
+            $localStorage.user = login.user = undefined;
             login.showToast("Come back soon ya' hear?!")
             login.signedIn = false;
         }
