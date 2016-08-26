@@ -1,5 +1,5 @@
 <div class="flex-row-center filterBox">
-	<h1>Filters:</h1>
+	<h1 class="col-xlg-12 lg md sm xsm">Filters:</h1>
     <div  class="filtertile clearBtn" ng-repeat="filter in $ctrl.filters" ng-click="$ctrl.setListProperty(filter.$id)"ng-class="{filtertile_clicked: filter.set}">
         <span> {{ filter.name }} </span>
         <!--<h4> {{ filter.set }}</h4>-->
