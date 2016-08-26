@@ -6,7 +6,7 @@
         });
     function filterController($firebaseArray){
         var filter = this;
-        filter.filters = getFilters;
+        filter.filters = getFilters();
         filter.addFilter = addFilter;
 
       	function getFilters(){
