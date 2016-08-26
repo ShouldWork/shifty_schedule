@@ -6,15 +6,14 @@
         });
     function filterController($firebaseArray,$mdToast,shiftyService){
         var filter = this;
-        filter.filters = getFilters();
+        filter.getFilters = getFilters();
         filter.addFilter = addFilter;
         filter.setListProperty = setListProperty;
 		filter.showToast = shiftyService.showToast;
 		filter.newListName = "";
 
       	function getFilters(){
-      		var filters = shiftyService.getList("xactware/filters")
-      		return filters;
+      		filter.filters = shiftyService.getList("xactware/filters")
       	}
 
       	function addFilter(name,set){
