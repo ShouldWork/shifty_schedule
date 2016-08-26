@@ -10,7 +10,7 @@
         // local functions
         login.signIn = signIn;
         login.logout = logout;
-        login.user = user; 
+        login.user = user(); 
 
         // From service
         login.showToast = shiftyService.showToast; 
