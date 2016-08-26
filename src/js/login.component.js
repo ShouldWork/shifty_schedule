@@ -41,18 +41,18 @@
                 $log.log(profileRef);
                 login.user.$loaded().then(function () {
                     if (!login.user.displayName) {
-                        showToast("Creating user...");
+                        login.showToast("Creating user...");
                         profileRef.set({
                             displayName: login.providerUser.displayName,
                             email: login.providerUser.email,
                             photoURL: login.providerUser.photoURL
                         }).then(function () {
-                            showToast("user created.");
+                            login.showToast("user created.");
                         }, function () {
-                            showToast("user could not be created.");
+                            login.showToast("user could not be created.");
                         });
                     } else {
-                        showToast('user already created!');
+                        login.showToast('user already created!');
                     }
                 });
             }).catch(function (error) {
@@ -65,6 +65,7 @@
             $log.log(login.displayName + " logged out");
             auth.$signOut();
             login.user = undefined;
+            login.showToast("Come back soon ya' hear?!")
         }
     }
 })();
