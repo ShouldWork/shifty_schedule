@@ -135,7 +135,7 @@
 
     border: 2px solid black;
     text-align: center;
-    color: white;
+    color: ghostWhite;
     text-shadow: 1px 2px 1px black;
 
     transition: all .25s ease-in;
@@ -149,14 +149,8 @@
 }
 
 .filtertile{
-    cursor: pointer;
-    text-shadow: 1px 2px 2px black;
-    
-    padding: .50em;
     margin: 1px;
     z-index: 15;
-    
-    color: ghostWhite;
     border-radius: 5px;
     border: 2px solid black;
     
