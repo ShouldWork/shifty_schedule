@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
@@ -204,6 +205,7 @@
     z-index: 15;
     margin: 1px;
     transition: all .25s ease-out;
+    border-radius: 5px;
 }
 .techTile:hover{
     box-shadow: 2px 5px 15px black;
