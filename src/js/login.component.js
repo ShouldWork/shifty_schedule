@@ -4,12 +4,13 @@
             templateUrl: "src/html/login.component.html",
             controller: loginController
         });
-    function loginController($firebaseObject,$scope,$firebaseArray,$firebaseAuth,$log){
+    function loginController($firebaseObject,$scope,$firebaseArray,$firebaseAuth,$log,shiftyService){
         var login = this;
         
         login.testData = [{text: "Month"},{text: "Year"},{text: "Week"},{text: "Day"},{text: "Level"},{text: "Team"},{text: "Filter"},{text: "Weekends"},{text: "Grave"},{text: "Swing"},{text: "Shift"}];
         login.signIn = signIn;
         login.logout = logout;
+        login.showToast = shiftyService.showToast; 
         
         var ref = firebase.database().ref().child("users");
         syncObject = $firebaseObject(ref);
