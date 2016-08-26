@@ -39,10 +39,10 @@
 			// console.log(ref.child(id).child("set").set());
       	}
 		var last = {
-			bottom: true,
-			top: false,
-			left: false,
-			right: true
+			bottom: false,
+			top: true,
+			left: true,
+			right: false
 		};
 
 		filter.toastPos = angular.extend({},last);
