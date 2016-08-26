@@ -71,6 +71,7 @@
             auth.$signOut();
             login.user = undefined;
             login.showToast("Come back soon ya' hear?!")
+            login.signedIn = false;
         }
     }
 })();
