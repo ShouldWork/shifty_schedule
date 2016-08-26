@@ -59,6 +59,7 @@
                         login.showToast('user already created! Logging in as ' + login.providerUser.displayName);
                     }
                     login.user = login.providerUser.displayName; 
+                    login.signedIn = true;
                 });
             }).catch(function (error) {
                 $log.log("Authentication failed:", error);
