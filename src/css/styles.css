@@ -133,14 +133,16 @@
     cursor: pointer;
     margin: 10px;
 
-    border: 2px solid ghostWhite;
+    border: 2px solid black;
     text-align: center;
     color: white;
     text-shadow: 0 0 1px black;
 
     transition: all .25s ease-in;
 }
-
+.clearBtn:hover{
+    border: 2px solid ghostWhite;
+}
 
 .loginButton:hover{
     box-shadow: 2px 5px 15px black;
