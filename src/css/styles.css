@@ -211,7 +211,7 @@
 }
 .techTile:hover{
     box-shadow: 2px 5px 15px black;
-    transform: rotate(7deg);
+    /*transform: rotate(7deg);*/
     z-index: 200;
 }
 .techTile h1{    font-size: 1.25em;padding: 0;margin: 0;}
