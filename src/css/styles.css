@@ -214,7 +214,7 @@
     transform: rotate(7deg);
     z-index: 200;
 }
-.techTile h1{font-size: 1.5em;}
+.techTile h1{    font-size: 1.25em;padding: 0;margin: 0;}
 .techTile h2{font-size: .75em;}
 
 
