@@ -202,7 +202,7 @@
 
 .techTile{
     background: linear-gradient(-133deg,rgba(190,255,252,1),rgba(190,255,252,0));
-    z-index: 15;
+    z-index: 0;
     margin: 1px;
     transition: all .25s ease-out;
     border-radius: 5px;
