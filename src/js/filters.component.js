@@ -9,10 +9,7 @@
         filter.filters = getFilters();
         filter.addFilter = addFilter;
         filter.setListProperty = setListProperty;
-		filter.toastPos = angular.extend({},last);
-		filter.getToastPos = shiftyService.getToastPos;
 		filter.showToast = shiftyService.showToast;
-		filter.getToastMsg = shiftyService.getToastMsg; 
 		filter.newListName = "";
 
       	function getFilters(){

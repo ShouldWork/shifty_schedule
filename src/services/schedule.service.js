@@ -44,7 +44,7 @@
 		}
 
 		function cleanUp(){
-			var current = filter.toastPos;
+			var current = self.toastPos;
 			if ( current.bottom && last.top ) current.top = false;
 			if ( current.top && last.bottom ) current.bottom = false;
 			if ( current.right && last.left ) current.left = false;
