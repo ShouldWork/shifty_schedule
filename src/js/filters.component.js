@@ -39,8 +39,8 @@
 			// console.log(ref.child(id).child("set").set());
       	}
 		var last = {
-			bottom: false,
-			top: true,
+			bottom: true,
+			top: false,
 			left: true,
 			right: false
 		};
