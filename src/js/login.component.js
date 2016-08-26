@@ -37,14 +37,13 @@
             var auth = $firebaseAuth();
             // login with provider
             auth.$signInWithPopup(provider).then(function (firebaseUser) {
-                $log.log(firebaseUser);
                 login.displayName = firebaseUser.user.displayName;
                 login.providerUser = firebaseUser.user;
-                var ref = firebase.database().ref("users");
-                var profileRef = ref.child(login.providerUser.uid);
+
+                var ref = firebase.database().ref("users"),
+                    profileRef = ref.child(login.providerUser.uid);
+
                 login.user = $firebaseObject(profileRef);
-                $log.log(login.user);
-                $log.log(profileRef);
                 login.user.$loaded().then(function () {
                     if (!login.user.displayName) {
                         login.showToast("Creating user...");
@@ -54,14 +53,14 @@
                             photoURL: login.providerUser.photoURL
                         }).then(function () {
                             login.showToast("user created. Logging in as " + login.providerUser.displayName);
-                        }, function () {
                             login.showToast("user could not be created.");
+                            login.user = login.providerUser.displayName; 
+                            console.log(login.user);
+                        }, function () {
                         });
                     } else {
                         login.showToast('user already created! Logging in as ' + login.providerUser.displayName);
                     }
-                    login.user = login.providerUser.displayName; 
-                    console.log(login.user);
                 });
             }).catch(function (error) {
                 $log.log("Authentication failed:", error);
