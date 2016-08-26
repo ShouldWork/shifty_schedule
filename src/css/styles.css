@@ -234,3 +234,9 @@
 .container::-webkit-scrollbar{
     display: none;
 }
+
+.noScrollBar::-webkit-scrollbar{
+    display: none;
+}
+
+
