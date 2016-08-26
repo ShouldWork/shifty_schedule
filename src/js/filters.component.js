@@ -4,12 +4,12 @@
             templateUrl: "src/html/filters.component.html",
             controller: filterController
         });
-    function filterController($firebaseArray,$mdToast){
+    function filterController($firebaseArray,$mdToast,shiftyService){
         var filter = this;
         filter.filters = getFilters();
         filter.addFilter = addFilter;
         filter.setListProperty = setListProperty;
-		filter.showToast = showToast;
+		filter.showToast = shiftyService.showToast;
 		filter.newListName = "";
 
       	function getFilters(){
@@ -38,42 +38,5 @@
 			});
 			// console.log(ref.child(id).child("set").set());
       	}
-		var last = {
-			bottom: true,
-			top: false,
-			left: true,
-			right: false
-		};
-
-		filter.toastPos = angular.extend({},last);
-		filter.getToastPos = function (){
-			cleanUp();
-			return Object.keys(filter.toastPos)
-				.filter(function(pos) { return filter.toastPos[pos]; })
-				.join(' ');
-		};
-		function showToast(message,delay){
-			var pinTo = filter.getToastPos(),
-				msg = getToastMsg(message);
-			$mdToast.show(
-				$mdToast.simple()
-					.textContent(msg)
-					.position(pinTo)
-					.hideDelay(delay || 2500)
-			);
-		}
-
-		function getToastMsg(whatGet){
-			return ($.isArray(whatGet)) ? getToastMsg(whatGet[Math.floor((Math.random() * whatGet.length - 1) + 1)]) : whatGet;
-		}
-
-		function cleanUp(){
-			var current = filter.toastPos;
-			if ( current.bottom && last.top ) current.top = false;
-			if ( current.top && last.bottom ) current.bottom = false;
-			if ( current.right && last.left ) current.left = false;
-			if ( current.left && last.right ) current.right = false;
-			last = angular.extend({},current);
-		}
     }
 })();
