@@ -72,11 +72,11 @@
         }
         function logout() {
             var auth = $firebaseAuth();
-            $log.log(login.displayName + " logged out");
+            var user = login.user; 
+            $log.log(user + " logged out");
             auth.$signOut();
             $localStorage.user = login.user = undefined;
-            login.showToast("Come back soon ya' hear?!")
-            login.signedIn = false;
+            login.showToast("Come back soon, " + user +  "ya' hear?!")
         }
     }
 })();
