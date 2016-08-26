@@ -42,7 +42,6 @@
 
                 var ref = firebase.database().ref("users"),
                     profileRef = ref.child(login.providerUser.uid);
-
                 login.user = $firebaseObject(profileRef);
                 login.user.$loaded().then(function () {
                     if (!login.user.displayName) {
@@ -53,14 +52,14 @@
                             photoURL: login.providerUser.photoURL
                         }).then(function () {
                             login.showToast("user created. Logging in as " + login.providerUser.displayName);
-                            login.showToast("user could not be created.");
-                            login.user = login.providerUser.displayName; 
-                            console.log(login.user);
                         }, function () {
+                            login.showToast("user could not be created.");
                         });
                     } else {
                         login.showToast('user already created! Logging in as ' + login.providerUser.displayName);
                     }
+                    login.user = login.providerUser.displayName; 
+                    console.log(login.user);
                 });
             }).catch(function (error) {
                 $log.log("Authentication failed:", error);
