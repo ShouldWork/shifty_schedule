@@ -39,7 +39,6 @@
     z-index: 10;
     background: transparent;
     box-shadow: none;
-    float: left;
 }
 
 .navButton:hover{
