@@ -169,7 +169,6 @@
 
 .filtertile_clicked{
     transform: rotate(7deg);
-    border: none;
     outline: 0;
 }
 
