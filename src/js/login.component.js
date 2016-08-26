@@ -52,7 +52,7 @@
                             login.showToast("user could not be created.");
                         });
                     } else {
-                        login.showToast('user already created!');
+                        login.showToast('user already created! Logging in as' + login.providerUser.displayName);
                     }
                 });
             }).catch(function (error) {
