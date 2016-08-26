@@ -26,8 +26,10 @@
         
         function user(){
             var user = $localStorage.user; 
-            (user) ? console.log("yes " + user) : console.lo("no " + user);
-        }
+            if (user !== undefined){
+                return user; 
+            }
+        };
 
 
         login.testSave = function (){
