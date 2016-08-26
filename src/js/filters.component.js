@@ -25,7 +25,7 @@
       	function setListProperty(prop){
       		console.log(prop);
       		var filters = getFilters();
-      		var prop = filters.$indexFor(prop);
+      		var prop = filters.$indexFor("Month");
       		console.log(prop);
       	}
     }
