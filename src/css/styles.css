@@ -210,8 +210,8 @@
     transform: rotate(7deg);
     z-index: 200;
 }
-.techTile h1{font-size: 100%;}
-.techTile h2{font-size: 80%;}
+.techTile h1{font-size: 1.5em;}
+.techTile h2{font-size: .75em;}
 
 
 .calendarBox::-webkit-scrollbar{ 
