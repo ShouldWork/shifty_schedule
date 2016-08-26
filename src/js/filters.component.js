@@ -32,7 +32,11 @@
 			ref.child(id).once("value", function(snapshot) {
 				var data = snapshot.val();
 				var toggle = (data.set) ? false : true;
-				showToast("Adding filter " + data.name + " to filters",1000);	
+				if (toggle){
+					showToast("Removing filter " + data.name + " to filters",1000);
+				} else{
+					showToast("Adding filter " + data.name + " to filters",1000);	
+				}
 				ref.child(id).child("set").set(toggle);
 				// data === "hello"
 			});
