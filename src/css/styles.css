@@ -7,10 +7,8 @@
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
 #header{
-    float: right;
-
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+    font-size: .1em;
     text-shadow: 0 1px 1px black;
     text-align: end;
 }
@@ -64,9 +62,10 @@
 
 .flex-row{
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
 	align-content: flex-start;
 	align-items: center;
+    justify-content: center;
 }
 
 
@@ -85,20 +84,24 @@
     padding: 1.5em;
     max-height: 85vh;
     overflow: auto;
+    z-index: 5;
 }
 
 .calendarTile{
     background: linear-gradient(-140deg,rgba(190,255,252,0.80),rgba(190,255,252,0.30));
-    padding: 2em;
+    padding: 1.5em;
     cursor: pointer;
-    transition: all .25s ease-out;
     font-family: 'Roboto', sans-serif;
     z-index: 15;
     margin: 1px;
+
+    transition: all .25s ease-out;
 }
 
 .calendarTile:hover{
+    box-shadow: 2px 5px 15px black;
     transform: rotate(7deg);
+    z-index: 200;
 }
 
 .leftContainer{
@@ -119,35 +122,37 @@
 
 
 .loginBox{
+<<<<<<< HEAD
     /*border: 1px solid white;*/
+=======
+>>>>>>> 4bf285c5a3f3e8296c96b46fc42c8124486e36ee
     padding: .5em;
-    height: 40%;
     overflow: hidden;
+<<<<<<< HEAD
     align-self: flex-end;
+=======
+>>>>>>> 4bf285c5a3f3e8296c96b46fc42c8124486e36ee
 }
 
 .loginButton{
-    background: linear-gradient(-180deg,rgba(190,255,252,0.55),rgba(190,255,252,0.50));
     padding: .5em;
-    font-size: 1.5em;
     cursor: pointer;
     text-shadow: 0 0 2px white;
     transition: all .25s ease-in;
-    text-align: start;
+    text-align: center;
 }
 
 
 .loginButton:hover{
     box-shadow: 2px 5px 15px black;
-    padding-left: 30%;
 }
 
 .filtertile{
     background: linear-gradient(-140deg,rgba(190,255,252,0.80),rgba(190,255,252,0.30));
-    padding: 1.25em;
+    padding: .50em;
     cursor: pointer;
 
-    font-size: 1.5em;
+    font-size: 1.25em;
     transition: all .25s ease-out;
 
     font-family: 'Roboto', sans-serif;
@@ -157,23 +162,26 @@
 }
 
 .filtertile:hover{
-    top: -15px;
     box-shadow: 2px 5px 10px rgba(0,0,0,0.65);
     z-index: 20;
     transform: rotate(7deg);
-
 }
 
 .filtertile_clicked{
     transform: rotate(7deg);
 }
 
+.flex-row-start{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+
 .flex-row-center{
     display: flex;
     flex-flow: row wrap;
-    /* justify-content: flex-start; */
-    /* align-items: flex-start; */
-    align-content: flex-start;
+    align-content: center;
+    align-items: center;
 }
 
 
@@ -187,3 +195,26 @@
     padding: 1em;
 }
 
+
+
+.techTile{
+    background: linear-gradient(-140deg,rgba(190,255,252,0.80),rgba(190,255,252,0.30));
+    padding: .5em;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    z-index: 15;
+    margin: 1px;
+    transition: all .25s ease-out;
+}
+.techTile:hover{
+    box-shadow: 2px 5px 15px black;
+    transform: rotate(7deg);
+    z-index: 200;
+}
+.techTile h1{font-size: 100%;}
+.techTile h2{font-size: 80%;}
+
+
+.calendarBox::-webkit-scrollbar { 
+    display: none; 
+}

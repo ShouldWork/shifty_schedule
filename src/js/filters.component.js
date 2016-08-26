@@ -4,8 +4,29 @@
             templateUrl: "src/html/filters.component.html",
             controller: filterController
         });
-    function filterController(){
+    function filterController($firebaseArray){
         var filter = this;
-        filter.filters = [{text: "Month"},{text: "Year"},{text: "Week"},{text: "Day"},{text: "Level"},{text: "Team"},{text: "Filter"},{text: "Weekends"},{text: "Grave"},{text: "Swing"},{text: "Shift"}];
+        filter.filters = getFilters();
+        filter.addFilter = addFilter;
+        filter.setListProperty = setListProperty;
+
+      	function getFilters(){
+     		var ref = firebase.database().ref().child("xactware/filters");
+            return $firebaseArray(ref);
+      	}
+
+      	function addFilter(){
+      		var filters = getFilters();
+			filters.$add({ name: "New Filter",set: false}).then(function(ref) {
+				filters.$indexFor(id); // returns location in the array
+			});
+      	}
+
+      	function setListProperty(prop){
+      		console.log(prop);
+      		var filters = getFilters();
+      		var prop = filters.$indexFor("Month");
+      		console.log(prop);
+      	}
     }
 })();
