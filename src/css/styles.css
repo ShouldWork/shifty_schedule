@@ -207,6 +207,7 @@
     color: black;
     text-shadow: none;
     border: 2px solid black;
+    border-radius: 0px;
 }
 .techTile:hover{
     box-shadow: 2px 5px 15px black;
