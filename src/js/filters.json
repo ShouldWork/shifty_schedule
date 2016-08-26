@@ -12,7 +12,40 @@
 	"set":false
 },{
 	"name":"Level",
+	"set":false[{
+	"name":"Month",
 	"set":false
+},{
+	"name":"Year",
+	"set":false
+},{
+	"name": "Week",
+	"set":false
+},{
+	"name":"Day",
+	"set":false
+},{
+	"name":"Level",
+	"set":false
+},{
+	"name":"Team",
+	"set":false
+},{
+	"name":"Weekends",
+	"set":false
+},{
+	"name":"Filter",
+	"set":false
+},{
+	"name":"Grave",
+	"set":false
+},{
+	"name":"Swing",
+	"set":false
+},{
+	"name":"Shift",
+	"set":false
+}]
 },{
 	"name":"Team",
 	"set":false

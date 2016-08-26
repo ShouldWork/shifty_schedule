@@ -4,11 +4,12 @@
             templateUrl: "src/html/login.component.html",
             controller: loginController
         });
-    function loginController($firebaseObject,$scope,$firebaseArray){
+    function loginController($firebaseObject,$scope,$firebaseArray,$firebaseAuth,$log){
         var login = this;
         
         login.testData = [{text: "Month"},{text: "Year"},{text: "Week"},{text: "Day"},{text: "Level"},{text: "Team"},{text: "Filter"},{text: "Weekends"},{text: "Grave"},{text: "Swing"},{text: "Shift"}];
-        login.login = login; 
+        login.signIn = signIn;
+        login.logout = logout;
         
         var ref = firebase.database().ref().child("users");
         syncObject = $firebaseObject(ref);
@@ -25,25 +26,25 @@
         };
 
 
-        function login(provider) {
+        function signIn(provider) {
             var auth = $firebaseAuth();
             // login with provider
             auth.$signInWithPopup(provider).then(function (firebaseUser) {
                 $log.log(firebaseUser);
-                vm.displayName = firebaseUser.user.displayName;
-                vm.providerUser = firebaseUser.user;
+                login.displayName = firebaseUser.user.displayName;
+                login.providerUser = firebaseUser.user;
                 var ref = firebase.database().ref("users");
-                var profileRef = ref.child(vm.providerUser.uid);
-                vm.user = $firebaseObject(profileRef);
-                $log.log(vm.user);
+                var profileRef = ref.child(login.providerUser.uid);
+                login.user = $firebaseObject(profileRef);
+                $log.log(login.user);
                 $log.log(profileRef);
-                vm.user.$loaded().then(function () {
-                    if (!vm.user.displayName) {
+                login.user.$loaded().then(function () {
+                    if (!login.user.displayName) {
                         $log.log("creating user...");
                         profileRef.set({
-                            displayName: vm.providerUser.displayName,
-                            email: vm.providerUser.email,
-                            photoURL: vm.providerUser.photoURL
+                            displayName: login.providerUser.displayName,
+                            email: login.providerUser.email,
+                            photoURL: login.providerUser.photoURL
                         }).then(function () {
                             $log.log("user created.");
                         }, function () {
@@ -56,6 +57,13 @@
             }).catch(function (error) {
                 $log.log("Authentication failed:", error);
             });
+            login.user = login.providerUser.displayName;
+        }
+        function logout() {
+            var auth = $firebaseAuth();
+            $log.log(login.displayName + " logged out");
+            auth.$signOut();
+            login.user = undefined;
         }
     }
 })();
