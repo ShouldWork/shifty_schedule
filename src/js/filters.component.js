@@ -8,6 +8,7 @@
         var filter = this;
         filter.filters = getFilters();
         filter.addFilter = addFilter;
+        filter.setListProperty = setListProperty;
 
       	function getFilters(){
      		var ref = firebase.database().ref().child("xactware/filters");
