@@ -45,6 +45,8 @@
 	font-style: bold;
     border: 2px solid white;
     color: white;
+    margin: 1px;
+    padding: 1.5em;
     /*background: linear-gradient(-183deg,rgba(0,0,0,0.10),rgba(0,0,0,0.30));*/
     box-shadow: 2px 5px 15px black;
 }
