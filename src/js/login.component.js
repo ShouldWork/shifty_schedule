@@ -7,11 +7,16 @@
     function loginController($firebaseObject,$scope,$firebaseArray,$firebaseAuth,$log,shiftyService){
         var login = this;
         
-        login.testData = [{text: "Month"},{text: "Year"},{text: "Week"},{text: "Day"},{text: "Level"},{text: "Team"},{text: "Filter"},{text: "Weekends"},{text: "Grave"},{text: "Swing"},{text: "Shift"}];
+        // local functions
         login.signIn = signIn;
         login.logout = logout;
+        login.user = undefined; 
+
+        // From service
         login.showToast = shiftyService.showToast; 
         
+
+        //firebase setup 
         var ref = firebase.database().ref().child("users");
         syncObject = $firebaseObject(ref);
         syncObject.$bindTo($scope,"login.form");
@@ -24,6 +29,7 @@
             console.log("saving...");
             console.log(JSON.stringify(login.testData));
             login.form = login.testData;
+
         };
 
 
@@ -47,18 +53,19 @@
                             email: login.providerUser.email,
                             photoURL: login.providerUser.photoURL
                         }).then(function () {
-                            login.showToast("user created.");
+                            login.showToast("user created. Logging in as " + login.providerUser.displayName);
                         }, function () {
                             login.showToast("user could not be created.");
                         });
                     } else {
-                        login.showToast('user already created! Logging in as' + login.providerUser.displayName);
+                        login.showToast('user already created! Logging in as ' + login.providerUser.displayName);
                     }
+                    login.user = login.providerUser.displayName; 
+                    console.log(login.user);
                 });
             }).catch(function (error) {
                 $log.log("Authentication failed:", error);
             });
-            console.log(login.user = login.providerUser.displayName);
         }
         function logout() {
             var auth = $firebaseAuth();
