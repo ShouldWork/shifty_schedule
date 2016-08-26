@@ -40,18 +40,18 @@
                 $log.log(profileRef);
                 login.user.$loaded().then(function () {
                     if (!login.user.displayName) {
-                        $log.log("creating user...");
+                        showToast("Creating user...");
                         profileRef.set({
                             displayName: login.providerUser.displayName,
                             email: login.providerUser.email,
                             photoURL: login.providerUser.photoURL
                         }).then(function () {
-                            $log.log("user created.");
+                            showToast("user created.");
                         }, function () {
-                            $log.log("user could not be created.");
+                            showToast("user could not be created.");
                         });
                     } else {
-                        $log.log('user already created!');
+                        showToast('user already created!');
                     }
                 });
             }).catch(function (error) {
