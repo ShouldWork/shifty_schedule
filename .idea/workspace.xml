@@ -2,8 +2,807 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56d2e67b-1f8b-4b9f-a036-b3fbfd4aaa03" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootStrap.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-animate/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-animate/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-animate/angular-animate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-animate/angular-animate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-animate/angular-animate.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-animate/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-animate/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-animate/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-aria/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-aria/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-aria/angular-aria.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-aria/angular-aria.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-aria/angular-aria.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-aria/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-aria/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-aria/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/angular-material-mocks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/angular-material.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/angular-material.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/angular-material.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/angular-material.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/angular-material.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/layouts/angular-material.layout-attributes.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/layouts/angular-material.layout-attributes.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/layouts/angular-material.layout-attributes.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/layouts/angular-material.layouts.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/layouts/angular-material.layouts.ie_fixes.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/layouts/angular-material.layouts.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/layouts/angular-material.layouts.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/autocomplete/autocomplete-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/autocomplete/autocomplete-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/autocomplete/autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/autocomplete/autocomplete.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/autocomplete/autocomplete.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/autocomplete/autocomplete.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/backdrop/backdrop-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/backdrop/backdrop-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/backdrop/backdrop.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/backdrop/backdrop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/backdrop/backdrop.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/backdrop/backdrop.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/bottomSheet/bottomSheet-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/bottomSheet/bottomSheet-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/bottomSheet/bottomSheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/bottomSheet/bottomSheet.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/bottomSheet/bottomSheet.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/bottomSheet/bottomSheet.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/button/button-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/button/button-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/button/button.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/button/button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/button/button.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/button/button.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/card/card-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/card/card-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/card/card.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/card/card.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/card/card.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/card/card.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/checkbox/checkbox-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/checkbox/checkbox-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/checkbox/checkbox.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/checkbox/checkbox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/checkbox/checkbox.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/checkbox/checkbox.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/chips/chips-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/chips/chips-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/chips/chips.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/chips/chips.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/chips/chips.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/chips/chips.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/colors/colors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/colors/colors.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/content/content-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/content/content-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/content/content.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/content/content.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/content/content.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/content/content.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/core/core-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/core/core-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/core/core.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/core/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/core/core.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/core/core.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/core/default-theme.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/datepicker/datepicker-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/datepicker/datepicker-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/datepicker/datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/datepicker/datepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/datepicker/datepicker.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/datepicker/datepicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/dialog/dialog-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/dialog/dialog-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/dialog/dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/dialog/dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/dialog/dialog.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/dialog/dialog.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/divider/divider-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/divider/divider-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/divider/divider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/divider/divider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/divider/divider.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/divider/divider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/fabActions/fabActions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/fabActions/fabActions.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/fabSpeedDial/fabSpeedDial.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/fabSpeedDial/fabSpeedDial.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/fabSpeedDial/fabSpeedDial.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/fabSpeedDial/fabSpeedDial.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/fabToolbar/fabToolbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/fabToolbar/fabToolbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/fabToolbar/fabToolbar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/fabToolbar/fabToolbar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/fabTrigger/fabTrigger.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/fabTrigger/fabTrigger.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/gridList/gridList-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/gridList/gridList.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/gridList/gridList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/gridList/gridList.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/gridList/gridList.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/icon/icon-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/icon/icon-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/icon/icon.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/icon/icon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/icon/icon.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/icon/icon.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/input/input-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/input/input-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/input/input.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/input/input.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/input/input.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/input/input.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/list/list-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/list/list-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/list/list.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/list/list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/list/list.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/list/list.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/menu/menu-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/menu/menu-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/menu/menu.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/menu/menu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/menu/menu.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/menu/menu.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/menuBar/menuBar-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/menuBar/menuBar-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/menuBar/menuBar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/menuBar/menuBar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/menuBar/menuBar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/menuBar/menuBar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/navBar/navBar-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/navBar/navBar-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/navBar/navBar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/navBar/navBar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/navBar/navBar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/navBar/navBar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/panel/panel-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/panel/panel-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/panel/panel.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/panel/panel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/panel/panel.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/panel/panel.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/progressCircular/progressCircular-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/progressCircular/progressCircular-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/progressCircular/progressCircular.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/progressCircular/progressCircular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/progressCircular/progressCircular.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/progressCircular/progressCircular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/progressLinear/progressLinear-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/progressLinear/progressLinear-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/progressLinear/progressLinear.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/progressLinear/progressLinear.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/progressLinear/progressLinear.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/progressLinear/progressLinear.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/radioButton/radioButton-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/radioButton/radioButton-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/radioButton/radioButton.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/radioButton/radioButton.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/radioButton/radioButton.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/radioButton/radioButton.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/select/select-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/select/select-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/select/select.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/select/select.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/select/select.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/select/select.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/showHide/showHide.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/showHide/showHide.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/sidenav/sidenav-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/sidenav/sidenav-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/sidenav/sidenav.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/sidenav/sidenav.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/sidenav/sidenav.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/sidenav/sidenav.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/slider/slider-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/slider/slider-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/slider/slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/slider/slider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/slider/slider.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/slider/slider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/sticky/sticky.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/sticky/sticky.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/sticky/sticky.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/sticky/sticky.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/subheader/subheader-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/subheader/subheader-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/subheader/subheader.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/subheader/subheader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/subheader/subheader.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/subheader/subheader.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/swipe/swipe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/swipe/swipe.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/switch/switch-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/switch/switch-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/switch/switch.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/switch/switch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/switch/switch.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/switch/switch.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/tabs/tabs-arrow.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/tabs/tabs-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/tabs/tabs-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/tabs/tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/tabs/tabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/tabs/tabs.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/tabs/tabs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/textField/textField-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/textField/textField.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/textField/textField.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/toast/toast-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/toast/toast-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/toast/toast.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/toast/toast.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/toast/toast.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/toast/toast.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/toolbar/toolbar-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/toolbar/toolbar-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/toolbar/toolbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/toolbar/toolbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/toolbar/toolbar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/toolbar/toolbar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/tooltip/tooltip-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/tooltip/tooltip-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/tooltip/tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/tooltip/tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/tooltip/tooltip.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/tooltip/tooltip.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/virtualRepeat/virtualRepeat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/virtualRepeat/virtualRepeat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/virtualRepeat/virtualRepeat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/virtualRepeat/virtualRepeat.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/whiteframe/whiteframe.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/whiteframe/whiteframe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/whiteframe/whiteframe.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/closure/whiteframe/whiteframe.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/autocomplete/autocomplete-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/autocomplete/autocomplete-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/autocomplete/autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/autocomplete/autocomplete.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/autocomplete/autocomplete.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/autocomplete/autocomplete.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/autocomplete/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/backdrop/backdrop-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/backdrop/backdrop-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/backdrop/backdrop.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/backdrop/backdrop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/backdrop/backdrop.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/backdrop/backdrop.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/backdrop/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/bottomSheet/bottomSheet-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/bottomSheet/bottomSheet-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/bottomSheet/bottomSheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/bottomSheet/bottomSheet.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/bottomSheet/bottomSheet.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/bottomSheet/bottomSheet.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/bottomSheet/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/button/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/button/button-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/button/button-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/button/button.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/button/button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/button/button.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/button/button.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/card/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/card/card-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/card/card-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/card/card.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/card/card.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/card/card.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/card/card.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/checkbox/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/checkbox/checkbox-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/checkbox/checkbox-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/checkbox/checkbox.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/checkbox/checkbox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/checkbox/checkbox.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/checkbox/checkbox.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/chips/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/chips/chips-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/chips/chips-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/chips/chips.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/chips/chips.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/chips/chips.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/chips/chips.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/colors/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/colors/colors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/colors/colors.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/content/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/content/content-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/content/content-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/content/content.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/content/content.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/content/content.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/content/content.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/core/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/core/core-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/core/core-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/core/core.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/core/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/core/core.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/core/core.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/core/default-theme.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/datepicker/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/datepicker/datepicker-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/datepicker/datepicker-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/datepicker/datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/datepicker/datepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/datepicker/datepicker.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/datepicker/datepicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/dialog/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/dialog/dialog-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/dialog/dialog-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/dialog/dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/dialog/dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/dialog/dialog.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/dialog/dialog.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/divider/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/divider/divider-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/divider/divider-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/divider/divider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/divider/divider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/divider/divider.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/divider/divider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/fabActions/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/fabActions/fabActions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/fabActions/fabActions.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/fabSpeedDial/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/fabSpeedDial/fabSpeedDial.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/fabSpeedDial/fabSpeedDial.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/fabSpeedDial/fabSpeedDial.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/fabSpeedDial/fabSpeedDial.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/fabToolbar/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/fabToolbar/fabToolbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/fabToolbar/fabToolbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/fabToolbar/fabToolbar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/fabToolbar/fabToolbar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/fabTrigger/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/fabTrigger/fabTrigger.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/fabTrigger/fabTrigger.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/gridList/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/gridList/gridList.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/gridList/gridList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/gridList/gridList.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/gridList/gridList.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/icon/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/icon/icon-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/icon/icon-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/icon/icon.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/icon/icon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/icon/icon.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/icon/icon.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/input/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/input/input-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/input/input-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/input/input.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/input/input.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/input/input.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/input/input.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/list/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/list/list-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/list/list-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/list/list.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/list/list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/list/list.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/list/list.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/menu/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/menu/menu-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/menu/menu-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/menu/menu.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/menu/menu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/menu/menu.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/menu/menu.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/menuBar/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/menuBar/menuBar-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/menuBar/menuBar-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/menuBar/menuBar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/menuBar/menuBar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/menuBar/menuBar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/menuBar/menuBar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/navBar/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/navBar/navBar-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/navBar/navBar-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/navBar/navBar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/navBar/navBar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/navBar/navBar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/navBar/navBar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/panel/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/panel/panel-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/panel/panel-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/panel/panel.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/panel/panel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/panel/panel.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/panel/panel.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/progressCircular/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/progressCircular/progressCircular-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/progressCircular/progressCircular-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/progressCircular/progressCircular.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/progressCircular/progressCircular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/progressCircular/progressCircular.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/progressCircular/progressCircular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/progressLinear/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/progressLinear/progressLinear-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/progressLinear/progressLinear-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/progressLinear/progressLinear.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/progressLinear/progressLinear.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/progressLinear/progressLinear.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/progressLinear/progressLinear.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/radioButton/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/radioButton/radioButton-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/radioButton/radioButton-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/radioButton/radioButton.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/radioButton/radioButton.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/radioButton/radioButton.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/radioButton/radioButton.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/select/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/select/select-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/select/select-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/select/select.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/select/select.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/select/select.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/select/select.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/showHide/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/showHide/showHide.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/showHide/showHide.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/sidenav/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/sidenav/sidenav-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/sidenav/sidenav-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/sidenav/sidenav.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/sidenav/sidenav.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/sidenav/sidenav.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/sidenav/sidenav.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/slider/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/slider/slider-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/slider/slider-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/slider/slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/slider/slider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/slider/slider.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/slider/slider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/sticky/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/sticky/sticky.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/sticky/sticky.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/sticky/sticky.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/sticky/sticky.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/subheader/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/subheader/subheader-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/subheader/subheader-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/subheader/subheader.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/subheader/subheader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/subheader/subheader.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/subheader/subheader.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/swipe/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/swipe/swipe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/swipe/swipe.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/switch/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/switch/switch-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/switch/switch-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/switch/switch.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/switch/switch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/switch/switch.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/switch/switch.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/tabs/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/tabs/tabs-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/tabs/tabs-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/tabs/tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/tabs/tabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/tabs/tabs.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/tabs/tabs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/textField/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/textField/textField-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/textField/textField-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/textField/textField.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/textField/textField.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/textField/textField.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/textField/textField.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/toast/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/toast/toast-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/toast/toast-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/toast/toast.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/toast/toast.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/toast/toast.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/toast/toast.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/toolbar/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/toolbar/toolbar-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/toolbar/toolbar-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/toolbar/toolbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/toolbar/toolbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/toolbar/toolbar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/toolbar/toolbar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/tooltip/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/tooltip/tooltip-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/tooltip/tooltip-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/tooltip/tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/tooltip/tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/tooltip/tooltip.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/tooltip/tooltip.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/virtualRepeat/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/virtualRepeat/virtualRepeat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/virtualRepeat/virtualRepeat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/virtualRepeat/virtualRepeat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/virtualRepeat/virtualRepeat.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/whiteframe/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/whiteframe/whiteframe.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/whiteframe/whiteframe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/whiteframe/whiteframe.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/js/whiteframe/whiteframe.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/layouts/angular-material.layout-attributes.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/layouts/angular-material.layout-attributes.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/layouts/angular-material.layouts.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/layouts/angular-material.layouts.ie_fixes.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/layouts/angular-material.layouts.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/scss/angular-material.layout-attributes.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/scss/angular-material.layouts.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/modules/scss/angular-material.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-material/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/accordion/accordion.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/accordion/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/accordion/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/accordion/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/accordion/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/accordion/test/accordion.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/alert/alert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/alert/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/alert/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/alert/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/alert/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/alert/test/alert.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/buttons/buttons.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/buttons/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/buttons/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/buttons/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/buttons/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/buttons/test/buttons.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/carousel/carousel.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/carousel/carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/carousel/docs/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/carousel/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/carousel/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/carousel/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/carousel/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/carousel/test/carousel.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/collapse/collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/collapse/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/collapse/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/collapse/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/collapse/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/collapse/test/collapse.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/collapse/test/collapseHorizontally.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dateparser/dateparser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dateparser/docs/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dateparser/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dateparser/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dateparser/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dateparser/test/dateparser.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepicker/datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepicker/datepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepicker/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepicker/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepicker/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepicker/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepicker/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepicker/test/datepicker.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepickerPopup/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepickerPopup/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepickerPopup/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepickerPopup/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepickerPopup/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepickerPopup/popup.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepickerPopup/popup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepickerPopup/test/popup.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/debounce/debounce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/debounce/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/debounce/test/debounce.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dropdown/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dropdown/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dropdown/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dropdown/dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dropdown/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dropdown/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dropdown/test/dropdown.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/isClass/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/isClass/isClass.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/isClass/test/isClass.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/modal/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/modal/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/modal/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/modal/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/modal/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/modal/modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/modal/test/modal.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/modal/test/multiMap.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pager/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pager/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pager/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pager/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pager/pager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pager/test/pager.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pagination/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pagination/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pagination/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pagination/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pagination/pagination.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pagination/test/pagination.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/paging/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/paging/paging.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/paging/test/paging.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/popover/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/popover/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/popover/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/popover/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/popover/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/popover/popover.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/popover/test/popover-html.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/popover/test/popover-template.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/popover/test/popover.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/position/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/position/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/position/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/position/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/position/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/position/position.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/position/position.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/position/test/position.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/position/test/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/progressbar/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/progressbar/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/progressbar/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/progressbar/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/progressbar/progressbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/progressbar/test/progressbar.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/rating/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/rating/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/rating/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/rating/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/rating/rating.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/rating/test/rating.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/stackedMap/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/stackedMap/stackedMap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/stackedMap/test/stackedMap.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tabindex/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tabindex/tabindex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tabindex/test/tabindex.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tabs/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tabs/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tabs/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tabs/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tabs/tabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tabs/test/tabs.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/timepicker/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/timepicker/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/timepicker/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/timepicker/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/timepicker/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/timepicker/test/timepicker.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/timepicker/timepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/timepicker/timepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tooltip/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tooltip/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tooltip/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tooltip/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tooltip/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tooltip/test/tooltip-template.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tooltip/test/tooltip.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tooltip/test/tooltip2.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tooltip/tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tooltip/tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/test/typeahead-highlight-ngsanitize.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/test/typeahead-highlight.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/test/typeahead-parser.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/test/typeahead-popup.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/test/typeahead.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/typeahead.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/typeahead.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/accordion/accordion-group.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/accordion/accordion-group.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/accordion/accordion.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/accordion/accordion.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/alert/alert.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/alert/alert.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/carousel/carousel.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/carousel/carousel.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/carousel/slide.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/carousel/slide.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/datepicker/datepicker.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/datepicker/datepicker.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/datepicker/day.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/datepicker/day.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/datepicker/month.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/datepicker/month.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/datepicker/year.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/datepicker/year.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/datepickerPopup/popup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/datepickerPopup/popup.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/modal/window.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/modal/window.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/pager/pager.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/pager/pager.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/pagination/pagination.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/pagination/pagination.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/popover/popover-html.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/popover/popover-html.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/popover/popover-template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/popover/popover-template.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/popover/popover.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/popover/popover.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/progressbar/bar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/progressbar/bar.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/progressbar/progress.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/progressbar/progress.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/progressbar/progressbar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/progressbar/progressbar.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/rating/rating.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/rating/rating.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/tabs/tab.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/tabs/tab.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/tabs/tabset.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/tabs/tabset.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/timepicker/timepicker.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/timepicker/timepicker.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/tooltip/tooltip-html-popup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/tooltip/tooltip-html-popup.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/tooltip/tooltip-popup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/tooltip/tooltip-popup.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/tooltip/tooltip-template-popup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/tooltip/tooltip-template-popup.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/typeahead/typeahead-match.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/typeahead/typeahead-match.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/typeahead/typeahead-popup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/typeahead/typeahead-popup.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular/angular-csp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular/angular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular/angular.min.js.gzip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular/angular.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/boot_style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/html/calendar.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/html/filters.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/html/groups.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/html/login.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/html/nav-bar.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/html/page-header.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/apps.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/calendar.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/filters.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/filters.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/groups.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/login.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/nav-bar.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/techs.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/background/color_scheme.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/background/color_scheme2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/background/oak_wood.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/background/warped_wood.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/background/wood_back.jpg" afterPath="" />
     </list>
     <ignored path="shifty_schedule.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,28 +822,7 @@
     <favorites_list name="shifty_schedule" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -118,84 +896,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="shifty_schedule" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shifty_schedule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shifty_schedule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shifty_schedule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shifty_schedule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shifty_schedule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shifty_schedule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shifty_schedule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shifty_schedule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shifty_schedule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shifty_schedule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -300,18 +1000,18 @@
       <workItem from="1472047161811" duration="3921000" />
       <workItem from="1472134744183" duration="4153000" />
       <workItem from="1472182678326" duration="139000" />
-      <workItem from="1472182832570" duration="526000" />
+      <workItem from="1472182832570" duration="999000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16730000" />
+    <option name="totallyTimeSpent" value="17203000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1868" height="1057" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -413,9 +1113,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-          <folding>
-            <marker date="1472182660000" expanded="true" signature="939:945" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -447,9 +1145,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="202" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="202" />
-          <folding>
-            <marker date="1472182660000" expanded="true" signature="939:945" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -536,9 +1232,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-          <folding>
-            <marker date="1472182660000" expanded="true" signature="939:945" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -560,8 +1254,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+        <state relative-caret-position="300">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
