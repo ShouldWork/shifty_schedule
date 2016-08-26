@@ -227,6 +227,6 @@
 .techTile h2{font-size: 80%;}
 
 
-.calendarBox::-webkit-scrollbar { 
+.calendarBox::-webkit-scrollbar body::-webkit-scrollbar{ 
     display: none; 
 }
