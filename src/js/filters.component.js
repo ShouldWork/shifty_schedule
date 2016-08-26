@@ -28,9 +28,9 @@
 		}
 
       	function setListProperty(id){
-			showToast("Setting filter(s)...",1000);
 			var ref = firebase.database().ref().child("xactware/filters");
 			ref.child(id).once("value", function(snapshot) {
+			showToast("Adding filter " + data.name + " to filters",1000);	
 				var data = snapshot.val();
 				var toggle = (data.set) ? false : true;
 				ref.child(id).child("set").set(toggle);
