@@ -17,8 +17,10 @@
       	}
 
       	function addFilter(name,set){
+      		console.log("Name: " + name + " set: " + set);
 			filter.showToast("Added filter " + filter.newListName);
       		var filters = getFilters();
+      		console.log(filters);
 			filters.$add({ name: name || "New filter",set: set || false}).then(function(ref) {
 				var id = ref.key,
 					index = filters.$indexFor(id);
