@@ -9,7 +9,7 @@
 
     
     function shiftyService($q, $log, $sessionStorage, $localStorage,$state,$mdToast,$firebaseObject,$firebaseArray,$firebaseAuth) {
-		var self = this,
+		var self = this;
 		self.showToast   = showToast;
 		self.getToastMsg = getToastMsg; 
 		self.getList     = getList; 
