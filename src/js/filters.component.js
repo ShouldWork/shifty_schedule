@@ -23,6 +23,7 @@
       	}
 
       	function setListProperty(prop){
+      		console.log(prop);
       		var filters = getFilters();
       		var prop = filters.$indexFor(prop);
       		console.log(prop);
