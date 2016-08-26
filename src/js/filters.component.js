@@ -20,6 +20,5 @@
 			filters.$indexFor(id); // returns location in the array
 			});
       	}
-      	getFilters();
     }
 })();
