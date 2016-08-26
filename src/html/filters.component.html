@@ -1,10 +1,10 @@
 <div class="flex-row-center filterBox">
-    <div  class="filtertile" ng-repeat="filter in $ctrl.filtersList" ng-class="{filtertile_clicked: filter.set}">
+    <div  class="filtertile" ng-repeat="filter in $ctrl.filters" ng-class="{filtertile_clicked: filter.set}">
         <span> {{ filter.name }} </span>
-        <h4> {{ filter.set }}</h4>
+<!--         <h4> {{ filter.set }}</h4> -->
     </div>
     <div>
-    	<div class="loginButton" ng-click="$ctrl.setFilter(filter.name)">
+    	<div class="loginButton" ng-click="$ctrl.addFilter()">
     		<span>Add filter</span>
     	</div>
     </div>

@@ -7,16 +7,15 @@
     function filterController($firebaseArray){
         var filter = this;
         filter.filters = getFilters;
-        filter.setFilter = setFilter;
+        filter.addFilter = addFilter;
 
       	function getFilters(){
      		var ref = firebase.database().ref().child("xactware/filters");
-            filter.filtersList = $firebaseArray(ref)
+            return $firebaseArray(ref)
       	}
 
-      	function setFilter(pass){
-      		var filters = firebase.database().ref().child("xactware/filters");
-      		filters = $firebaseArray(filters);
+      	function addFilter(pass){
+      		var filters = getFilters();
 			filters.$add({ name: "New Filter",set: false}).then(function(ref) {
 			filters.$indexFor(id); // returns location in the array
 			});
