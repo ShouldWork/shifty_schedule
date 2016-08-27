@@ -66,7 +66,7 @@
 					console.log(level);
 					self.displayTechs = [];
 					if (level = "L1"){
-						self.displayTechs.push({name: name,level: level})
+						self.displayTechs.push([{name: name,level: level}])
 					}
 				});
 				console.log(self.displayTechs);
