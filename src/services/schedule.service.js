@@ -66,14 +66,15 @@
 					var level = techSnapshot.child('level').val();
 					var name = techSnapshot.child('name').val();
 					console.log("key: " + key + " level: " + level + " name: " + name);
-				})
+				});
+			}
 			//   var data = snapshot.val();
 			//   // data equals { "name": { "first": "Fred", "last": "Flintstone" }, "age": 53 }
 			//   console.log(data);
 			//   console.log(data[0].name);  // "Fred"
 			//   console.log(data.level);  // 53
 			// });
-     	};
+     	// };
     };
 }());
 
