@@ -4,13 +4,12 @@
             templateUrl: "src/html/groups.component.html",
             controller: groupsController
         });
-    function groupsController($firebaseObject,$scope,$firebaseArray){
+    function groupsController($firebaseObject,$scope,$firebaseArray,shiftyService){
         var groups = this;
-        var ref = firebase.database().ref().child("xactware/techs");
-        
-        groups.testData = [{text: "Month"},{text: "Year"},{text: "Week"},{text: "Day"},{text: "Level"},{text: "Team"},{text: "Filter"},{text: "Weekends"},{text: "Grave"},{text: "Swing"},{text: "Shift"}];
-    
-        groups.techs = $firebaseArray(ref)
+        groups.getTechs = getTechs();
 
+        function getTechs(){
+            return group.techs = shiftyService.getList("xactware/techs")
+        }
     }
 })();

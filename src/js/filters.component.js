@@ -6,7 +6,7 @@
         });
     function filterController($firebaseArray,$mdToast,shiftyService){
         var filter = this;
-        filter.getFilters = getFilters();
+        // filter.getFilters = getFilters();
         filter.addFilter = addFilter;
         filter.setListProperty = setListProperty;
 		filter.showToast = shiftyService.showToast;
