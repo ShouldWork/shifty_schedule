@@ -12,8 +12,7 @@
 		var self = this;
 		self.showToast   = showToast;
 		self.getToastMsg = getToastMsg; 
-		self.getList     = getList; 
-		
+		self.getList     = getList; 		
 
 
 		
@@ -65,7 +64,12 @@
 					var level = techSnapshot.child('level').val();
 					var name = techSnapshot.child('name').val();
 					console.log(level);
+					self.displayTechs = [];
+					if (level = "L1"){
+						self.displayTechs.push({name: name,level: level})
+					}
 				});
+				console.log(self.displayTechs);
 			});
    		 }
    	}
