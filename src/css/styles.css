@@ -92,7 +92,7 @@
 
 
 .calendarBox{
-    background: linear-gradient(64deg,rgba(0,0,0,1),transparent,rgba(0,0,0,0.45));
+    background: linear-gradient(64deg,rgba(0,0,0,.55),rgba(0,0,0,0.2),rgba(0,0,0,0.45));
     padding: 1.5em;
     max-height: 80vh;
     overflow: auto;
