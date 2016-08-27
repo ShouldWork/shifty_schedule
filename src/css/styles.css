@@ -212,8 +212,7 @@
     margin: 1px;
     transition: all .25s ease-out;
     border-radius: 5px;
-    color: black;
-    text-shadow: none;
+    color: ghostWhite;
     border: 2px solid black;
     border-radius: 0px;
 }
