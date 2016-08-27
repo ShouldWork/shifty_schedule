@@ -18,10 +18,15 @@
 
       	function addFilter(name,set){
 			filter.showToast("Added filter " + filter.newListName);
-      		var filters = getFilters();
-			filters.$add({ name: name || "New filter",set: set || false}).then(function(ref) {
+      		var ref = firebase.database().ref().child(toGet),
+            	dbFilters = $firebaseArray(ref);
+			dbFilters.$add({ 
+				name: name || "New filter",
+				set: set || false
+				})
+			.then(function(ref) {
 				var id = ref.key,
-					index = filters.$indexFor(id);
+					index = dbFilters.$indexFor(id);
 			});
 			filter.newListName = "";
 		}
