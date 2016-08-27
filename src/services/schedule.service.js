@@ -64,7 +64,7 @@
 					var key = techSnapshot.val();
 					var level = techSnapshot.child('level').val();
 					var name = techSnapshot.child('name').val();
-					console.log("key: " + key + " level: " + level + " name: " + name);
+					console.log(key);
 				});
 			});
    		 }
