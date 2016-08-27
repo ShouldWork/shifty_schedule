@@ -20,6 +20,7 @@
 			filter.showToast("Added filter " + filter.newListName);
       		var ref = firebase.database().ref().child(toGet),
             	dbFilters = $firebaseArray(ref);
+            	console.log(dbFilters);
 			dbFilters.$add({ 
 				name: name || "New filter",
 				set: set || false
