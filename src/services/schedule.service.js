@@ -61,7 +61,7 @@
      		var fredRef = firebase.database().ref().child(toGet);
 			fredRef.once("value", function(snapshot) {
 				snapshot.forEach(function(techSnapshot) {
-					var key = techSnapshot.key();
+					var key = techSnapshot.val();
 					var level = techSnapshot.child('level').val();
 					var name = techSnapshot.child('name').val();
 					console.log("key: " + key + " level: " + level + " name: " + name);
