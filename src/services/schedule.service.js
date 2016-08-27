@@ -63,6 +63,7 @@
 			fredRef.once("value", function(snapshot) {
 			  var data = snapshot.val();
 			  // data equals { "name": { "first": "Fred", "last": "Flintstone" }, "age": 53 }
+			  console.log(data);
 			  console.log(data.name);  // "Fred"
 			  console.log(data.level);  // 53
 			});
