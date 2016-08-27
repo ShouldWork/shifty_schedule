@@ -61,12 +61,18 @@
      		var fredRef = firebase.database().ref().child(toGet);
      		var count = 0;
 			fredRef.once("value", function(snapshot) {
-			  var data = snapshot.val();
-			  // data equals { "name": { "first": "Fred", "last": "Flintstone" }, "age": 53 }
-			  console.log(data);
-			  console.log(data[0].name);  // "Fred"
-			  console.log(data.level);  // 53
-			});
+				snapshot.forEach(function(techSnapshot){
+					var key = techSnapshot.key();
+					var level = techSnapshot.child('level').val();
+					var name = techSnapshot.child('name').val();
+					console.log("key: " + key + " level: " + level + " name: " + name);
+				})
+			//   var data = snapshot.val();
+			//   // data equals { "name": { "first": "Fred", "last": "Flintstone" }, "age": 53 }
+			//   console.log(data);
+			//   console.log(data[0].name);  // "Fred"
+			//   console.log(data.level);  // 53
+			// });
      	};
     };
 }());
