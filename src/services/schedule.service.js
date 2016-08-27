@@ -56,21 +56,25 @@
 
 
 		// getting lists
-		function getList(toGet){
-     		var fredRef = firebase.database().ref().child(toGet);
-			fredRef.once("value", function(snapshot) {
-				snapshot.forEach(function(techSnapshot) {
-					var key = techSnapshot.val();
-					var level = techSnapshot.child('level').val();
-					var name = techSnapshot.child('name').val();
-					console.log(level);
-					self.displayTechs = [];
-					if (level = "L1"){
-						self.displayTechs.push([{name: name,level: level}])
-					}
+		function getList(toGet,filtered){
+			var fredRef = firebase.database().ref().child(toGet);
+			if (filtered){
+				fredRef.once("value", function(snapshot) {
+					snapshot.forEach(function(techSnapshot) {
+						var key = techSnapshot.val();
+						var level = techSnapshot.child('level').val();
+						var name = techSnapshot.child('name').val();
+						console.log(level);
+						self.displayTechs = [];
+						if (level = "L1"){
+							self.displayTechs.push([{name: name,level: level}])
+						}
+					});
+					console.log(self.displayTechs);
 				});
-				console.log(self.displayTechs);
-			});
+			} else {
+				return $firebaseArray(fredRef);
+			}
    		 }
    	}
 }());
