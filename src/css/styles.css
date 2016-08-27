@@ -211,7 +211,8 @@
     margin: 1px;
     transition: all .25s ease-out;
     color: ghostWhite;
-    border: none;
+    
+    border: 2px solid transparent;
 }
 .techTile:hover{
     box-shadow: 2px 5px 15px black;
