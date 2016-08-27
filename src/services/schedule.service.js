@@ -59,10 +59,16 @@
 		// getting lists
 		function getList(toGet){
      		var ref = firebase.database().ref().child(toGet);
-            ref.orderByChild("techs/name").on("child_added",function(snapshot){
-            	console.log(snapshot.key() + " was " + snapshot.val().name + " alive ");
-            });
-      	}
+     		var count = 0
+     		ref.on("child_added",function(snap){
+     			count++
+     			console.log("added", snap.key());
+     		});
+
+       //      ref.orderByChild("techs	/name").on("child_added",function(snapshot){
+       //      	console.log(snapshot.key() + " was " + snapshot.val().name + " alive ");
+       //      })
+      	// };
     };
 }());
 
