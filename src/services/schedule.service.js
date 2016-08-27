@@ -59,7 +59,7 @@
 		// getting lists
 		function getList(toGet){
      		var ref = firebase.database().ref().child(toGet);
-            ref.orderByChild("")
+            ref.orderByChild("level");
       	}
     };
 }());
