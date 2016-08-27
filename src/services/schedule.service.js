@@ -68,7 +68,7 @@
 					console.log("key: " + key + " level: " + level + " name: " + name);
 				});
 			});
-   		 };
+   		 }
 }());
 
 			//   var data = snapshot.val();
