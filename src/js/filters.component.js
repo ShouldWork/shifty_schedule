@@ -13,7 +13,7 @@
 		filter.newListName = "";
 
       	function getFilters(){
-      		filter.filters = shiftyService.getList("xactware/filters")
+      		return filter.filters = shiftyService.getList("xactware/filters")
       	}
 
       	function addFilter(name,set){
