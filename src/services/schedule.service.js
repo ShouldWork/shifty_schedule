@@ -68,6 +68,7 @@
 			// 	});
 			// });
    		 }
+   	}
 }());
 
 			//   var data = snapshot.val();
