@@ -18,7 +18,7 @@
 
       	function addFilter(name,set){
 			filter.showToast("Added filter " + filter.newListName);
-      		var ref = firebase.database().ref().child(toGet),
+      		var ref = firebase.database().ref().child("xactware/filters"),
             	dbFilters = $firebaseArray(ref);
             	console.log(dbFilters);
 			dbFilters.$add({ 
