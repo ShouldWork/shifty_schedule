@@ -58,12 +58,14 @@
 
 		// getting lists
 		function getList(toGet){
-     		var ref = firebase.database().ref().child(toGet);
+     		var fredRef = firebase.database().ref().child(toGet);
      		var count = 0;
-     		ref.on("child_added",function(snap){
-     			count++;
-     			console.log("added", snap.key());
-     		})
+			fredRef.once("value", function(snapshot) {
+			  var data = snapshot.val();
+			  // data equals { "name": { "first": "Fred", "last": "Flintstone" }, "age": 53 }
+			  console.log(data.name);  // "Fred"
+			  console.log(data.level);  // 53
+			});
      	};
     };
 }());
