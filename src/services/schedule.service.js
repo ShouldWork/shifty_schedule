@@ -59,9 +59,8 @@
 		// getting lists
 		function getList(toGet){
      		var fredRef = firebase.database().ref().child(toGet);
-     		var count = 0;
 			fredRef.once("value", function(snapshot) {
-				snapshot.forEach(function(techSnapshot){
+				snapshot.forEach(function(techSnapshot) {
 					var key = techSnapshot.key();
 					var level = techSnapshot.child('level').val();
 					var name = techSnapshot.child('name').val();
