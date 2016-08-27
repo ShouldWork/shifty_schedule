@@ -63,7 +63,7 @@
      		ref.on("child_added",function(snap){
      			count++
      			console.log("added", snap.key());
-     		});
+     		})
 
        //      ref.orderByChild("techs	/name").on("child_added",function(snapshot){
        //      	console.log(snapshot.key() + " was " + snapshot.val().name + " alive ");
