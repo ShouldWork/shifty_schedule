@@ -59,9 +59,9 @@
 		// getting lists
 		function getList(toGet){
      		var ref = firebase.database().ref().child(toGet);
-     		var count = 0
+     		var count = 0;
      		ref.on("child_added",function(snap){
-     			count++
+     			count++;
      			console.log("added", snap.key());
      		})
 
