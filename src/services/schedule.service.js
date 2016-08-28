@@ -109,12 +109,12 @@
                             photoURL: self.providerUser.photoURL,
                             chatColor: 'blue'
                         }).then(function () {
-                            shiftyService.showToast("User created. Logging in as " + self.providerUser.displayName);
+                            self.showToast("User created. Logging in as " + self.providerUser.displayName);
                         }, function () {
-                            shiftyService.showToast("User could not be created.");
+                            self.showToast("User could not be created.");
                         });
                     } else {
-                        shiftyService.showToast('Welcome back! Logging in as ' + self.providerUser.displayName);
+                        self.showToast('Welcome back! Logging in as ' + self.providerUser.displayName);
                     }
                     $localStorage.user = self.user = self.providerUser.displayName; 
                     self.signedIn = true;
