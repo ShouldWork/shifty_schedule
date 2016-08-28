@@ -12,7 +12,8 @@
 		var self = this;
 		self.showToast   = showToast;
 		self.getToastMsg = getToastMsg; 
-		self.getList     = getList; 		
+		self.getList     = getList; 
+		self.logout 	 = logout; 		
 
 
 		
