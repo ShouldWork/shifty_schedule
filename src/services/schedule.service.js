@@ -114,7 +114,8 @@
                             self.showToast("User could not be created.");
                         });
                     } else {
-                        self.showToast(msg + self.providerUser.displayName);
+                    	var message = getToastMsg(msg);
+                        self.showToast(message + self.providerUser.displayName);
                     }
                     $localStorage.user = self.user = self.providerUser.displayName; 
                     self.signedIn = true;
