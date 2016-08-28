@@ -15,7 +15,7 @@
 		self.getList     = getList; 
 		self.logout 	 = logout; 		
 		self.signIn 	 = signIn;
-		self.user 		 = user(); 
+		self.getUser 		 = user(); 
 
 
 		
