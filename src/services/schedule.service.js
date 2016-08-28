@@ -123,7 +123,7 @@
                     self.signedIn = true;
                     self.displayList = getList("xactware/techs",false);
                     var myData = {list: self.displayList,user: self.user}
-                   	self.showToast("The end of sign in...");
+                   	console.log("The end of sign in...");
                     return user;
                 });
             }).catch(function (error) {
