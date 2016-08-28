@@ -34,6 +34,7 @@
 		}
 
 		function addFilterEnter(name,set,key){
+			console.log("name: " + name + " set: " + set + " key: " + key);
 			if (isEnter(key)){addFilter(name,set)};
 		}
       	function setListProperty(id){
