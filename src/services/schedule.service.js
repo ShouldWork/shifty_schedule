@@ -89,7 +89,7 @@
             var message = self.getToastMsg(msg);
             auth.$signOut();
             $localStorage.user = self.user = undefined;
-            self.showToast( message + user)
+            self.showToast( message + self.user)
         }
 
         function signIn(provider,msg) {
