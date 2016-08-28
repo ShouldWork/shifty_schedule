@@ -89,6 +89,41 @@
             $localStorage.user = self.user = undefined;
             self.showToast( message + " Blake.")
         }
+
+        function signIn(provider) {
+            var auth = $firebaseAuth();
+            // login with provider
+            auth.$signInWithPopup(provider).then(function (firebaseUser) {
+                self.displayName = firebaseUser.user.displayName;
+                self.providerUser = firebaseUser.user;
+
+                var ref = firebase.database().ref("users"),
+                    profileRef = ref.child(self.providerUser.uid);
+                self.user = $firebaseObject(profileRef);
+                self.user.$loaded().then(function () {
+                    if (!self.user.displayName) {
+                        shiftService.showToast("Creating user...");
+                        profileRef.set({
+                            displayName: self.providerUser.displayName,
+                            email: self.providerUser.email,
+                            photoURL: self.providerUser.photoURL,
+                            chatColor: 'blue'
+                        }).then(function () {
+                            shiftyService.showToast("User created. Logging in as " + self.providerUser.displayName);
+                        }, function () {
+                            shiftyService.showToast("User could not be created.");
+                        });
+                    } else {
+                        shiftyService.showToast('Welcome back! Logging in as ' + self.providerUser.displayName);
+                    }
+                    $localStorage.user = self.user = self.providerUser.displayName; 
+                    self.signedIn = true;
+                    return self.user;
+                });
+            }).catch(function (error) {
+                $log.log("Authentication failed:", error);
+            });
+        }
    	}
 }());
 

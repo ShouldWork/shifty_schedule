@@ -7,6 +7,7 @@
     function loginController($firebaseObject,$scope,$firebaseArray,$firebaseAuth,$log,shiftyService,$localStorage){
         var login = this;
         login.logoutMessages = ['See you later, ','Thanks for stopping by, ','Check ya later, ','Smell ya later, ','Salutations, ','Peace out, ','Ciao, ','Well it was real, ','You\'ll be back, ','We\'ll miss you, ']
+        login.loginMessages = ['Welcome back, ','We have a lot to discuss, ','It\s you again, ', 'Hello,  ','Salutations, ','How you doing, ','You\'re looking good, ','Another great day ahead for, ','Let\'s schedule somethinng, ','I missed you...a little. Welcome back, ']
         
         // local functions
         login.signIn = signIn;
@@ -34,37 +35,7 @@
 
 
         function signIn(provider) {
-            var auth = $firebaseAuth();
-            // login with provider
-            auth.$signInWithPopup(provider).then(function (firebaseUser) {
-                login.displayName = firebaseUser.user.displayName;
-                login.providerUser = firebaseUser.user;
-
-                var ref = firebase.database().ref("users"),
-                    profileRef = ref.child(login.providerUser.uid);
-                login.user = $firebaseObject(profileRef);
-                login.user.$loaded().then(function () {
-                    if (!login.user.displayName) {
-                        shiftService.showToast("Creating user...");
-                        profileRef.set({
-                            displayName: login.providerUser.displayName,
-                            email: login.providerUser.email,
-                            photoURL: login.providerUser.photoURL,
-                            chatColor: 'blue'
-                        }).then(function () {
-                            shiftyService.showToast("User created. Logging in as " + login.providerUser.displayName);
-                        }, function () {
-                            shiftyService.showToast("User could not be created.");
-                        });
-                    } else {
-                        shiftyService.showToast('Welcome back! Logging in as ' + login.providerUser.displayName);
-                    }
-                    $localStorage.user = login.user = login.providerUser.displayName; 
-                    login.signedIn = true;
-                });
-            }).catch(function (error) {
-                $log.log("Authentication failed:", error);
-            });
+            var login.user = shiftService.signIn(provider,login.loginMessages);
         }
         function logout() {
             login.user = undefined;
