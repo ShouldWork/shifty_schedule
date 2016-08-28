@@ -154,15 +154,16 @@
     outline: 0;
     z-index: 15;
     border-radius: none;
-    border: 3px solid black;    
+    border: 1px solid rgba(95,54,20,0.90);
     font-size: 1.25em;
+    box-shadow: 0 0 10px rgba(95,31,22,0.75);
 }
 .filtertile:hover{
     box-shadow: 2px 5px 10px rgba(0,0,0,0.65);
     z-index: 20;
-    border: 3px solid ghostWhite;
+    border: 1px solid ghostWhite;
     border-radius: 5px;
-    transform: rotate(-7deg);
+    /*transform: rotate(-7deg);*/
 }
 
 .filtertile_clicked{
