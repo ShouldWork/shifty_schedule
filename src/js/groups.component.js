@@ -6,7 +6,8 @@
         });
     function groupsController($firebaseObject,$scope,$firebaseArray,shiftyService){
         var groups = this;
-        groups.techs = shiftyService.displayList;
+        groups.techs = getTechs();
+        groups.isSignedin = shiftyService.isSignedin;
 
         function getTechs(){
             console.log("Getting techs list...");
