@@ -9,7 +9,7 @@
         groups.getTechs = getTechs();
 
         function getTechs(){
-            return groups.techs = shiftyService.displayList; 
+            groups.techs = shiftyService.displayList; 
         }
     }
 })();
