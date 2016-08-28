@@ -9,8 +9,8 @@
         groups.getTechs = getTechs();
 
         function getTechs(){
-            groups.techs = shiftyService.displayList;
-            console.log(groups.techs);
+            console.log("Getting techs list...");
+           return groups.techs = shiftyService.displayList;
         }
     }
 })();
