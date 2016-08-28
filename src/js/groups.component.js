@@ -6,11 +6,11 @@
         });
     function groupsController($firebaseObject,$scope,$firebaseArray,shiftyService){
         var groups = this;
-        groups.getTechs = getTechs();
+        groups.techs = shiftyService.displayList;
 
         function getTechs(){
             console.log("Getting techs list...");
-           return groups.techs = shiftyService.getList("xactware/techs",false);
+            return groups.techs = shiftyService.getList("xactware/techs",false);
         }
     }
 })();
