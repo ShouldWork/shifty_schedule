@@ -128,13 +128,6 @@
     padding: 1em;
 }
 
-.filterBox{
-    padding: 1em;
-    height: 40%;
-    overflow: auto;
-    align-self: flex-start;
-}
-
 
 .loginBox{
     border: 1px solid white;
@@ -148,18 +141,27 @@
     box-shadow: 2px 5px 15px black;
 }
 
+
+.filterBox{
+    padding: 1em;
+    height: 40%;
+    overflow: auto;
+    align-self: flex-start;
+}
+
 .filtertile{
     margin: 1px;
     outline: 0;
     z-index: 15;
-    border-radius: 5px;
-    border: 2px solid black;    
+    border-radius: none;
+    border: 3px solid black;    
     font-size: 1.25em;
 }
 .filtertile:hover{
     box-shadow: 2px 5px 10px rgba(0,0,0,0.65);
     z-index: 20;
-    border: 2px solid ghostWhite;
+    border: 3px solid ghostWhite;
+    border-radius: 5px;
     transform: rotate(-7deg);
 }
 
