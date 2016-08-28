@@ -10,7 +10,7 @@
 
         function getTechs(){
             console.log("Getting techs list...");
-           return groups.techs = shiftyService.displayList;
+           return groups.techs = shiftyService.getList("xactware/techs",false);
         }
     }
 })();

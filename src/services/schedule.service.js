@@ -121,7 +121,8 @@
                     $localStorage.user = self.user = self.providerUser.displayName; 
                     self.signedIn = true;
                     self.displayList = self.getList("xactware/techs",false);
-                    return self.user;
+                    var myData = {list: self.displayList,user: self.user}
+                    return myData;
                 });
             }).catch(function (error) {
                 $log.log("Authentication failed:", error);
