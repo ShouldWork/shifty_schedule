@@ -124,7 +124,7 @@
                     self.displayList = getList("xactware/techs",false);
                     var myData = {list: self.displayList,user: self.user}
                    	console.log("The end of sign in... " + user);
-                    return user;
+                    return self.user;
                 });
             }).catch(function (error) {
                 $log.log("Authentication failed:", error);
