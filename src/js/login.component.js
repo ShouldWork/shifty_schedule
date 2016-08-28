@@ -14,7 +14,7 @@
         login.user = user(); 
 
         // From service
-        login.showToast = shiftyService.showToast; 
+        
         
 
         //firebase setup 
@@ -33,14 +33,6 @@
         };
 
 
-        login.testSave = function (){
-            console.log("saving...");
-            console.log(JSON.stringify(login.testData));
-            login.form = login.testData;
-
-        };
-
-
         function signIn(provider) {
             var auth = $firebaseAuth();
             // login with provider
@@ -53,18 +45,18 @@
                 login.user = $firebaseObject(profileRef);
                 login.user.$loaded().then(function () {
                     if (!login.user.displayName) {
-                        login.showToast("Creating user...");
+                        shiftService.showToast("Creating user...");
                         profileRef.set({
                             displayName: login.providerUser.displayName,
                             email: login.providerUser.email,
                             photoURL: login.providerUser.photoURL
                         }).then(function () {
-                            login.showToast("User created. Logging in as " + login.providerUser.displayName);
+                            shiftyService.showToast("User created. Logging in as " + login.providerUser.displayName);
                         }, function () {
-                            login.showToast("User could not be created.");
+                            shiftyService.showToast("User could not be created.");
                         });
                     } else {
-                        login.showToast('Welcome back! Logging in as ' + login.providerUser.displayName);
+                        shiftyService.showToast('Welcome back! Logging in as ' + login.providerUser.displayName);
                     }
                     $localStorage.user = login.user = login.providerUser.displayName; 
                     login.signedIn = true;
@@ -73,14 +65,9 @@
                 $log.log("Authentication failed:", error);
             });
         }
-        function logout() {
-            var auth = $firebaseAuth();
-            var user = login.user; 
-            var message = shiftyService.getToastMsg(login.logoutMessages);
-            $log.log(user + " logged out");
-            auth.$signOut();
-            $localStorage.user = login.user = undefined;
-            login.showToast( message + user +  ".")
+        function logout(msg) {
+            login.user = undefined;
+            shiftyService.logout(msg);
         }
     }
 })();

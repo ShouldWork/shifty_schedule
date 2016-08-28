@@ -76,6 +76,18 @@
 				return $firebaseArray(fredRef);
 			}
    		 }
+
+
+   		 // authentication
+
+   		function logout(msg) {
+            var auth = $firebaseAuth();
+            var user = self.user; 
+            var message = self.getToastMsg(msg);
+            auth.$signOut();
+            $localStorage.user = self.user = undefined;
+            self.showToast( message + user +  ".")
+        }
    	}
 }());
 
