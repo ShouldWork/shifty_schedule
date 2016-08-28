@@ -10,7 +10,7 @@
         login.loginMessages = ['Welcome back, ','We have a lot to discuss, ','It\s you again, ', 'Hello,  ','Salutations, ','How you doing, ','You\'re looking good, ','Another great day ahead for, ','Let\'s schedule somethinng, ','I missed you...a little. Welcome back, ']
         
         // local functions
-        login.signIn = signIn;
+        login.signIn = logout;
         login.logout = logout;
 
 
