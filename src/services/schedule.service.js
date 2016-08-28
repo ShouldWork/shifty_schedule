@@ -90,7 +90,7 @@
             self.showToast( message + " Blake.")
         }
 
-        function signIn(provider) {
+        function signIn(provider,msg) {
             var auth = $firebaseAuth();
             // login with provider
             auth.$signInWithPopup(provider).then(function (firebaseUser) {
@@ -109,12 +109,12 @@
                             photoURL: self.providerUser.photoURL,
                             chatColor: 'blue'
                         }).then(function () {
-                            self.showToast("User created. Logging in as " + self.providerUser.displayName);
+                            self.showToast("New user created. Welcome, " + self.providerUser.displayName + "!");
                         }, function () {
                             self.showToast("User could not be created.");
                         });
                     } else {
-                        self.showToast('Welcome back! Logging in as ' + self.providerUser.displayName);
+                        self.showToast(msg + self.providerUser.displayName);
                     }
                     $localStorage.user = self.user = self.providerUser.displayName; 
                     self.signedIn = true;

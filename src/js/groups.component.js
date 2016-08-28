@@ -6,7 +6,7 @@
         });
     function groupsController($firebaseObject,$scope,$firebaseArray,shiftyService){
         var groups = this;
-        groups.getTechs = getTechs();
+        groups.getTechs = getTechs;
 
         function getTechs(){
             return groups.techs = shiftyService.getList("xactware/techs")
