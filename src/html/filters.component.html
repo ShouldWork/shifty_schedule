@@ -7,7 +7,7 @@
 </div>
 <form>
     <label class="flex-row">
-        <input type="text" ng-model="$ctrl.newListName" ng-keyUp="$ctr.addFilterEnter($ctrl.newListName,false,$event)" class="addFilter">
+        <input type="text" ng-model="$ctrl.newListName" ng-keypress="$ctr.addFilterEnter($ctrl.newListName,false,$event)" class="addFilter">
         <div class="clearBtn" ng-click="$ctrl.addFilter($ctrl.newListName,false)">Add</div>
     </label>
 </form>
