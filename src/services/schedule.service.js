@@ -14,7 +14,7 @@
 		self.getToastMsg = getToastMsg; 
 		self.getList     = getList; 
 		self.logout 	 = logout; 		
-
+		self.signIn 	 = signIn;
 
 		
 		// Toast setup and functions
