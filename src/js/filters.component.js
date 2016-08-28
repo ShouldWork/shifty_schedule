@@ -32,6 +32,9 @@
 			filter.newListName = "";
 		}
 
+		function addFilterEnter(name,set,key){
+			(isEnter(key)) ? addFilter(name,set) : return;
+		}
       	function setListProperty(id){
 			var ref = firebase.database().ref().child("xactware/filters");
 			ref.child(id).once("value", function(snapshot) {
@@ -42,6 +45,10 @@
 				// data === "hello"
 			});
 			// console.log(ref.child(id).child("set").set());
+      	}
+
+      	function isEnter(key){
+      		(keyEvent.which == 13) ? return true : return false;
       	}
     }
 })();
