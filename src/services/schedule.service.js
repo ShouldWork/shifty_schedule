@@ -103,7 +103,7 @@
                 self.user = $firebaseObject(profileRef);
                 self.user.$loaded().then(function () {
                     if (!self.user.displayName) {
-                        shiftService.showToast("Creating user...");
+                        self.showToast("Creating user...");
                         profileRef.set({
                             displayName: self.providerUser.displayName,
                             email: self.providerUser.email,
