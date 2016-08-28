@@ -34,7 +34,7 @@
 		}
 
 		function addFilterEnter(name,set,key){
-			(isEnter(key)) ? addFilter(name,set) : return;
+			if (isEnter(key)){addFilter(name,set)};
 		}
       	function setListProperty(id){
 			var ref = firebase.database().ref().child("xactware/filters");

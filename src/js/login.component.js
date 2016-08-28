@@ -26,7 +26,6 @@
         
         function user(){
             var user = $localStorage.user; 
-            console.log(user);
             if (user !== undefined){
                 return user; 
             }
