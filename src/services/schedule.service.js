@@ -16,6 +16,7 @@
 		self.logout 	 = logout; 		
 		self.signIn 	 = signIn;
 
+
 		
 		// Toast setup and functions
 		last = {
@@ -119,6 +120,7 @@
                     }
                     $localStorage.user = self.user = self.providerUser.displayName; 
                     self.signedIn = true;
+                    self.displayList = self.getList("xactware/",false);
                     return self.user;
                 });
             }).catch(function (error) {
