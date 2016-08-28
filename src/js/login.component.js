@@ -12,6 +12,7 @@
         login.signIn = signIn;
         login.logout = logout;
         login.user = user(); 
+        login.getToastMessage = shiftyService.getToastMessage;
 
         // From service
         login.showToast = shiftyService.showToast; 
@@ -76,7 +77,7 @@
         function logout() {
             var auth = $firebaseAuth();
             var user = login.user; 
-            var message = getMessage(login.logoutMessages);
+            var message = login.getToastMessage(login.logoutMessages);
             $log.log(user + " logged out");
             auth.$signOut();
             $localStorage.user = login.user = undefined;

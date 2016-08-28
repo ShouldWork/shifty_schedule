@@ -157,7 +157,7 @@ margin: 1px;
     border: 1px solid rgba(95,54,20,0.90);
     font-size: 1.25em;
     box-shadow: 0 0 10px rgba(95,31,22,0.75);
-    background: linear-gradient(165deg,transparent,rgba(95,54,20,0.4),rgba(95,54,200,.20));
+    background: linear-gradient(165deg,transparent,rgba(95,54,20,0.3),rgba(95,54,200,.2));
 }
 .filtertile:hover{
     box-shadow: 2px 5px 10px rgba(0,0,0,0.65);
