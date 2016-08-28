@@ -38,7 +38,7 @@
         }
 
         function getUser(provider,msg){
-            if (login.user == undefined){login.user = shiftService.user}
+            if (login.user == undefined){login.user = shiftyService.user}
         }
     }
 })();
