@@ -50,7 +50,7 @@
       	}
 
       	function isEnter(key){
-      		return (keyEvent.which == 13) ? true : false;
+      		return (key.which == 13) ? true : false;
       	}
     }
 })();
