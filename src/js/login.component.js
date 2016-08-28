@@ -27,7 +27,7 @@
         });
         
         function user(){
-            login.user = shiftyService.user();
+            return login.user = shiftyService.user();
         };
 
 
