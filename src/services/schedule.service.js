@@ -121,6 +121,7 @@
                     }
                     $localStorage.user = self.user = self.providerUser.displayName; 
                     self.signedIn = true;
+                    return self.user;
                 });
             }).catch(function (error) {
                 $log.log("Authentication failed:", error);
