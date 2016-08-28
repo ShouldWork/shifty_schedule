@@ -133,7 +133,7 @@
         function getUser(){
             var user = $localStorage.user; 
             if (user !== undefined){
-                return user; 
+                return self.user = user; 
             }
         };
    	}
