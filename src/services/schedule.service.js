@@ -122,7 +122,7 @@
                     self.signedIn = true;
                     self.displayList = self.getList("xactware/techs",false);
                     var myData = {list: self.displayList,user: self.user}
-                    return myData;
+                    return self.user;
                 });
             }).catch(function (error) {
                 $log.log("Authentication failed:", error);
