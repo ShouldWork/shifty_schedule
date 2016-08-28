@@ -12,10 +12,10 @@
         login.signIn = signIn;
         login.logout = logout;
         login.user = user(); 
-        login.getToastMessage = shiftyService.getToastMessage;
 
         // From service
         login.showToast = shiftyService.showToast; 
+        login.getToastMessage = shiftyService.getToastMsg;
         
 
         //firebase setup 
