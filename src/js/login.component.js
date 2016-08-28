@@ -77,7 +77,7 @@
         function logout() {
             var auth = $firebaseAuth();
             var user = login.user; 
-            var message = login.getToastMessage(login.logoutMessages);
+            var message = login.getToastMsg(login.logoutMessages);
             $log.log(user + " logged out");
             auth.$signOut();
             $localStorage.user = login.user = undefined;
