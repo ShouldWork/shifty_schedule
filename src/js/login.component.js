@@ -12,7 +12,7 @@
         // local functions
         login.signIn = signIn;
         login.logout = logout;
-        login.user = user(); 
+
 
         // From service
         
@@ -26,11 +26,6 @@
             login.fireBase = login.form;
         });
         
-        function user(){
-            return login.user = shiftyService.user;
-        };
-
-
         function signIn(provider) {
             login.user = shiftyService.signIn(provider,login.loginMessages);
         }
