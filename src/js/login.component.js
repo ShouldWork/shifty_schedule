@@ -28,11 +28,15 @@
 
         function signIn(provider) {
             console.log(login.user);
-            login.user = shiftyService.signIn(provider,login.loginMessages);
+            login.user = getUser(provider,login.loginMessages);
         }
         function logout() {
             login.user = undefined;
             shiftyService.logout(login.logoutMessages);
+        }
+
+        function getUser(provider,msg){
+            return login.user = shiftyService.signIn(provider,msg);
         }
     }
 })();
