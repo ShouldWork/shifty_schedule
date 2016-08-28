@@ -35,7 +35,7 @@
 
 
         function signIn(provider) {
-            var login.user = shiftService.signIn(provider,login.loginMessages);
+            login.user = shiftService.signIn(provider,login.loginMessages);
         }
         function logout() {
             login.user = undefined;
