@@ -15,7 +15,7 @@
 		self.getList     = getList; 
 		self.logout 	 = logout; 		
 		self.signIn 	 = signIn;
-		self.getUser  	 = user; 
+		self.getUser  	 = getUser(); 
 
 
 		
@@ -130,7 +130,7 @@
             });
         }
 
-        function user(){
+        function getUser(){
             var user = $localStorage.user; 
             if (user !== undefined){
                 return user; 
