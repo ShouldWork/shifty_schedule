@@ -120,7 +120,7 @@
                     }
                     $localStorage.user = self.user = self.providerUser.displayName; 
                     self.signedIn = true;
-                    self.displayList = self.getList("xactware/",false);
+                    self.displayList = self.getList("xactware/techs",false);
                     return self.user;
                 });
             }).catch(function (error) {
