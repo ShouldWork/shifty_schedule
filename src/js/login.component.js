@@ -10,6 +10,7 @@
         login.loginMessages = ['Welcome back, ','We have a lot to discuss, ','It\s you again, ', 'Hello,  ','Salutations, ','How you doing, ','You\'re looking good, ','Another great day ahead for, ','Let\'s schedule somethinng, ','I missed you...a little. Welcome back, ']
         
         // local functions
+        login.getUser = getUser();
         login.signIn = signIn;
         login.logout = logout;
 
@@ -27,7 +28,6 @@
         });
 
         function signIn(provider) {
-            console.log(login.user);
             shiftyService.signIn(provider,login.loginMessages).then(function(){
                 login.user = shiftyService.user;
             });
@@ -38,7 +38,7 @@
         }
 
         function getUser(provider,msg){
-            return login.user = shiftyService.signIn(provider,msg);
+            if (login.user == undefined){login.user = shiftService.user}
         }
     }
 })();
