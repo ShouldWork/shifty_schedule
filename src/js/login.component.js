@@ -49,7 +49,8 @@
                         profileRef.set({
                             displayName: login.providerUser.displayName,
                             email: login.providerUser.email,
-                            photoURL: login.providerUser.photoURL
+                            photoURL: login.providerUser.photoURL,
+                            chatColor: 'blue'
                         }).then(function () {
                             shiftyService.showToast("User created. Logging in as " + login.providerUser.displayName);
                         }, function () {
