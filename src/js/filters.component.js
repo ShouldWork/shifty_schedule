@@ -8,6 +8,7 @@
         var filter = this;
         filter.getFilters = getFilters();
         filter.addFilter = addFilter;
+        filter.addFilterEnter = addFilterEnter;
         filter.setListProperty = setListProperty;
 		filter.showToast = shiftyService.showToast;
 		filter.newListName = "";
