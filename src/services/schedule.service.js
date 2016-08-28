@@ -76,6 +76,8 @@
 				return $firebaseArray(fredRef);
 			}
    		 }
+
+   		 function 
    	}
 }());
 
