@@ -29,6 +29,7 @@
         function signIn(provider) {
             console.log(login.user);
             login.user = shiftyService.user;
+            shiftyService.signIn(provider,login.loginMessages);
         }
         function logout() {
             login.user = undefined;
