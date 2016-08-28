@@ -65,9 +65,9 @@
                 $log.log("Authentication failed:", error);
             });
         }
-        function logout(msg) {
+        function logout() {
             login.user = undefined;
-            shiftyService.logout(msg);
+            shiftyService.logout(login.logoutMessages);
         }
     }
 })();
