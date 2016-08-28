@@ -6,6 +6,7 @@
         });
     function loginController($firebaseObject,$scope,$firebaseArray,$firebaseAuth,$log,shiftyService,$localStorage){
         var login = this;
+        login.logoutMessages = ['See you later, ','Thanks for stopping by, ','Check ya later, ','Smell ya later, ','Salutations, ','Peace out, ','Ciao, ','Well it was real, ','You\'ll be back, ','We\'ll miss you, ']
         
         // local functions
         login.signIn = signIn;
@@ -58,12 +59,12 @@
                             email: login.providerUser.email,
                             photoURL: login.providerUser.photoURL
                         }).then(function () {
-                            login.showToast("user created. Logging in as " + login.providerUser.displayName);
+                            login.showToast("User created. Logging in as " + login.providerUser.displayName);
                         }, function () {
-                            login.showToast("user could not be created.");
+                            login.showToast("User could not be created.");
                         });
                     } else {
-                        login.showToast('user already created! Logging in as ' + login.providerUser.displayName);
+                        login.showToast('Welcome back! Logging in as ' + login.providerUser.displayName);
                     }
                     $localStorage.user = login.user = login.providerUser.displayName; 
                     login.signedIn = true;
@@ -75,10 +76,11 @@
         function logout() {
             var auth = $firebaseAuth();
             var user = login.user; 
+            var message = getMessage(login.logoutMessages);
             $log.log(user + " logged out");
             auth.$signOut();
             $localStorage.user = login.user = undefined;
-            login.showToast("Come back soon, " + user +  " ya' hear?!")
+            login.showToast( message + user +  ".")
         }
     }
 })();

@@ -49,7 +49,7 @@
       	}
 
       	function isEnter(key){
-      		(keyEvent.which == 13) ? return true : return false;
+      		return (keyEvent.which == 13) ? true : false;
       	}
     }
 })();
