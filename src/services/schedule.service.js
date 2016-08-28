@@ -15,6 +15,7 @@
 		self.getList     = getList; 
 		self.logout 	 = logout; 		
 		self.signIn 	 = signIn;
+		self.user 		 = user(); 
 
 
 		
@@ -120,7 +121,7 @@
                     }
                     $localStorage.user = self.user = self.providerUser.displayName; 
                     self.signedIn = true;
-                    self.displayList = self.getList("xactware/techs",false);
+                    self.displayList = getList("xactware/techs",false);
                     var myData = {list: self.displayList,user: self.user}
                     return self.user;
                 });
@@ -128,6 +129,12 @@
                 $log.log("Authentication failed:", error);
             });
         }
+        function user(){
+            var user = $localStorage.user; 
+            if (user !== undefined){
+                return user; 
+            }
+        };
    	}
 }());
 

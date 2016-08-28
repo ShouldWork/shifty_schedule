@@ -27,10 +27,7 @@
         });
         
         function user(){
-            var user = $localStorage.user; 
-            if (user !== undefined){
-                return user; 
-            }
+            login.user = shiftyService.user();
         };
 
 
