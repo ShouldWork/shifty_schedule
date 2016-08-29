@@ -6,7 +6,8 @@
                 "ngAnimate",
                 "ngStorage",
                 "ngMaterial",
-                "firebase"
+                "firebase",
+                "ngRoute"
                 // "ui.bootstrap"
             ])
         .config(function($urlRouterProvider){
