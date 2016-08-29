@@ -121,8 +121,8 @@
                     }
                     $localStorage.user = self.user = self.providerUser.displayName; 
                     self.signedIn = true;
-                    var currentState = $state.current.name;
-                    console.log(currentState);
+                    // var currentState = $state.current.name;
+                    // console.log(currentState);
                     $state.go();
                     return self.user;
                 });
