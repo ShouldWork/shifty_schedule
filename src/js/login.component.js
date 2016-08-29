@@ -28,9 +28,7 @@
         });
 
         function signIn(provider) {
-            shiftyService.signIn(provider,login.loginMessages).then(function(){
-                login.user = shiftyService.user;
-            });
+            shiftyService.signIn(provider,login.loginMessages)
         }
         function logout() {
             login.user = undefined;
