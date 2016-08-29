@@ -28,9 +28,9 @@
         });
 
         function signIn(provider) {
-            console.log($state.current.name);
+            console.log($state);
             shiftyService.signIn(provider,login.loginMessages);
-            $state.go($state.current.name, {}, {reload: true})
+            $state.go($state.current.name, {}, {reload: true});
         }
         function logout() {
             login.user = undefined;
