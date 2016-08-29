@@ -92,7 +92,7 @@
             self.showToast( message + user)
         }
 
-        function signIn(provider,msg) {
+        function signIn(provider,msg,state) {
             var auth = $firebaseAuth();
             // login with provider
             auth.$signInWithPopup(provider).then(function (firebaseUser) {
@@ -121,9 +121,7 @@
                     }
                     $localStorage.user = self.user = self.providerUser.displayName; 
                     self.signedIn = true;
-                    // var currentState = $state.current.name;
-                    // console.log(currentState);
-                    $state.go();
+                    console.log(state);
                     return self.user;
                 });
             }).catch(function (error) {
