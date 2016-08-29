@@ -88,7 +88,7 @@
             var user = self.user; 
             var message = self.getToastMsg(msg);
             auth.$signOut();
-            $localStorage.user = self.user = undefined;
+            $localStorage.user = self.user = false;
             self.showToast( message + user)
         }
 
