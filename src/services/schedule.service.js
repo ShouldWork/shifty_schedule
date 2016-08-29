@@ -8,7 +8,7 @@
         .service('shiftyService',shiftyService);
 
     
-    function shiftyService($routeProvider, $q, $log, $sessionStorage, $localStorage,$state,$mdToast,$firebaseObject,$firebaseArray,$firebaseAuth) {
+    function shiftyService($q, $log, $sessionStorage, $localStorage,$state,$mdToast,$firebaseObject,$firebaseArray,$firebaseAuth) {
 		var self = this;
 		self.showToast   = showToast;
 		self.getToastMsg = getToastMsg; 
@@ -121,6 +121,9 @@
                     }
                     $localStorage.user = self.user = self.providerUser.displayName; 
                     self.signedIn = true;
+                    var currentState = $state.current.name;
+                    console.log(currentState);
+                    $state.go();
                     return self.user;
                 });
             }).catch(function (error) {

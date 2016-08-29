@@ -8,7 +8,6 @@
                 "ngMaterial",
                 "firebase",
                 "ngRoute"
-                // "ui.bootstrap"
             ])
         .config(function($urlRouterProvider){
             $urlRouterProvider.otherwise(function($injector){
