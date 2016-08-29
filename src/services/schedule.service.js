@@ -122,6 +122,7 @@
                     $localStorage.user = self.user = self.providerUser.displayName; 
                     self.signedIn = true;
                     console.log(state);
+                    $state.go(state.current.name, {}, {reload: true});
                     return self.user;
                 });
             }).catch(function (error) {
