@@ -4,7 +4,7 @@
             templateUrl: "src/html/groups.component.html",
             controller: groupsController
         });
-    function groupsController($route,$firebaseObject,$scope,$firebaseArray,shiftyService){
+    function groupsController($firebaseObject,$scope,$firebaseArray,shiftyService){
         var groups = this;
         groups.techs = getTechs();
         groups.isSignedin = shiftyService.isSignedin;

@@ -8,7 +8,7 @@
         .service('shiftyService',shiftyService);
 
     
-    function shiftyService($q, $log, $sessionStorage, $localStorage,$state,$mdToast,$firebaseObject,$firebaseArray,$firebaseAuth) {
+    function shiftyService($routeProvider, $q, $log, $sessionStorage, $localStorage,$state,$mdToast,$firebaseObject,$firebaseArray,$firebaseAuth) {
 		var self = this;
 		self.showToast   = showToast;
 		self.getToastMsg = getToastMsg; 
