@@ -92,6 +92,7 @@
             self.user.displayName = false; 
             $localStorage.user = self.user.displayName;
             self.showToast( message + self.user.displayName);
+            self.isLoggedIn = false;
         }
 
         function signIn(provider,msg) {
@@ -159,13 +160,14 @@
                     }).then(function () {
                         showToast("user updated.");
                     }, function () {
-                        showToast("user could not be updated.");
+                        showToast("User " + self.user.diplayName);
                     });
                 } else {
-                    showToast('user already created!');
+                    showToast(msg + self.user.displayName);
                 }
-                self.displayName = providerUser.displayName;
-				$localStorage.user = self.displayName;
+                self.isLoggedIn = true;
+                self.user.displayName = providerUser.displayName;
+				$localStorage.user = self.user.displayName;
                 deferred.resolve();
             });
             return deferred.promise;
@@ -173,10 +175,6 @@
 
         function loginError(error) {
             showToast("Authentication failed:", error);
-        }
-
-        function isLoggedIn(){
-        	return
         }
     }
 }());
