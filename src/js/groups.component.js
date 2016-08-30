@@ -42,8 +42,8 @@
         },           
           function(newVal, oldVal) {
             groups.techs = srv.techList;
-            groups.user = srv.user;
-            console.log("Controller techs: " + groups.techs + " tags: " + groups.user.displayName);
+            groups.user = srv.user.displayName;
+            console.log("Controller techs: " + groups.techs + " user: " + groups.user);
         }, true);
     }
 })();
