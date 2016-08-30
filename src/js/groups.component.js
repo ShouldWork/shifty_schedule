@@ -4,7 +4,7 @@
             templateUrl: "src/html/groups.component.html",
             controller: groupsController
         });
-    function groupsController($firebaseObject,$scope,$firebaseArray,shiftyService){
+    function groupsController($firebaseObject,$scope,$firebaseArray,shiftyService,$timeout){
         var groups = this,
             srv = shiftyService; 
         groups.techs = getTechs();
@@ -12,7 +12,7 @@
 
         function getTechs(){
             console.log("Getting techs list...");
-            $scope.$timeout(function(){
+            $timeout(function(){
                 groups.techs = srv.techList;
                 console.log(groups.techs);
             });
