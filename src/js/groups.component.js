@@ -22,14 +22,19 @@
         function getTechs(){
             console.log("Getting techs list...");
         }
-                //firebase setup 
-        var ref = firebase.database().ref("xactware").child("techs");
-        syncObject = $firebaseObject(ref);
-        syncObject.$bindTo($scope,"data.techs");
-        syncObject.$loaded().then(function(){
-            groups.techs = data.form;
-            console.log(group.techs);
-        });
 
+        $scope.setFTag = function() {
+            alert("Within MyCtrl->setFTag");
+            srv.setFalseTag();
+        };    
+
+        $scope.$watch(function () {
+            return myService.tags;
+        },           
+          function(newVal, oldVal) {
+            alert("Inside watch");
+            console.log(newVal);
+            console.log(oldVal);
+        }, true);
     }
 })();

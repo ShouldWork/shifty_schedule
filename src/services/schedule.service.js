@@ -21,17 +21,17 @@
 		self.list 		 = undefined; 
 		self.filterList	 = undefined;
 		self.techList 	 = undefined; 
-		getTechs();
-		getFilters();
-
-        this.setFalseTag = function() {
-            alert("Within myService->setFalseTag");
+        self.setFalseTag = function() {
+            console.log("Within myService->setFalseTag" + self.techList);
             this.tags.a = false;
             this.tags.b = false;
+
             
             //how do I get the watch in MyCtrl to be triggered?
         };
-		
+		getTechs();
+        getFilters();
+
 		// Toast setup and functions
 		last = {
 			bottom: true,
