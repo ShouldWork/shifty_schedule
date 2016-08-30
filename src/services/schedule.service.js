@@ -140,7 +140,7 @@
 
         function loginSuccess(firebaseUser) {
             var deferred = $q.defer();
-            showToast(firebaseUser);
+            // showToast(firebaseUser);
 
             var providerUser = firebaseUser.user ? firebaseUser.user : firebaseUser;
             var ref = firebase.database().ref("users");
