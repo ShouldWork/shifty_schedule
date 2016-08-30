@@ -33,7 +33,7 @@
         },           
           function(newVal, oldVal) {
             groups.techs = srv.techList;
-            console.log("Controller techs: " + groups.techs + " tags: " + serv.tags);
+            console.log("Controller techs: " + groups.techs + " tags: " + srv.tags);
         }, true);
     }
 })();
