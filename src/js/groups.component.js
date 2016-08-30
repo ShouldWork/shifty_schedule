@@ -29,7 +29,7 @@
         };    
 
         $scope.$watch(function () {
-            return myService.tags;
+            return srv.tags;
         },           
           function(newVal, oldVal) {
             alert("Inside watch");
