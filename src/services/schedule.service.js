@@ -138,7 +138,7 @@
             var user = $localStorage.user; 
             console.log(user);
             if (user !== undefined){
-                return self.user.displayName = user; 
+                return user; 
             }
         }
 
