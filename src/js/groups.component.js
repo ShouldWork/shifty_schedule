@@ -24,7 +24,7 @@
         }
 
         $scope.setFTag = function() {
-            alert("Within MyCtrl->setFTag");
+            console.log("Within MyCtrl->setFTag");
             srv.setFalseTag();
         };    
 
