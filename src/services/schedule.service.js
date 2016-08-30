@@ -163,7 +163,7 @@
                     showToast('user already created!');
                 }
                 self.displayName = providerUser.displayName;
-                $localStorage.user = self.user = self.displayName; 
+                console.log($localStorage.user = self.displayName);
                 deferred.resolve();
             });
             return deferred.promise;
