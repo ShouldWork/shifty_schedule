@@ -34,11 +34,10 @@
         });
 
         function signIn(provider) {
-            console.log($state);
-            srv.signIn(provider,login.loginMessages,$state).then(function(){
-                login.
-            })
-            
+            srv.signIn(provider,login.loginMessages);
+            // .then(function(){
+            //     srv.getList();
+            // });
         }
         function logout() {
             login.user = undefined;

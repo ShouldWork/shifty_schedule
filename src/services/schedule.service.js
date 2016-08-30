@@ -96,7 +96,7 @@
             self.showToast( message + user)
         }
 
-        function signIn(provider,msg,state) {
+        function signIn(provider,msg) {
             var auth = $firebaseAuth();
             return auth.$signInWithPopup(provider)
             	.then(loginSuccess)
