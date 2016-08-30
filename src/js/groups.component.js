@@ -32,9 +32,7 @@
             return srv.tags;
         },           
           function(newVal, oldVal) {
-            alert("Inside watch");
-            console.log(newVal);
-            console.log(oldVal);
+            console.log("Inside watch " + oldVal + " new Val: " + newVal);
         }, true);
     }
 })();
