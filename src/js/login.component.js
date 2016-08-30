@@ -30,6 +30,7 @@
         syncObject.$bindTo($scope,"login.form");
         syncObject.$loaded().then(function(){
             login.fireBase = login.form;
+            console.log(login.form);
         });
 
         function signIn(provider) {
