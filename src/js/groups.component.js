@@ -7,12 +7,14 @@
     function groupsController($firebaseObject,$scope,$firebaseArray,shiftyService,$timeout){
         var groups = this,
             srv = shiftyService; 
-        groups.techs = getTechs();
+        groups.techs = srv.techList;
         groups.isSignedin = srv.isLoggedIn;
+
+
 
         function getTechs(){
             console.log("Getting techs list...");
-            $scope.$watch('srv.techList',function(){
+            $scope.$watch('groups.techs',function(){
                 groups.techs = srv.techList;
                 console.log(groups.techs);
             });
