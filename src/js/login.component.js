@@ -5,7 +5,10 @@
             controller: loginController
         });
     function loginController($state,$firebaseObject,$scope,$firebaseArray,$firebaseAuth,$log,shiftyService,$localStorage){
-        var login = this;
+        var login = this,
+            srv = shiftyService; 
+
+
         login.logoutMessages = ['See you later, ','Thanks for stopping by, ','Check ya later, ','Smell ya later, ','Salutations, ','Peace out, ','Ciao, ','Well it was real, ','You\'ll be back, ','We\'ll miss you, ']
         login.loginMessages = ['Welcome back, ','We have a lot to discuss, ','It\s you again, ', 'Hello,  ','Salutations, ','How you doing, ','You\'re looking good, ','Another great day ahead for, ','Let\'s schedule somethinng, ','I missed you...a little. Welcome back, ']
         
@@ -13,6 +16,8 @@
         login.getUser = getUser();
         login.signIn = signIn;
         login.logout = logout;
+
+
 
 
         // From service
@@ -29,16 +34,16 @@
 
         function signIn(provider) {
             console.log($state);
-            shiftyService.signIn(provider,login.loginMessages,$state);
+            srv.signIn(provider,login.loginMessages,$state);
             
         }
         function logout() {
             login.user = undefined;
-            shiftyService.logout(login.logoutMessages);
+            srv.logout(login.logoutMessages);
         }
 
         function getUser(provider,msg){
-            if (login.user == undefined){login.user = shiftyService.user}
+            if (login.user == undefined){login.user = srv.user}
         }
     }
 })();
