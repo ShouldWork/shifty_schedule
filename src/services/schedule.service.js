@@ -87,12 +87,11 @@
 
    		function logout(msg) {
             var auth = $firebaseAuth();
-            var user = self.user; 
             var message = self.getToastMsg(msg);
             auth.$signOut();
-            self.user = false; 
-            $localStorage.user = self.user;
-            self.showToast( message + user)
+            self.user.displayName = false; 
+            $localStorage.user = self.user.displayName;
+            self.showToast( message + self.user.DisplayName);
         }
 
         function signIn(provider,msg) {
