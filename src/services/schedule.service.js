@@ -12,8 +12,8 @@
 		var self = this;
 		self.showToast   = showToast;
 		self.getToastMsg = getToastMsg; 
-		// self.getTechs    = getTechs(); 
-		// self.getFilters  = getFilters(); 
+		self.getTechs    = getTechs; 
+		self.getFilters  = getFilters; 
 		self.logout 	 = logout; 		
 		self.signIn 	 = signIn;
 		self.getUser  	 = getUser(); 

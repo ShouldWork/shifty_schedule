@@ -35,7 +35,8 @@
 
         function signIn(provider) {
             srv.signIn(provider,login.loginMessages).then(function(){
-                getUser();
+                srv.getTechs();
+                srv.getFilters();
             });
         }
 
