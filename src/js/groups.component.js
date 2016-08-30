@@ -13,7 +13,7 @@
         function getTechs(){
             console.log("Getting techs list...");
             $scope.$watch('srv.list',function(){
-                groups.techs = srv.list;
+                groups.techs = srv.list[1];
                 console.log(groups.techs);
             });
         }
