@@ -11,13 +11,13 @@
         groups.isSignedin = srv.isLoggedIn;
 
 
+        $scope.$watch('group.techs', function(){
+            groups.techs = srv.techList;
+            console.log(groups.techs);
+        });
 
         function getTechs(){
             console.log("Getting techs list...");
-            $timeout(function(){
-                groups.techs = srv.techList;
-                console.log(groups.techs);
-            });
         }
     }
 })();
