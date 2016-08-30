@@ -12,9 +12,12 @@
 
 
         $scope.$watch('group.techs', function(){
-            groups.techs = srv.techList;
-            console.log(groups.techs);
-        });
+            return srv.techList; 
+        },
+        function(newVal, oldVal){
+            console.log(newVal);
+            console.log(oldVal);
+        }, true);
 
         function getTechs(){
             console.log("Getting techs list...");
