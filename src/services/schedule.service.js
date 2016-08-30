@@ -94,40 +94,41 @@
 
         function signIn(provider,msg,state) {
             var auth = $firebaseAuth();
-            // login with provider
-            auth.$signInWithPopup(provider).then(function (firebaseUser) {
-                self.displayName = firebaseUser.user.displayName;
-                self.providerUser = firebaseUser.user;
+            return auth.$signInWithPopup(provider)
+            	.then(loginSuccess)
+            	.catch(loginError);
 
-                var ref = firebase.database().ref("users"),
-                    profileRef = ref.child(self.providerUser.uid);
-                self.user = $firebaseObject(profileRef);
-                self.user.$loaded().then(function () {
-                    if (!self.user.displayName) {
-                        self.showToast("Creating user...");
-                        profileRef.set({
-                            displayName: self.providerUser.displayName,
-                            email: self.providerUser.email,
-                            photoURL: self.providerUser.photoURL,
-                            chatColor: 'blue'
-                        }).then(function () {
-                            self.showToast("New user created. Welcome, " + self.providerUser.displayName + "!");
-                        }, function () {
-                            self.showToast("User could not be created.");
-                        });
-                    } else {
-                    	var message = getToastMsg(msg);
-                        self.showToast(message + self.providerUser.displayName);
-                    }
-                    $localStorage.user = self.user = self.providerUser.displayName; 
-                    self.signedIn = true;
-                    console.log(state);
-                    $state.go(state.current.name, {}, {reload: true});
-                    return self.user;
-                });
-            }).catch(function (error) {
-                $log.log("Authentication failed:", error);
-            });
+            // // login with provider
+            // auth.$signInWithPopup(provider).then(function (firebaseUser) {
+            //     self.displayName = firebaseUser.user.displayName;
+            //     self.providerUser = firebaseUser.user;
+
+            //     var ref = firebase.database().ref("users"),
+            //         profileRef = ref.child(self.providerUser.uid);
+            //     self.user = $firebaseObject(profileRef);
+            //     self.user.$loaded().then(function () {
+            //         if (!self.user.displayName) {
+            //             self.showToast("Creating user...");
+            //             profileRef.set({
+            //                 displayName: self.providerUser.displayName,
+            //                 email: self.providerUser.email,
+            //                 photoURL: self.providerUser.photoURL,
+            //                 chatColor: 'blue'
+            //             }).then(function () {
+            //                 self.showToast("New user created. Welcome, " + self.providerUser.displayName + "!");
+            //             }, function () {
+            //                 self.showToast("User could not be created.");
+            //             });
+            //         } else {
+            //         	var message = getToastMsg(msg);
+            //             self.showToast(message + self.providerUser.displayName);
+            //         }
+            //         $localStorage.user = self.user = self.providerUser.displayName; 
+            //         return self.user;
+            //     });
+            // }).catch(function (error) {
+            //     $log.log("Authentication failed:", error);
+            // });
         }
 
         function getUser(){
@@ -135,7 +136,43 @@
             if (user !== undefined){
                 return self.user = user; 
             }
-        };
+        }
+
+        function loginSuccess(firebaseUser) {
+            var deferred = $q.defer();
+            showToast(firebaseUser);
+
+            var providerUser = firebaseUser.user ? firebaseUser.user : firebaseUser;
+            var ref = firebase.database().ref("users");
+            var profileRef = ref.child(providerUser.uid);
+            self.user = $firebaseObject(profileRef);
+            self.user.$loaded().then(function () {
+                if (!self.user.displayName) {
+                    showToast("Updating user...",1500);
+                    profileRef.set({
+                        displayName: providerUser.displayName || providerUser.email,
+                        email: providerUser.email,
+                        photoURL: providerUser.photoURL,
+                        lastLogin: firebase.database.ServerValue.TIMESTAMP
+                    }).then(function () {
+                        showToast("user updated.");
+                    }, function () {
+                        showToast("user could not be updated.");
+                    });
+                } else {
+                    showToast('user already created!');
+                }
+                self.displayName = providerUser.displayName;
+                deferred.resolve();
+            });
+            return deferred.promise;
+        }
+
+        function loginError(error) {
+            showToast("Authentication failed:", error);
+        }
+
+
    	}
 }());
 

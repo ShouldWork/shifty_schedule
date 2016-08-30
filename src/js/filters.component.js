@@ -5,23 +5,23 @@
             controller: filterController
         });
     function filterController($firebaseArray,$mdToast,shiftyService,$state){
-        var filter = this;
+        var filter = this,
+        	srv = shiftyService;
         filter.getFilters = getFilters();
         filter.addFilter = addFilter;
         filter.addFilterEnter = addFilterEnter;
         filter.setListProperty = setListProperty;
-		filter.showToast = shiftyService.showToast;
+		filter.showToast = srv.showToast;
 		filter.newListName = "";
 
       	function getFilters(){
-      		return filter.filters = shiftyService.getList("xactware/filters",false)
+      		return filter.filters = srv.getList("xactware/filters",false)
       	}
 
       	function addFilter(name,set){
 			filter.showToast("Added filter " + filter.newListName);
       		var ref = firebase.database().ref().child("xactware/filters"),
             	dbFilters = $firebaseArray(ref);
-            	console.log(dbFilters);
 			dbFilters.$add({ 
 				name: name || "New filter",
 				set: set || false
