@@ -16,6 +16,9 @@
 		self.logout 	 = logout; 		
 		self.signIn 	 = signIn;
 		self.getUser  	 = getUser(); 
+		self.isLoggedIn  = isLoggedIn;
+		self.list 		 = undefined; 
+
 
 
 		
@@ -60,9 +63,9 @@
 
 		// getting lists
 		function getList(toGet,filtered){
-			var fredRef = firebase.database().ref().child(toGet);
+			var ref = firebase.database().ref().child(toGet);
 			if (filtered){
-				fredRef.once("value", function(snapshot) {
+				ref.once("value", function(snapshot) {
 					snapshot.forEach(function(techSnapshot) {
 						var key = techSnapshot.val();
 						var level = techSnapshot.child('level').val();
@@ -76,7 +79,7 @@
 					console.log(self.displayTechs);
 				});
 			} else {
-				return $firebaseArray(fredRef);
+				self.list = $firebaseArray(ref);
 			}
    		 }
 
@@ -163,7 +166,7 @@
                     showToast('user already created!');
                 }
                 self.displayName = providerUser.displayName;
-                console.log($localStorage.user = self.displayName);
+				$localStorage.user = self.displayName;
                 deferred.resolve();
             });
             return deferred.promise;
@@ -171,6 +174,10 @@
 
         function loginError(error) {
             showToast("Authentication failed:", error);
+        }
+
+        function isLoggedIn(){
+        	(s)
         }
 
 

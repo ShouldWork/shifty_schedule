@@ -5,13 +5,14 @@
             controller: groupsController
         });
     function groupsController($firebaseObject,$scope,$firebaseArray,shiftyService){
-        var groups = this;
+        var groups = this,
+            srv = shiftyService; 
         groups.techs = getTechs();
         groups.isSignedin = shiftyService.isSignedin;
 
         function getTechs(){
             console.log("Getting techs list...");
-            return groups.techs = shiftyService.getList("xactware/techs",false);
+            groups.techs = srv.list;
         }
     }
 })();

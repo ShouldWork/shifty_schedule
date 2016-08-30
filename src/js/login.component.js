@@ -35,7 +35,9 @@
 
         function signIn(provider) {
             console.log($state);
-            srv.signIn(provider,login.loginMessages,$state);
+            srv.signIn(provider,login.loginMessages,$state).then(function(){
+                login.
+            })
             
         }
         function logout() {
