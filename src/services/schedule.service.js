@@ -24,7 +24,13 @@
 		getTechs();
 		getFilters();
 
-
+        this.setFalseTag = function() {
+            alert("Within myService->setFalseTag");
+            this.tags.a = false;
+            this.tags.b = false;
+            
+            //how do I get the watch in MyCtrl to be triggered?
+        };
 		
 		// Toast setup and functions
 		last = {

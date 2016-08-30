@@ -22,5 +22,19 @@
         function getTechs(){
             console.log("Getting techs list...");
         }
+
+        $scope.setFTag = function() {
+            alert("Within MyCtrl->setFTag");
+            srv.setFalseTag();
+        };    
+
+        $scope.$watch(function () {
+            return srv.tags;
+        },           
+        function(newVal, oldVal) {
+            alert("Inside watch");
+            console.log(newVal);
+            console.log(oldVal);
+        }, true);
     }
 })();
