@@ -13,11 +13,9 @@
         function getTechs(){
             console.log("Getting techs list...");
             $scope.$watch('srv.list',function(){
-                groups.techs = srv.list[0];
+                groups.techs = srv.list;
                 console.log(groups.techs);
                 console.log(srv.list.1);
-                console.log(srv.list[2]);
-                console.log(srv.list[1]);
             });
         }
     }
