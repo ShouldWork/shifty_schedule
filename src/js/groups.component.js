@@ -11,7 +11,7 @@
         groups.isSignedin = srv.isLoggedIn;
 
 
-        $scope.$watch('group.techs', function(){
+        $scope.$watch('groups.techs', function(){
             return srv.techList; 
         },
         function(newVal, oldVal){
