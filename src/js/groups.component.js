@@ -33,7 +33,7 @@
         },           
           function(newVal, oldVal) {
             groups.techs = srv.techList;
-            console.log("Inside watch " + oldVal + " new Val: " + newVal);
+            console.log("Controller techs: " + groups.techs);
         }, true);
     }
 })();
