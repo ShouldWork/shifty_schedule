@@ -91,7 +91,7 @@
             auth.$signOut();
             self.user.displayName = false; 
             $localStorage.user = self.user.displayName;
-            self.showToast( message + self.user.DisplayName);
+            self.showToast( message + self.user.displayName);
         }
 
         function signIn(provider,msg) {
@@ -136,7 +136,7 @@
         function getUser(){
             var user = $localStorage.user; 
             if (user !== undefined){
-                return self.user = user; 
+                return self.user.displayName = user; 
             }
         }
 
