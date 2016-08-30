@@ -67,7 +67,6 @@
 		function getTechs(){
 			var techRef = firebase.database().ref().child('xactware/techs');
 				self.techList = $firebaseArray(techRef);
-			}
    		 }		
 
    		 function getFilters(){
@@ -171,9 +170,7 @@
         function isLoggedIn(){
         	return
         }
-
-
-   	}
+    }
 }());
 
 			//   var data = snapshot.val();
