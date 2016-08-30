@@ -24,8 +24,8 @@
 		self.techList 	 = undefined; 
         self.setFalseTag = function() {
             console.log("Within myService->setFalseTag" + self.techList);
-            // this.tags.a = false;
-            // this.tags.b = false;
+            self.tags.a = false;
+            self.tags.b = false;
             
             //how do I get the watch in MyCtrl to be triggered?
         };
