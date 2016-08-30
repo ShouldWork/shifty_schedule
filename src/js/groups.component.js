@@ -12,7 +12,10 @@
 
         function getTechs(){
             console.log("Getting techs list...");
-            groups.techs = srv.list;
+            $scope.$watch('srv.list',function(){
+                groups.techs = srv.list.techs;
+                console.log(groups.techs);
+            });
         }
     }
 })();
