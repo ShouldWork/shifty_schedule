@@ -36,5 +36,14 @@
             groups.tags = srv.tags;
             console.log("Controller techs: " + groups.techs + " tags: " + groups.tags.a);
         }, true);
+
+        $scope.$watch(function () {
+            return srv.user;
+        },           
+          function(newVal, oldVal) {
+            groups.techs = srv.techList;
+            groups.user = srv.user;
+            console.log("Controller techs: " + groups.techs + " tags: " + groups.tags.a);
+        }, true);
     }
 })();
