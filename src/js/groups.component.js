@@ -12,7 +12,7 @@
 
         function getTechs(){
             console.log("Getting techs list...");
-            $timeout(function(){
+            $scope.$watch('srv.techList',function(){
                 groups.techs = srv.techList;
                 console.log(groups.techs);
             });
