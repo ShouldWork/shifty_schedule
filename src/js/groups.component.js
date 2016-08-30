@@ -38,7 +38,7 @@
         }, true);
 
         $scope.$watch(function () {
-            return srv.displyaName;
+            return srv.user;
         },           
           function(newVal, oldVal) {
             groups.techs = srv.techList;
