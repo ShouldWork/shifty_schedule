@@ -18,6 +18,8 @@
 		self.getUser  	 = getUser(); 
 		self.isLoggedIn  = isLoggedIn;
 		self.list 		 = undefined; 
+		self.filterList	 = undefined;
+		self.techList 	 = undefined; 
 
 
 
@@ -62,26 +64,15 @@
 
 
 		// getting lists
-		function getList(toGet,filtered){
-			toGet = 'xactware';
-			var ref = firebase.database().ref().child(toGet);
-			if (filtered){
-				ref.once("value", function(snapshot) {
-					snapshot.forEach(function(techSnapshot) {
-						var key = techSnapshot.val();
-						var level = techSnapshot.child('level').val();
-						var name = techSnapshot.child('name').val();
-						console.log(level);
-						self.displayTechs = [];
-						if (level = "L1"){
-							self.displayTechs.push([{name: name,level: level}])
-						}
-					});
-					console.log(self.displayTechs);
-				});
-			} else {
-				console.log(self.list = $firebaseArray(ref));
+		function getTechs(){
+			var techRef = firebase.database().ref().child('xactware/techs');
+				self.techList = $firebaseArray(techRef);
 			}
+   		 }		
+
+   		 function getFilters(){
+			var filterRef = firebase.database().ref().child('xactware/filters');
+				self.filterList = $firebaseArray(filterRef);
    		 }
 
 

@@ -18,6 +18,14 @@
       		return filter.filters = srv.getList("xactware/filters",false)
       	}
 
+      	function getFilters(){
+            console.log("Fetching filters...");
+            $scope.$watch('srv.filterList',function(){
+                filter.filters = srv.filterList;
+                console.log(filter.filters);
+            });
+        }
+
       	function addFilter(name,set){
 			filter.showToast("Added filter " + filter.newListName);
       		var ref = firebase.database().ref().child("xactware/filters"),
