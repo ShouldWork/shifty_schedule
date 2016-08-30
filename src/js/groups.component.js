@@ -8,11 +8,11 @@
         var groups = this,
             srv = shiftyService; 
         groups.techs = getTechs();
-        groups.isSignedin = shiftyService.isSignedin;
+        groups.isSignedin = srv.isLoggedIn;
 
         function getTechs(){
             console.log("Getting techs list...");
-            $scope.$watch('srv.techList',function(){
+            $scope.$timeout(function(){
                 groups.techs = srv.techList;
                 console.log(groups.techs);
             });
