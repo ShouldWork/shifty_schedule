@@ -63,6 +63,7 @@
 
 		// getting lists
 		function getList(toGet,filtered){
+			toGet = 'xactware';
 			var ref = firebase.database().ref().child(toGet);
 			if (filtered){
 				ref.once("value", function(snapshot) {
@@ -79,7 +80,7 @@
 					console.log(self.displayTechs);
 				});
 			} else {
-				self.list = $firebaseArray(ref);
+				console.log(self.list = $firebaseArray(ref));
 			}
    		 }
 
@@ -177,7 +178,7 @@
         }
 
         function isLoggedIn(){
-        	(s)
+        	return
         }
 
 
