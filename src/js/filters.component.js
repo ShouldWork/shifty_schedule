@@ -4,7 +4,7 @@
             templateUrl: "src/html/filters.component.html",
             controller: filterController
         });
-    function filterController($firebaseArray,$mdToast,shiftyService,$state){
+    function filterController($firebaseArray,$mdToast,shiftyService,$state,$scope){
         var filter = this,
         	srv = shiftyService;
         filter.getFilters = getFilters();
