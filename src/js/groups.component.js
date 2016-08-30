@@ -43,7 +43,7 @@
           function(newVal, oldVal) {
             groups.techs = srv.techList;
             groups.user = srv.user;
-            console.log("Controller techs: " + groups.techs + " tags: " + groups.user);
+            console.log("Controller techs: " + groups.techs + " tags: " + groups.user.displayName);
         }, true);
     }
 })();
