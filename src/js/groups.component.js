@@ -38,11 +38,11 @@
         }, true);
 
         $scope.$watch(function () {
-            return srv.user;
+            return srv.displyaName;
         },           
           function(newVal, oldVal) {
             groups.techs = srv.techList;
-            groups.user = srv.user.displayName;
+            groups.user = srv.displayName;
             console.log("Controller techs: " + groups.techs + " user: " + groups.user);
         }, true);
     }
