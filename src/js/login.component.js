@@ -34,17 +34,17 @@
         });
 
         function signIn(provider) {
-            srv.signIn(provider,login.loginMessages)
-            .then(function(){
-                srv.getList();
+            srv.signIn(provider,login.loginMessages).then(function(){
+                getUser();
             });
         }
+
         function logout() {
             login.user = undefined;
             srv.logout(login.logoutMessages);
         }
 
-        function getUser(provider,msg){
+        function getUser(){
             if (login.user == undefined){login.user = srv.user}
         }
     }
