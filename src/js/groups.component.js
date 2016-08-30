@@ -15,7 +15,6 @@
             $scope.$watch('srv.list',function(){
                 groups.techs = srv.list;
                 console.log(groups.techs);
-                console.log(srv.list.1);
             });
         }
     }
