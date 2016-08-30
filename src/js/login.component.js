@@ -34,10 +34,10 @@
         });
 
         function signIn(provider) {
-            srv.signIn(provider,login.loginMessages);
-            // .then(function(){
-            //     srv.getList();
-            // });
+            srv.signIn(provider,login.loginMessages)
+            .then(function(){
+                srv.getList();
+            });
         }
         function logout() {
             login.user = undefined;
