@@ -32,6 +32,7 @@
             return srv.tags;
         },           
           function(newVal, oldVal) {
+            groups.techs = srv.techList;
             console.log("Inside watch " + oldVal + " new Val: " + newVal);
         }, true);
     }
