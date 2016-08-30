@@ -66,12 +66,12 @@
 
 		// getting lists
 		function getTechs(){
-			var techRef = firebase.database().ref('xactware/techs');
+			var techRef = firebase.database().ref('xactware').child('filters');
 				console.log(self.techList = $firebaseArray(techRef));
    		 }		
 
    		 function getFilters(){
-			var filterRef = firebase.database().ref().child('xactware/filters');
+			var filterRef = firebase.database().ref('xactware').child('filters');
 				console.log(self.filterList = $firebaseArray(filterRef));
    		 }
 
