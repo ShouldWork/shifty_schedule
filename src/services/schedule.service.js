@@ -102,8 +102,8 @@
 	            	displayName: providerUser.displayName || providerUser.email,
                 email: providerUser.email,
                 photoURL: providerUser.photoURL,
-                lastLogin: profileRef.child("lastLogin").val(),
-	              lastLogout: new Date(firebase.database.ServerValue.TIMESTAMP).getTime(),
+                lastLogin: lastLogin,
+	              lastLogout: lastLogout,
 	              active: false
 	            }).then(function () {
 	                showToast(self.user.displayName + "'s profile updated.");
