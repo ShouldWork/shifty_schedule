@@ -41,6 +41,7 @@
             return srv.user;
         },           
           function(newVal, oldVal) {
+            groups.techs = [];
             groups.techs = srv.techList;
             groups.user = srv.displayName;
             console.log("Controller techs: " + groups.techs + " user: " + groups.user);

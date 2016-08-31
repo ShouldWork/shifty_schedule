@@ -45,7 +45,7 @@
         }
 
         function getUser(){
-            if (login.user == undefined){login.user = srv.user}
+            if (login.user == undefined){login.userLoggedIn = srv.userLoggedIn}
         }
     }
 })();

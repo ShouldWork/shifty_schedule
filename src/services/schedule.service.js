@@ -147,7 +147,7 @@
         function loginSuccess(firebaseUser,msg) {
             var deferred = $q.defer();
             // showToast(firebaseUser);
-
+            console.log(msg);
             var providerUser = firebaseUser.user ? firebaseUser.user : firebaseUser;
             var ref = firebase.database().ref("users");
             var profileRef = ref.child(providerUser.uid);
