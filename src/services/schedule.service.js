@@ -125,7 +125,7 @@
             	.then(function(){
                 console.log("Second then")
 	            	self.isLoggedIn = true;
-	              self.userLoggedIn  = providerUser.displayName;
+	              
 	              $localStorage.user = {
 	                	displayName: self.userLoggedIn,
 	                	isLoggedIn: self.isLoggedIn
@@ -171,7 +171,8 @@
                     }, function () {
                         showToast("This toast: " + self.user.diplayName);
                     });
-                } 
+                }
+                self.userLoggedIn  = providerUser.displayName; 
 		// $localStorage.user = self.userLoggedIn;
                 deferred.resolve();
             });
