@@ -1,5 +1,4 @@
 <div class="col-xlg-12 lg md sm xsm flex-row calendarBox" ng-if="$ctrl.isLoggedIn">
-	<div ng-click="setFTag()">Click me!!!</div>
     <div ng-repeat="tech in $ctrl.techs" class="row col-lg-3 xlg md sm xsm">
         <div ng-click="setFTag()" class="techTile clearBtn">
         	<h1 ng-bind="tech.name"></h1>
@@ -7,4 +6,7 @@
         	<h2 ng-if="tech.supervisor">Supervisor: {{ tech.supervisor }}</h3>
         </div>
     </div>
+</div>
+<div class="col-xlg-12 lg md sm xsm flex-row calendarBox" ng-if="!$ctrl.isLoggedIn">
+	<div class="techTile">Login to see data!</div>
 </div>
