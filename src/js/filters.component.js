@@ -7,66 +7,58 @@
     function filterController($firebaseArray,$mdToast,shiftyService,$state,$scope){
         var filter = this,
         	srv = shiftyService;
-        filter.getFilters = getFilters();
         filter.addFilter = addFilter;
         filter.addFilterEnter = addFilterEnter;
         filter.setListProperty = setListProperty;
-		filter.showToast = srv.showToast;
-		filter.newListName = "";
+		    filter.showToast = srv.showToast;
+		    filter.newListName = "";
 
-      	function getFilters(){
-           srv.showToast("Fetching filters...");
-            $scope.$watch('srv.filterList',function(){
-                filter.filters = srv.filterList;
-                console.log(filter.filters);
-            });
-        }
-
-      	function addFilter(name,set){
-			filter.showToast("Added filter " + filter.newListName);
-      		var ref = firebase.database().ref().child("xactware/filters"),
-            	dbFilters = $firebaseArray(ref);
-			dbFilters.$add({ 
-				name: name || "New filter",
-				set: set || false
+    function addFilter(name,set){
+			  filter.showToast("Added filter " + filter.newListName);
+      	var ref = firebase.database().ref().child("xactware/filters"),
+            dbFilters = $firebaseArray(ref);
+			  dbFilters.$add({ 
+    				name: name || "New filter",
+    				set: set || false
 				})
-			.then(function(ref) {
-				var id = ref.key,
-					index = dbFilters.$indexFor(id);
-			});
+			     .then(function(ref) {
+      				var id = ref.key,
+      					  index = dbFilters.$indexFor(id);
+		    });
 			filter.newListName = "";
 		}
 
 		function addFilterEnter(name,set,key){
 			if (isEnter(key)){addFilter(name,set)};
 		}
-      	function setListProperty(id){
-			var ref = firebase.database().ref().child("xactware/filters");
-			ref.child(id).once("value", function(snapshot) {
-				var data = snapshot.val();
-				var toggle = (data.set) ? false : true;
-				(!toggle) ? filter.showToast("Removed '" + data.name + "' from filters",1000) : filter.showToast("Added '" + data.name + "' to filters",1000);	
-				ref.child(id).child("set").set(toggle);
-				// data === "hello"
-			});
-			// console.log(ref.child(id).child("set").set());
-      	}
+    
+    function setListProperty(id){
+        var ref = firebase.database().ref().child("xactware/filters");
+        ref.child(id).once("value", function(snapshot) {
+            var data = snapshot.val();
+            var toggle = (data.set) ? false : true;
+            (!toggle) ? filter.showToast("Removed '" + data.name + "' from filters",1000) : filter.showToast("Added '" + data.name + "' to filters",1000);	
+            ref.child(id).child("set").set(toggle);
+            // data === "hello"
+        });
+        // console.log(ref.child(id).child("set").set());
+      }
 
-      	function isEnter(key){
+      function isEnter(key){
       		return (key.which == 13) ? true : false;
-      	}
+      }
 
-        $scope.setTechsGroup = function() {
-            srv.setTechsGroup();
-        };    
+      $scope.setTechsGroup = function() {
+          srv.setTechsGroup();
+      };    
 
-        $scope.$watch(function () {
-            return srv.isLoggedIn;
-        },           
-          function() {
-            filter.isLoggedIn = srv.isLoggedIn
-            srv.getFilters(); 
-            // console.log("Controller techs: " + groups.techs + " user: " + groups.isLoggedIn);
-        }, true);
+      $scope.$watch(function () {
+          return srv.isLoggedIn;
+      },           
+        function() {
+          filter.isLoggedIn = srv.isLoggedIn
+          filter.filters = srv.filterList;  
+          // console.log("Controller techs: " + groups.techs + " user: " + groups.isLoggedIn);
+      }, true);
     }
 })();
