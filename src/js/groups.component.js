@@ -8,7 +8,7 @@
         var groups = this,
             srv = shiftyService; 
         groups.techs = srv.techList;
-        groups.isSignedin = srv.isLoggedIn;
+        groups.isLoggedIn = srv.isLoggedIn;
 
 
         $scope.$watch('groups.techs', function(){
@@ -27,15 +27,6 @@
             console.log("Within MyCtrl->setFTag");
             srv.setFalseTag();
         };    
-
-        $scope.$watch(function () {
-            return srv.tags;
-        },           
-          function(newVal, oldVal) {
-            groups.techs = srv.techList;
-            groups.tags = srv.tags;
-            console.log("Controller techs: " + groups.techs + " tags: " + groups.tags.a);
-        }, true);
 
         $scope.$watch(function () {
             return srv.isLoggedIn;

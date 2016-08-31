@@ -1,4 +1,4 @@
-<div class="col-xlg-12 lg md sm xsm flex-row calendarBox">
+<div class="col-xlg-12 lg md sm xsm flex-row calendarBox" ng-if="$ctrl.isLoggedIn">
 	<div ng-click="setFTag()">Click me!!!</div>
     <div ng-repeat="tech in $ctrl.techs" class="row col-lg-3 xlg md sm xsm">
         <div ng-click="setFTag()" class="techTile clearBtn">
