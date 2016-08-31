@@ -96,7 +96,7 @@
 	    self.user = $firebaseObject(profileRef);
 	     if (!self.user.displayName) {
             var lastLogin = new Date(firebase.database.ServerValue.TIMESTAMP * 1000),
-                lasLogout = new Date(firebase.database.ServerValue.TIMESTAMP * 1000);
+                lastLogout = new Date(firebase.database.ServerValue.TIMESTAMP * 1000);
 	            showToast("Logging out user... " + self.user.displayName + ". Last logout: " + lastLogout,1500);
 	            profileRef.set({
 	            	displayName: providerUser.displayName || providerUser.email,
@@ -161,7 +161,7 @@
                 if (!self.user.displayName) {
                     showToast("Updating user... " + self.user.displayName + ".",1500);
                     var lastLogin = new Date(firebase.database.ServerValue.TIMESTAMP * 1000),
-                        lasLogout = new Date(firebase.database.ServerValue.TIMESTAMP * 1000);
+                        lastLogout = new Date(firebase.database.ServerValue.TIMESTAMP * 1000);
                     profileRef.set({
                         displayName: providerUser.displayName || providerUser.email,
                         email: providerUser.email,
