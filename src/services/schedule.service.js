@@ -97,18 +97,11 @@
             var profileRef = ref.child(providerUser.uid);
             console.log(profileRef);
 	    self.user = $firebaseObject(profileRef);
-	     if (!self.user.displayName) {
+	     if (self.user.displayName) {
             var lastLogin = new Date(firebase.database.ServerValue.TIMESTAMP * 1000),
                 lastLogout = new Date(firebase.database.ServerValue.TIMESTAMP * 1000);
 	            showToast("Logging out user... " + self.user.displayName + ". Last logout: " + lastLogout,1500);
-	            profileRef.set({
-	            	displayName: providerUser.displayName || providerUser.email,
-                email: providerUser.email,
-                photoURL: providerUser.photoURL,
-                lastLogin: firebase.database.ServerValue.TIMESTAMP,
-	              lastLogout: firebase.database.ServerValue.TIMESTAMP,
-	              active: false
-	            }).then(function () {
+	            profileRef.child('lastLogout').set(lastLogout).then(function () {
 	                showToast(self.user.displayName + "'s profile updated.");
 	            }, function () {
 	                showToast("Logged out: This toast: " + self.user.diplayName);
