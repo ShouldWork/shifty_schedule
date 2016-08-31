@@ -15,10 +15,6 @@
 		filter.newListName = "";
 
       	function getFilters(){
-      		return filter.filters = srv.getList("xactware/filters",false)
-      	}
-
-      	function getFilters(){
            serv.showToast("Fetching filters...");
             $scope.$watch('srv.filterList',function(){
                 filter.filters = srv.filterList;
@@ -69,7 +65,7 @@
         },           
           function() {
             filter.isLoggedIn = srv.isLoggedIn
-            getFilters(); 
+            srv.getFilters(); 
             // console.log("Controller techs: " + groups.techs + " user: " + groups.isLoggedIn);
         }, true);
     }
