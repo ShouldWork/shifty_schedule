@@ -97,7 +97,7 @@
 
         function signIn(provider,msg) {
             var auth = $firebaseAuth();
-            return auth.$signInWithPopup(provider,msg)
+            return auth.$signInWithPopup(provider)
             	.then(loginSuccess)
             	.catch(loginError);
 
