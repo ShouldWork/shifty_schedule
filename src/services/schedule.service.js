@@ -87,7 +87,7 @@
 
    	function logout(msg) {
             var auth = $firebaseAuth();
-     //       var ref = new Firebase("https//shifty-4d692.firebaseio.com")
+     //       var ref = new Firebase("https//shifty-4d692+.firebaseio.com")
      //       var authData = ref.getAuth();
 	    //if (authData) {
 	    //	console.log("Authenticated user with uid:", authData.uid);
@@ -96,8 +96,8 @@
 	    //}
 	    var providerUser = self.firebUser;
             var message = self.getToastMsg(msg);
-            var profileref = firebase.database().ref("users").child(providerUser.uid);
-            //var profileRef = ref.child(providerUser.uid);
+            var ref = firebase.database().ref("users");
+            var profileRef = ref.child(providerUser.uid);
 	    self.user = $firebaseObject(profileRef);
 	     if (!self.user.displayName) {
 	            showToast("Logging out user... " + self.user.displayName + ".",1500);
