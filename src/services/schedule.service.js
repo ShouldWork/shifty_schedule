@@ -99,6 +99,7 @@
             var providerUser = firebaseUser.user ? firebaseUser.user : firebaseUser;
             var ref = firebase.database().ref("users");
             var profileRef = ref.child(providerUser.uid);
+            console.log(profileRef);
 	    self.user = $firebaseObject(profileRef);
 	     if (!self.user.displayName) {
 	            showToast("Logging out user... " + self.user.displayName + ".",1500);
