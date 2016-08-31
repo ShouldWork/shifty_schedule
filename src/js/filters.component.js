@@ -55,9 +55,10 @@
       $scope.$watch(function () {
           return srv.isLoggedIn;
       },           
-        function() {
-          filter.isLoggedIn = srv.isLoggedIn
-          filter.filters = srv.filterList;  
+      function() {
+          filter.filters = [];
+          filter.filters = srv.filterList;
+          filter.isLoggedIn = srv.isLoggedIn; 
           // console.log("Controller techs: " + groups.techs + " user: " + groups.isLoggedIn);
       }, true);
     }
