@@ -192,7 +192,7 @@
                         displayName: providerUser.displayName || providerUser.email,
                         email: providerUser.email,
                         photoURL: providerUser.photoURL,
-                        lastLogin: new Date(firebase.database.ServerValue.TIMESTAMP).getTime(),
+                        lastLogin: new Date(firebase.database.ServerValue.TIMESTAMP * 1000),
                         lastLogout: new Date(firebase.database.ServerValue.TIMESTAMP * 1000),
                         active: true
                     }).then(function () {
