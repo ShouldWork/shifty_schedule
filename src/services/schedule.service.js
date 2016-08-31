@@ -81,7 +81,7 @@
                 newTechdatadb = $firebaseArray(newTechdata);
             newTechdatadb.$add(self.techList)
                 .then(function(newTechdata){
-                    var id = ref.key,
+                    var id = newTechdata.key,
                         index = newTechdatadb.$indexFor(id);
                 });
 			console.log(self.techList = $firebaseArray(techRef));
