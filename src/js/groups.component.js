@@ -9,6 +9,7 @@
             srv = shiftyService; 
         groups.techs = srv.techList;
         groups.isLoggedIn = srv.isLoggedIn;
+        groups.getTime = getTime;
 
 
         $scope.$watch(function () {
@@ -27,6 +28,6 @@
             return dateObject;
         }      
     }
-    var now = getTime();
+    var now = groups.getTime();
     console.log(now);
 })();
