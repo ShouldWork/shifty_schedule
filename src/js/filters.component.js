@@ -59,5 +59,17 @@
       	function isEnter(key){
       		return (key.which == 13) ? true : false;
       	}
+
+        $scope.setTechsGroup = function() {
+            srv.setTechsGroup();
+        };    
+
+        $scope.$watch(function () {
+            return srv.isLoggedIn;
+        },           
+          function() {
+            groups.isLoggedIn = srv.isLoggedIn;
+            // console.log("Controller techs: " + groups.techs + " user: " + groups.isLoggedIn);
+        }, true);
     }
 })();

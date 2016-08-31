@@ -11,31 +11,14 @@
         groups.isLoggedIn = srv.isLoggedIn;
 
 
-        $scope.$watch('groups.techs', function(){
-            return srv.techList; 
-        },
-        function(newVal, oldVal){
-            console.log(newVal);
-            console.log(oldVal);
-        }, true);
-
-        function getTechs(){
-            console.log("Getting techs list...");
-        }
-
-        $scope.setFTag = function() {
-            console.log("Within MyCtrl->setFTag");
-            srv.setFalseTag();
-        };    
-
         $scope.$watch(function () {
             return srv.isLoggedIn;
         },           
-          function(newVal, oldVal) {
+          function() {
             groups.techs = [];
             groups.techs = srv.techList;
             groups.isLoggedIn = srv.isLoggedIn;
-            console.log("Controller techs: " + groups.techs + " user: " + groups.isLoggedIn);
+            // console.log("Controller techs: " + groups.techs + " user: " + groups.isLoggedIn);
         }, true);
     }
 })();
