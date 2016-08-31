@@ -29,7 +29,7 @@
         //     getTechs();
         //     //how do I get the watch in MyCtrl to be triggered?
         // };
-        var now = moment();
+        // var now = moment();
         console.log(now);
         getTechs();
         console.log()
