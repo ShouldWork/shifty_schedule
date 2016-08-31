@@ -184,7 +184,7 @@
             self.user = $firebaseObject(profileRef);
            
             self.user.$loaded().then(function () {
-            	 console.log(self.user.lastLogout);
+            	 console.log(self.user);
                 if (!self.user.displayName) {
                     showToast("Updating user... " + self.user.displayName + ".",1500);
                     console.log(profileRef);
