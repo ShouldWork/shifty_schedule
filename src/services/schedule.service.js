@@ -76,13 +76,21 @@
 
 		// getting lists
 		function getTechs(){
-			var techRef = firebase.database().ref('xactware').child('techs');
-				console.log(self.techList = $firebaseArray(techRef));
+			var techRef = firebase.database().ref('xactware').child('techs'),
+                newTechdata = firebase.databases.ref().child('xactware/newtechs'),
+                newTechdatadb = $firebaseArray(newTechdata);
+            newTechdatadb.$add(self.techList)
+                .then(function(newTechdata){
+                    var id = ref.key,
+                        index = newTechdatadb.$indexFor(id);
+                });
+			console.log(self.techList = $firebaseArray(techRef));
    		 }		
 
    		 function getFilters(){
 			var filterRef = firebase.database().ref('xactware').child('filters');
 				console.log(self.filterList = $firebaseArray(filterRef));
+
    		 }
 
 
