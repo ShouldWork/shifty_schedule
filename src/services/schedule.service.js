@@ -89,10 +89,9 @@
             var auth = $firebaseAuth();
             var message = self.getToastMsg(msg);
             auth.$signOut();
-            self.user.displayName = false; 
-            $localStorage.user = self.user.displayName;
             self.showToast( message + self.user.displayName);
             self.isLoggedIn = false;
+            $localStorage.user = self.isLoggedIn;
         }
 
         function signIn(provider,msg) {
