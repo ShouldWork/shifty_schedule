@@ -27,5 +27,6 @@
             return dateObject;
         }      
     }
-    console.log(var now = getTime());
+    var now = getTime();
+    console.log(now);
 })();
