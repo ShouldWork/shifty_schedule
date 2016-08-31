@@ -1,6 +1,6 @@
 (function(){
     angular.module("shiftyApp")
         .component('example', {
-            templateUrl: "src/html/example.firebaseauth.component.html"
+            templateUrl: "src/html/example.firebaseAuth.component.html"
         })
 }());
