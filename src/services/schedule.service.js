@@ -129,39 +129,15 @@
             var auth = $firebaseAuth();
             return auth.$signInWithPopup(provider)
             	.then(loginSuccess)
+            	.then(function(){
+	            	self.isLoggedIn = true;
+	                self.userLoggedIn  = providerUser.displayName;
+	                $localStorage.user = {
+	                	displayName: self.userLoggedIn,
+	                	isLoggedIn: self.isLoggedIn
+	                }
+            	})
             	.catch(loginError);
-
-            // // login with provider
-            // auth.$signInWithPopup(provider).then(function (firebaseUser) {
-            //     self.displayName = firebaseUser.user.displayName;
-            //     self.providerUser = firebaseUser.user;
-
-            //     var ref = firebase.database().ref("users"),
-            //         profileRef = ref.child(self.providerUser.uid);
-            //     self.user = $firebaseObject(profileRef);
-            //     self.user.$loaded().then(function () {
-            //         if (!self.user.displayName) {
-            //             self.showToast("Creating user...");
-            //             profileRef.set({
-            //                 displayName: self.providerUser.displayName,
-            //                 email: self.providerUser.email,
-            //                 photoURL: self.providerUser.photoURL,
-            //                 chatColor: 'blue'
-            //             }).then(function () {
-            //                 self.showToast("New user created. Welcome, " + self.providerUser.displayName + "!");
-            //             }, function () {
-            //                 self.showToast("User could not be created.");
-            //             });
-            //         } else {
-            //         	var message = getToastMsg(msg);
-            //             self.showToast(message + self.providerUser.displayName);
-            //         }
-            //         $localStorage.user = self.user = self.providerUser.displayName; 
-            //         return self.user;
-            //     });
-            // }).catch(function (error) {
-            //     $log.log("Authentication failed:", error);
-            // });
         }
 
         function getUser(){
@@ -202,12 +178,6 @@
                         showToast("This toast: " + self.user.diplayName);
                     });
                 } 
-                self.isLoggedIn = true;
-                self.userLoggedIn  = providerUser.displayName;
-                $localStorage.user = {
-                	displayName: self.userLoggedIn,
-                	isLoggedIn: self.isLoggedIn
-                }
 		// $localStorage.user = self.userLoggedIn;
                 deferred.resolve();
             });
