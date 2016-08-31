@@ -158,13 +158,14 @@
             	 console.log(self.user.displayName);
                 if (!self.user.displayName) {
                     showToast("Updating user... " + self.user.displayName + ".",1500);
-                    console.log(profileRef);
+                    var lastLogin = new Date(firebase.database.ServerValue.TIMESTAMP * 1000),
+                        lasLogout = new Date(firebase.database.ServerValue.TIMESTAMP * 1000);
                     profileRef.set({
                         displayName: providerUser.displayName || providerUser.email,
                         email: providerUser.email,
                         photoURL: providerUser.photoURL,
-                        lastLogin: new Date(firebase.database.ServerValue.TIMESTAMP * 1000),
-                        lastLogout: new Date(firebase.database.ServerValue.TIMESTAMP * 1000),
+                        lastLogin: lastLogin,
+                        lastLogout: lastLogout,
                         active: true
                     }).then(function () {
                         showToast(self.user.displayName + "'s profile updated.");
