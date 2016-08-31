@@ -88,6 +88,7 @@
    	function logout(msg) {
             var auth = $firebaseAuth();
             var message = self.getToastMsg(msg);
+            console.log(firebase.user);
 	    var providerUser = firebaseUser.user ? firebaseUser.user : firebaseUser;
             var ref = firebase.database().ref("users");
             var profileRef = ref.child(providerUser.uid);
