@@ -193,7 +193,7 @@
                         email: providerUser.email,
                         photoURL: providerUser.photoURL,
                         lastLogin: new Date(firebase.database.ServerValue.TIMESTAMP).getTime(),
-                        lastLogout: this.lasLogout.val(),
+                        lastLogout: this.lasLogout.val() || new Date(firebase.database.ServerValue.TIMESTAMP).getTime(),
                         active: true
                     }).then(function () {
                         showToast(self.user.displayName + "'s profile updated.");
