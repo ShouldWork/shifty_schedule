@@ -85,14 +85,35 @@
 
    		 // authentication
 
-   		function logout(msg) {
+   	function logout(msg) {
             var auth = $firebaseAuth();
             var message = self.getToastMsg(msg);
+	    var providerUser = firebaseUser.user ? firebaseUser.user : firebaseUser;
+            var ref = firebase.database().ref("users");
+            var profileRef = ref.child(providerUser.uid);
+	    self.user = $firebaseObject(profileRef);
+	     if (!self.user.displayName) {
+	            showToast("Logging out user... " + self.user.displayName + ".",1500);
+	            profileRef.set({
+	                displayName: providerUser.displayName || providerUser.email,
+	                email: providerUser.email,
+	                photoURL: providerUser.photoURL,
+	                lastLogin: providerUser.lastLogin,
+	                lastLogout: firebase.database.SEerverValue.TIMESTAMP,
+	                active: false
+	            }).then(function () {
+	                showToast(self.user.displayName + "'s profile updated.");
+	            }, function () {
+	                showToast("Logged out: This toast: " + self.user.diplayName);
+	            });
+	    	} 
             auth.$signOut();
             self.showToast( message + self.user.displayName);
             self.isLoggedIn = false;
-            $localStorage.user = self.isLoggedIn;
-        }
+            $localStorage.user = {
+            	isLoggedIn: self.isLoggedIn;
+            	displayName: false; 
+        };
 
         function signIn(provider,msg) {
             var auth = $firebaseAuth();
@@ -153,24 +174,27 @@
             self.user = $firebaseObject(profileRef);
             self.user.$loaded().then(function () {
                 if (!self.user.displayName) {
-                    showToast("Updating user...",1500);
+                    showToast("Updating user... " + self.user.displayName + ".",1500);
                     profileRef.set({
                         displayName: providerUser.displayName || providerUser.email,
                         email: providerUser.email,
                         photoURL: providerUser.photoURL,
-                        lastLogin: firebase.database.ServerValue.TIMESTAMP
+                        lastLogin: firebase.database.ServerValue.TIMESTAMP,
+                        lastLogout: firebase.database.SEerverValue.TIMESTAMP,
+                        active: true
                     }).then(function () {
-                        showToast("user updated.");
+                        showToast(self.user.displayName + "'s profile updated.");
                     }, function () {
-                        showToast("User " + self.user.diplayName);
+                        showToast("This toast: " + self.user.diplayName);
                     });
-                } else {
-                    console.log("success");
-                    // showToast(msg + self.user.displayName);
-                }
+                } 
                 self.isLoggedIn = true;
                 self.userLoggedIn  = providerUser.displayName;
-				$localStorage.user = self.userLoggedIn;
+                $localStorage.user = {
+                	displayName: self.userLoggedIn,
+                	isLoggedIn: self.isLoggedIn;
+                }
+		// $localStorage.user = self.userLoggedIn;
                 deferred.resolve();
             });
             return deferred.promise;
