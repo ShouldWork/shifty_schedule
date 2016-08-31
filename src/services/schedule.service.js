@@ -139,6 +139,8 @@
             console.log(user);
             if (user !== undefined){
                 return user; 
+            } else {
+                return false;
             }
         }
 
@@ -167,8 +169,8 @@
                     showToast(msg + self.user.displayName);
                 }
                 self.isLoggedIn = true;
-                self.user.displayName = providerUser.displayName;
-				$localStorage.user = self.user.displayName;
+                self.userLoggedIn  = providerUser.displayName;
+				$localStorage.user = self.userLoggedIn;
                 deferred.resolve();
             });
             return deferred.promise;
