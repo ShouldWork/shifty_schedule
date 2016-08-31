@@ -13,7 +13,7 @@
         login.loginMessages = ['Welcome back, ','We have a lot to discuss, ','It\s you again, ', 'Hello,  ','Salutations, ','How you doing, ','You\'re looking good, ','Another great day ahead for, ','Let\'s schedule somethinng, ','I missed you...a little. Welcome back, ']
         
         // local functions
-        login.getUser = getUser();
+        login.isLoggedIn = srv.isLoggedIn
         login.signIn = signIn;
         login.logout = logout;
 
@@ -34,18 +34,15 @@
 
         function signIn(provider) {
             srv.signIn(provider,login.loginMessages).then(function(){
+                login.isLoggedIn = srv.isLoggedIn;
                 srv.getTechs();
                 srv.getFilters();
             });
         }
 
         function logout() {
-            login.user = undefined;
+            login.isLoggedIn = false; 
             srv.logout(login.logoutMessages);
-        }
-
-        function getUser(){
-            if (login.userLoggedIn == undefined){login.userLoggedIn = srv.userLoggedIn}
         }
     }
 })();
