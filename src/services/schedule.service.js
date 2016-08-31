@@ -155,9 +155,6 @@
             self.user.$loaded().then(function () {
             	 console.log(self.user.displayName);
                 if (!self.user.displayName) {
-                    showToast("Updating user... " + self.user.displayName + ".",1500);
-                    var lastLogin = new Date(firebase.database.ServerValue.TIMESTAMP * 1000),
-                        lastLogout = new Date(firebase.database.ServerValue.TIMESTAMP * 1000);
                     profileRef.set({
                         filterColor: 'Blue',
                         displayName: providerUser.displayName || providerUser.email,
@@ -167,9 +164,9 @@
                         lastLogout: firebase.database.ServerValue.TIMESTAMP,
                         active: true
                     }).then(function () {
-                        showToast(self.user.displayName + "'s profile updated.");
+                        showToast(self.user.displayName + "'s profile updated.",1500);
                     }, function () {
-                        showToast("This toast: " + self.user.diplayName);
+                        showToast("This toast: " + self.user.diplayName,1500);
                     });
                 }
                 self.userLoggedIn  = providerUser.displayName; 
