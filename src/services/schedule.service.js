@@ -77,7 +77,7 @@
 		// getting lists
 		function getTechs(){
 			var techRef = firebase.database().ref('xactware').child('techs'),
-                newTechdata = firebase.databases.ref().child('xactware/newtechs'),
+                newTechdata = firebase.database().ref().child('xactware/newtechs'),
                 newTechdatadb = $firebaseArray(newTechdata);
             newTechdatadb.$add(self.techList)
                 .then(function(newTechdata){
