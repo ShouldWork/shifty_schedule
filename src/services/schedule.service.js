@@ -87,8 +87,8 @@
 
    	function logout(msg) {
             var auth = $firebaseAuth();
-            console.log(auth);
-            var authData = auth.getAuth();
+            var ref = new Firebase("shifty-4d692.firebaseio.com")
+            var authData = ref.getAuth();
 	    if (authData) {
 	    	console.log("Authenticated user with uid:", authData.uid);
 	    } else {
