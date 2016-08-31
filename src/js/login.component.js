@@ -37,7 +37,8 @@
                 login.isLoggedIn = srv.isLoggedIn;
                 srv.getTechs();
                 srv.getFilters();
-                srv.showToast(login.loginMessages + srv.user.displayName);
+                var msg = srv.getToastMsg(login.loginMessages);
+                srv.showToast(msg + srv.user.displayName);
             });
         }
 
