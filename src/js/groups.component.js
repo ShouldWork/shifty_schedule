@@ -20,5 +20,12 @@
             groups.isLoggedIn = srv.isLoggedIn;
             // console.log("Controller techs: " + groups.techs + " user: " + groups.isLoggedIn);
         }, true);
+
+        function getTime(){
+            var date = new Date(timestamp * 1000);
+            var dateObject = date.getFullYear() +'/'+ ('0' + (date.getMonth() + 1)).slice(-2) +'/'+ ('0' + date.getDate()).slice(-2);
+            return dateObject;
+        }      
     }
+    console.log(var now = getTime());
 })();
