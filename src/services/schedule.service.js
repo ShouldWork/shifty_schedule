@@ -182,7 +182,9 @@
             var ref = firebase.database().ref("users");
             var profileRef = ref.child(providerUser.uid);
             self.user = $firebaseObject(profileRef);
+           
             self.user.$loaded().then(function () {
+            	 console.log(self.user.lastLogout);
                 if (!self.user.displayName) {
                     showToast("Updating user... " + self.user.displayName + ".",1500);
                     console.log(profileRef);
