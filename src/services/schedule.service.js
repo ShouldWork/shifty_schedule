@@ -95,14 +95,16 @@
             console.log(profileRef);
 	    self.user = $firebaseObject(profileRef);
 	     if (!self.user.displayName) {
-	            showToast("Logging out user... " + self.user.displayName + ".",1500);
+            var lastLogin = new Date(firebase.database.ServerValue.TIMESTAMP * 1000),
+                lasLogout = new Date(firebase.database.ServerValue.TIMESTAMP * 1000);
+	            showToast("Logging out user... " + self.user.displayName + ". Last logout: " + lastLogout,1500);
 	            profileRef.set({
 	            	displayName: providerUser.displayName || providerUser.email,
-                        email: providerUser.email,
-                        photoURL: providerUser.photoURL,
-                        lastLogin: profileRef.child("lastLogin").val(),
-	                lastLogout: new Date(firebase.database.ServerValue.TIMESTAMP).getTime(),
-	                active: false
+                email: providerUser.email,
+                photoURL: providerUser.photoURL,
+                lastLogin: profileRef.child("lastLogin").val(),
+	              lastLogout: new Date(firebase.database.ServerValue.TIMESTAMP).getTime(),
+	              active: false
 	            }).then(function () {
 	                showToast(self.user.displayName + "'s profile updated.");
 	            }, function () {
