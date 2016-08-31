@@ -34,8 +34,8 @@
           function(newVal, oldVal) {
             groups.techs = [];
             groups.techs = srv.techList;
-            groups.user = srv.isLoggedIn;
-            console.log("Controller techs: " + groups.techs + " user: " + groups.user);
+            groups.isLoggedIn = srv.isLoggedIn;
+            console.log("Controller techs: " + groups.techs + " user: " + groups.isLoggedIn);
         }, true);
     }
 })();
