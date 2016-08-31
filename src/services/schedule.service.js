@@ -102,8 +102,8 @@
 	            	displayName: providerUser.displayName || providerUser.email,
                 email: providerUser.email,
                 photoURL: providerUser.photoURL,
-                lastLogin: lastLogin,
-	              lastLogout: lastLogout,
+                lastLogin: firebase.database.ServerValue.TIMESTAMP,
+	              lastLogout: firebase.database.ServerValue.TIMESTAMP,
 	              active: false
 	            }).then(function () {
 	                showToast(self.user.displayName + "'s profile updated.");
@@ -163,11 +163,12 @@
                     var lastLogin = new Date(firebase.database.ServerValue.TIMESTAMP * 1000),
                         lastLogout = new Date(firebase.database.ServerValue.TIMESTAMP * 1000);
                     profileRef.set({
+                        filterColor: 'Blue',
                         displayName: providerUser.displayName || providerUser.email,
                         email: providerUser.email,
                         photoURL: providerUser.photoURL,
-                        lastLogin: lastLogin,
-                        lastLogout: lastLogout,
+                        lastLogin: firebase.database.ServerValue.TIMESTAMP,
+                        lastLogout: firebase.database.ServerValue.TIMESTAMP,
                         active: true
                     }).then(function () {
                         showToast(self.user.displayName + "'s profile updated.");
