@@ -19,7 +19,7 @@
       	}
 
       	function getFilters(){
-            console.log("Fetching filters...");
+           serv.showToast("Fetching filters...");
             $scope.$watch('srv.filterList',function(){
                 filter.filters = srv.filterList;
                 console.log(filter.filters);
