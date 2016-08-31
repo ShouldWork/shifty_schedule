@@ -68,7 +68,8 @@
             return srv.isLoggedIn;
         },           
           function() {
-            filter.isLoggedIn = srv.isLoggedIn;
+            filter.isLoggedIn = srv.isLoggedIn
+            getFilters(); 
             // console.log("Controller techs: " + groups.techs + " user: " + groups.isLoggedIn);
         }, true);
     }
