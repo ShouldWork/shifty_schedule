@@ -88,6 +88,12 @@
    	function logout(msg) {
             var auth = $firebaseAuth();
             console.log(auth);
+            var authData = auth.getAuth();
+	    if (authData) {
+	    	console.log("Authenticated user with uid:", authData.uid);
+	    } else {
+	    	console.log("Not Authenticated user with uid:", authData.uid);
+	    }
             var message = self.getToastMsg(msg);
             var profileref = firebase.database().ref("users").child();
             var profileRef = ref.child(providerUser.uid);
