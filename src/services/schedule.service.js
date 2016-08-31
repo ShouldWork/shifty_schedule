@@ -113,6 +113,7 @@
             $localStorage.user = {
             	isLoggedIn: self.isLoggedIn;
             	displayName: false; 
+            }
         };
 
         function signIn(provider,msg) {
