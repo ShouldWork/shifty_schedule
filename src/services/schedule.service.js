@@ -17,7 +17,7 @@
 		self.logout 	 = logout; 		
 		self.signIn 	 = signIn;
 		self.getUser  	 = getUser(); 
-		self.isLoggedIn  = true;
+		self.isLoggedIn  = false;
         self.tags        = {a: true,b: false};
 		self.list 		 = undefined; 
 		self.filterList	 = undefined;
