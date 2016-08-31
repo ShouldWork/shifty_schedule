@@ -185,6 +185,7 @@
             self.user.$loaded().then(function () {
                 if (!self.user.displayName) {
                     showToast("Updating user... " + self.user.displayName + ".",1500);
+                    console.log(profileRef);
                     profileRef.set({
                         displayName: providerUser.displayName || providerUser.email,
                         email: providerUser.email,
