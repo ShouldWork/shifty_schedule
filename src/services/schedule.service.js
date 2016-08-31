@@ -100,8 +100,8 @@
 	     if (self.user.displayName) {
             var lastLogin = new Date(firebase.database.ServerValue.TIMESTAMP * 1000),
                 lastLogout = new Date(firebase.database.ServerValue.TIMESTAMP * 1000);
-	            showToast("Logging out user... " + self.user.displayName + ". Last logout: " + lastLogout,1500);
-	            profileRef.child('lastLogout').set(lastLogout).then(function () {
+	            // showToast("Logging out user... " + self.user.displayName + ". Last logout: " + lastLogout,1500);
+	            profileRef.child('lastLogout').set(lastLogout + 'Updated by Blake').then(function () {
 	                showToast(self.user.displayName + "'s profile updated.");
 	            }, function () {
 	                showToast("Logged out: This toast: " + self.user.diplayName);
