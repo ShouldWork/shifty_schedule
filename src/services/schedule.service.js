@@ -30,9 +30,9 @@
         //     //how do I get the watch in MyCtrl to be triggered?
         // };
         // var now = moment();
-        console.log(now);
+        // console.log(now);
         getTechs();
-        console.log()
+        // console.log()
         getFilters();
 
 		// Toast setup and functions
