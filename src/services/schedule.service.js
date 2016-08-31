@@ -193,7 +193,7 @@
                 self.userLoggedIn  = providerUser.displayName;
                 $localStorage.user = {
                 	displayName: self.userLoggedIn,
-                	isLoggedIn: self.isLoggedIn;
+                	isLoggedIn: self.isLoggedIn
                 }
 		// $localStorage.user = self.userLoggedIn;
                 deferred.resolve();
