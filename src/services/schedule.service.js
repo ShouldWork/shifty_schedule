@@ -87,19 +87,14 @@
 
    	function logout(msg) {
             var auth = $firebaseAuth();
+            console.log(auth);
             var message = self.getToastMsg(msg);
-            console.log(firebase.user);
-	    var providerUser = firebaseUser.user ? firebaseUser.user : firebaseUser;
-            var ref = firebase.database().ref("users");
+            var profileref = firebase.database().ref("users").child();
             var profileRef = ref.child(providerUser.uid);
 	    self.user = $firebaseObject(profileRef);
 	     if (!self.user.displayName) {
 	            showToast("Logging out user... " + self.user.displayName + ".",1500);
 	            profileRef.set({
-	                displayName: providerUser.displayName || providerUser.email,
-	                email: providerUser.email,
-	                photoURL: providerUser.photoURL,
-	                lastLogin: providerUser.lastLogin,
 	                lastLogout: firebase.database.SEerverValue.TIMESTAMP,
 	                active: false
 	            }).then(function () {
