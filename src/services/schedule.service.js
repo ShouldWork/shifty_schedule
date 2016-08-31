@@ -166,7 +166,8 @@
                         showToast("User " + self.user.diplayName);
                     });
                 } else {
-                    showToast(msg + self.user.displayName);
+                    console.log("success");
+                    // showToast(msg + self.user.displayName);
                 }
                 self.isLoggedIn = true;
                 self.userLoggedIn  = providerUser.displayName;
