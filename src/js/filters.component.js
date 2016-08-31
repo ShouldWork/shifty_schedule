@@ -15,7 +15,7 @@
 		filter.newListName = "";
 
       	function getFilters(){
-           serv.showToast("Fetching filters...");
+           srv.showToast("Fetching filters...");
             $scope.$watch('srv.filterList',function(){
                 filter.filters = srv.filterList;
                 console.log(filter.filters);
