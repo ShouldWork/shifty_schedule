@@ -111,9 +111,9 @@
             self.showToast( message + self.user.displayName);
             self.isLoggedIn = false;
             $localStorage.user = {
-            	isLoggedIn: self.isLoggedIn;
-            	displayName: false; 
-            }
+            	isLoggedIn: self.isLoggedIn,
+            	displayName: false
+            };
         };
 
         function signIn(provider,msg) {
