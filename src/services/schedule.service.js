@@ -9,19 +9,19 @@
 
     
     function shiftyService($state,$q, $log, $sessionStorage, $localStorage,$state,$mdToast,$firebaseObject,$firebaseArray,$firebaseAuth) {
-		var self = this;
-		self.showToast   = showToast;
-		self.getToastMsg = getToastMsg; 
-		self.getTechs    = getTechs; 
-		self.getFilters  = getFilters; 
-		self.logout 	 = logout; 		
-		self.signIn 	 = signIn;
-		self.getUser  	 = getUser(); 
-		self.isLoggedIn  = false;
+    		var self = this;
+    		self.showToast   = showToast;
+    		self.getToastMsg = getToastMsg; 
+    		self.getTechs    = getTechs; 
+    		self.getFilters  = getFilters; 
+    		self.logout 	 = logout; 		
+    		self.signIn 	 = signIn;
+    		self.getUser  	 = getUser(); 
+    		self.isLoggedIn  = false;
         self.tags        = {a: true,b: false};
-		self.list 		 = undefined; 
-		self.filterList	 = undefined;
-		self.techList 	 = undefined; 
+    		self.list 		 = undefined; 
+    		self.filterList	 = undefined;
+    		self.techList 	 = undefined; 
         // self.setTechsGroup = function() {
         //     console.log("Within myService->setFalseTag" + self.techList);
         //     self.tags.a = false;
@@ -29,7 +29,10 @@
         //     getTechs();
         //     //how do I get the watch in MyCtrl to be triggered?
         // };
+        new now = moment();
+        console.log(now);
         getTechs();
+        console.log()
         getFilters();
 
 		// Toast setup and functions
