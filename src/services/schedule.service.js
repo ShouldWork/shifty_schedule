@@ -94,8 +94,9 @@
 	    //} else {
 	    //	console.log("Not Authenticated user with uid:", authData.uid);
 	    //}
-	    var providerUser = self.firebUser;
+	    var firebaseUser = self.firebUser;
             var message = self.getToastMsg(msg);
+            var providerUser = firebaseUser.user ? firebaseUser.user : firebaseUser;
             var ref = firebase.database().ref("users");
             var profileRef = ref.child(providerUser.uid);
 	    self.user = $firebaseObject(profileRef);
