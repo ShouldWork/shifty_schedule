@@ -103,7 +103,7 @@
 	     if (!self.user.displayName) {
 	            showToast("Logging out user... " + self.user.displayName + ".",1500);
 	            profileRef.set({
-	                lastLogout: firebase.database.ServerValue.TIMESTAMP,
+	                lastLogout: new Date(firebase.database.ServerValue.TIMESTAMP).getTime(),
 	                active: false
 	            }).then(function () {
 	                showToast(self.user.displayName + "'s profile updated.");
@@ -185,7 +185,7 @@
                         displayName: providerUser.displayName || providerUser.email,
                         email: providerUser.email,
                         photoURL: providerUser.photoURL,
-                        lastLogin: firebase.database.ServerValue.TIMESTAMP,
+                        lastLogin: new Date(firebase.database.ServerValue.TIMESTAMP).getTime(),
                         lastLogout: firebase.database.ServerValue.TIMESTAMP,
                         active: true
                     }).then(function () {
