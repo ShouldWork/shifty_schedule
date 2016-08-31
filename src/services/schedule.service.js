@@ -97,7 +97,7 @@
 
         function signIn(provider,msg) {
             var auth = $firebaseAuth();
-            return auth.$signInWithPopup(provider)
+            return auth.$signInWithPopup(provider,msg)
             	.then(loginSuccess)
             	.catch(loginError);
 
@@ -142,7 +142,7 @@
             }
         }
 
-        function loginSuccess(firebaseUser) {
+        function loginSuccess(firebaseUser,msg) {
             var deferred = $q.defer();
             // showToast(firebaseUser);
 
