@@ -140,13 +140,8 @@
 
         function getUser(){
             var user = $localStorage.user; 
-            console.log(user.isLoggedIn + " vs: " + self.isLoggedIn);
-            if (user.isLoggedIn !== false){
-                return self.isLoggedIn = true; 
-            } else {
-                return self.isLoggedIn = false;
-            }
-            console.log(user.isLoggedIn + " vs: " + self.isLoggedIn);
+            self.isLoggedIn = user.isLoggedIn
+            console.log(user.isLoggedIn + " vs: " + self.isLoggedIn); 
         }
 
         function loginSuccess(firebaseUser,msg) {
