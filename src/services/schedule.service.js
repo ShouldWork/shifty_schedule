@@ -82,10 +82,12 @@
                 data = snapshot.val();
                 console.log(data);
                 console.log(snapshot.key);
+            })
+            .then(function(){
+                console.log(data)
+                self.techList = data; 
+                console.log(self.techList);
             });
-            console.log(data)
-            self.techList = data; 
-            console.log(self.techList);
 		    // console.log(self.techList = data);
    		 }		
 
