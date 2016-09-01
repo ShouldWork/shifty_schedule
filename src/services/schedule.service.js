@@ -80,6 +80,7 @@
             var data = {};
             techRef.orderByKey().on("value", function(snapshot) {
                 data = snapshot.val();
+                console.log($firebaseArray(techRef));
                 console.log(self.techList = data);
             })
 		    // console.log(self.techList = data);
