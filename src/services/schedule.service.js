@@ -77,12 +77,13 @@
 		// getting lists
 		function getTechs(){
 			var techRef = firebase.database().ref().child('xactware/techs');
+            var data;
             techRef.orderByKey().on("value", function(snapshot) {
-                var data = snapshot.val();
+                data = snapshot.val();
                 console.log(data);
                 console.log(snapshot.key);
             });
-		    console.log(self.techList = $firebaseArray(techRef));
+		    console.log(self.techList = data);
    		 }		
 
    		 function getFilters(){
@@ -96,7 +97,7 @@
 
    	function logout(msg) {
             var auth = $firebaseAuth();
-	    var firebaseUser = self.firebUser;
+	        var firebaseUser = self.firebUser;
             var message = self.getToastMsg(msg);
             var providerUser = firebaseUser.user ? firebaseUser.user : firebaseUser;
             var ref = firebase.database().ref("users");
