@@ -80,14 +80,8 @@
             var data = {};
             techRef.orderByKey().on("value", function(snapshot) {
                 data = snapshot.val();
-                console.log(data);
-                console.log(snapshot.key);
+                console.log(self.techList = data);
             })
-            .then(function(){
-                console.log(data)
-                self.techList = data; 
-                console.log(self.techList);
-            });
 		    // console.log(self.techList = data);
    		 }		
 
