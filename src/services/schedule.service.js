@@ -85,7 +85,7 @@
             });
             console.log(data)
             self.techList = data; 
-            consol.log(self.techList);
+            console.log(self.techList);
 		    // console.log(self.techList = data);
    		 }		
 
