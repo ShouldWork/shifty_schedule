@@ -140,7 +140,7 @@
 
         function getUser(){
             var user = $localStorage.user; 
-            console.log(user);
+            console.log(user.isLoggedIn);
             if (user.isLoggedIn !== false){
                 return self.isLoggedIn = true; 
             } else {
