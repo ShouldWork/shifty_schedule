@@ -23,7 +23,7 @@
     		self.filterList	 = undefined;
     		self.techList 	 = undefined; 
             self.getTime     = getTime; 
-            getUser();
+
 
 
         function getTime(){
