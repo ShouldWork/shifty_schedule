@@ -22,17 +22,17 @@
     		self.list 		 = undefined; 
     		self.filterList	 = undefined;
     		self.techList 	 = undefined; 
-        // self.setTechsGroup = function() {
-        //     console.log("Within myService->setFalseTag" + self.techList);
-        //     self.tags.a = false;
-        //     self.tags.b = false;
-        //     getTechs();
-        //     //how do I get the watch in MyCtrl to be triggered?
-        // };
-        // var now = moment();
-        // console.log(now);
+            self.getTime     = getTime; 
+
+
+
+        function getTime(){
+            var date = new Date();
+            var dateObject = date.getFullYear() +'/'+ ('0' + (date.getMonth() + 1)).slice(-2) +'/'+ ('0' + date.getDate()).slice(-2);
+            return dateObject;
+        }  
+
         getTechs();
-        // console.log()
         getFilters();
 
 		// Toast setup and functions
@@ -159,14 +159,14 @@
             self.user = $firebaseObject(profileRef);
            
             self.user.$loaded().then(function () {
-            	 console.log(self.user.displayName);
+            	var now = self.getTime();
                 if (!self.user.displayName) {
                     profileRef.set({
                         filterColor: 'Blue',
                         displayName: providerUser.displayName || providerUser.email,
                         email: providerUser.email,
                         photoURL: providerUser.photoURL,
-                        lastLogin: firebase.database.ServerValue.TIMESTAMP,
+                        lastLogin: now,
                         lastLogout: firebase.database.ServerValue.TIMESTAMP,
                         active: true
                     }).then(function () {
