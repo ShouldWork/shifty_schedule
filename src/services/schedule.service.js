@@ -83,7 +83,10 @@
                 console.log(data);
                 console.log(snapshot.key);
             });
-		    console.log(self.techList = data);
+            console.log(data)
+            self.techList = data; 
+            consol.log(self.techList);
+		    // console.log(self.techList = data);
    		 }		
 
    		 function getFilters(){
