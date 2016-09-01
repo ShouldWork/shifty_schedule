@@ -80,7 +80,7 @@
             techRef.orderByKey().on("value", function(snapshot) {
                 var data = snapshot.val();
                 console.log(data);
-                console.log(snapshot.key());
+                console.log(snapshot.key);
             });
 		    console.log(self.techList = $firebaseArray(techRef));
    		 }		
@@ -141,10 +141,10 @@
         function getUser(){
             var user = $localStorage.user; 
             console.log(user);
-            if (user !== undefined){
-                return user; 
+            if (user.isLoggedIn !== undefined){
+                return self.isLoggedIn = true; 
             } else {
-                return false;
+                return self.isLoggedIn = false;
             }
         }
 
