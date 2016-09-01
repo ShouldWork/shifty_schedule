@@ -77,7 +77,9 @@
 		// getting lists
 		function getTechs(){
 			var techRef = firebase.database().ref().child('xactware/techs');
-            techRef.orderByKey().on("child_added", function(snapshot) {
+            techRef.orderByKey().on("value", function(snapshot) {
+                var data = snapshot.val();
+                console.log(data);
                 console.log(snapshot.key());
             });
 		    console.log(self.techList = $firebaseArray(techRef));
