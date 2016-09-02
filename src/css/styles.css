@@ -108,6 +108,8 @@
     padding: 0.5em;
     max-height: 80vh;
     overflow: auto;
+    min-height: 80vh;
+    justify-content: center;
 }
 
 .calendarBox::-webkit-scrollbar{ 
@@ -147,8 +149,9 @@
 
     border: 2px solid white;
     width: 7.5em;
+    max-width: 500px;
     position: absolute;
-    padding: .5em;
+    /*padding: .5em;*/
     top: 5px;
     right: 5px;
     transition: all .5s ease-in;
@@ -164,6 +167,7 @@
 .accessBox:hover .userImg{
     opacity: 1;
     display: block;
+    transform: rotate(-1080deg);
 }
 
 .accessBox:hover .usrName{
@@ -173,7 +177,7 @@
 
 .accessBox:hover .usrLogin{
     opacity: 1;
-    top: 1em;
+    top: 1.5em;
     left: 4.5em;
 }
 .userImg{
@@ -186,7 +190,7 @@
     left: 0.5em;
     opacity: 0;
     overflow: hidden;
-    transition: all .5s ease-out;
+    transition: all .75s ease-out;
 }
 .usrName , .usrLogin{
     position: absolute;
@@ -199,20 +203,30 @@
     transition: all .5s ease-out;
 }
 
+.infoBox{
+    right: 0;
+    transition: all 1s ease-in;
+}
+
+.infoBox:hover{
+    left: 0;
+}
+
 .usrLogin{
     top: -1.5em;
 }
 .loginButton{
     position: absolute;
-    top: 0.1em;
+    top: 1em;
     border: none;
     right: 0.1em;
     outline: 0;
     width: 100px;
-
+    transition: all .25s ease-out;    
 }
 .loginButton:hover{
-    border-radius: 25px;
+    border:none;
+    
     outline: 0;
 }
 
@@ -250,7 +264,7 @@ margin: 1px;
     outline: 0;
 }
 
-.addFilter , .addFilter:active , .addFilter:hover{
+.addFilter , .addFilter:active , .addFilter:hover, #searchBox{
     /*background: linear-gradient(-90deg,transparent,rgba(0,0,0,0.15));*/
     background: transparent;
     outline: 0;
@@ -288,10 +302,10 @@ margin: 1px;
 
 .techTile{
     /*background: linear-gradient(-180deg,transparent,rgba(0,0,0,0.5),transparent);*/
-    margin: 0;
+    margin: 2px;
     transition: all .25s ease-out;
     color: ghostWhite;
-    padding: 1em;
+    padding: .75em;
     border: 1px solid transparent;
 }
 .techTile:hover{

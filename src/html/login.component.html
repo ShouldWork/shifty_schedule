@@ -1,5 +1,5 @@
 <div id="usercard" class="accessBox">
-	<div>
+	<div class="">
 		<div ng-if="$ctrl.isLoggedIn"class="userImg">
 			<img ng-src="{{ $ctrl.currentUser.userImage }}"/>
 		</div>
@@ -8,16 +8,17 @@
 			<h3 class="usrLogin"> {{ $ctrl.currentUser.loggedIn }} </h3>
 		</div>
 		<div ng-if="!$ctrl.isLoggedIn">
-			<h3 style="left: .5em" class="usrName">Sign in and check it out!</h3>
+			<h3 class="usrName">Sign in and check it out!</h3>
 		</div>
 	</div>		
-	<div class="loginButton">
+	<div style="border: none;"class="clearBtn">
 		<!-- <span ng-bind="$ctrl.login"></span> -->
-	    <div  class="clearBtn animate-if" ng-if="!$ctrl.isLoggedIn" ng-click="$ctrl.signIn('google')" >
+	    <div  class="loginButton animate-if" ng-if="!$ctrl.isLoggedIn" ng-click="$ctrl.signIn('google')" >
 	        <div>Sign in!</div>
 	    </div>
-	    <div class="clearBtn animate-if" ng-if="$ctrl.isLoggedIn" ng-click="$ctrl.logout()">
-	        <div>Sign out!</div>
+
+	    <div class="loginButton animate-if" ng-if="$ctrl.isLoggedIn" ng-click="$ctrl.logout()">
+	        <div> {{ $ctrl.currentUser.displayName }} </div>
 	    </div>
 	</div>
 </div>

@@ -1,11 +1,19 @@
-<div class="animate-if col-xlg-12 lg md sm xsm flex-row calendarBox" ng-if="$ctrl.isLoggedIn">
-    <div ng-repeat="tech in $ctrl.techs" class="row col-lg-3 xlg md sm xsm">
-        <div class="techTile clearBtn">
-        	<h1 ng-bind="tech.name"></h1>
-        	<h2 ng-if="tech.level">Level: {{ tech.level }} </h2>
-        	<h2 ng-if="tech.supervisor">Supervisor: {{ tech.supervisor }}</h3>
-        </div>
-    </div>
+<div ng-if="$ctrl.isLoggedIn">
+	<div class="search-animate-class col-xlg-12 lg md sm xsm">
+		<label style="color: ghostWhite; text-shadow: 1px 2px 1px black;" for="searchBox"><h3>Search: </h3>
+		</label>
+			<input ng-model="searchTerm" type="text" id="searchBox" />
+			<!-- <span>{{ searchTerm }}</span> -->
+	</div>
+	<div class="animate-if col-xlg-12 lg md sm xsm flex-row-start calendarBox">
+	    <div ng-repeat="tech in $ctrl.techs | filter:searchTerm as results" class="animate-repeat row col-lg-3 xlg md sm xsm">
+	        <div  class="techTile clearBtn">
+	        	<h1 ng-bind="tech.name"></h1>
+	        	<h2 ng-if="tech.level">Level: {{ tech.level }} </h2>
+	        	<h2 ng-if="tech.supervisor">Supervisor: {{ tech.supervisor }}</h3>
+	        </div>
+	    </div>
+	</div>
 </div>
 <div ng-show="!$ctrl.isLoggedIn" style="font-size: 3em" class="animate-if filterTile">
 	<span>Please sign in</span>
