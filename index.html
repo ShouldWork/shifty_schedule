@@ -25,14 +25,14 @@
 
 <!-- <div class="background"></div> -->
 <div ng-cloak class="background">
-    <div ng-cloak class="container">
+    <div ng-cloak class="container addPad">
         <div ng-cloak class="col-md-12 xs sm lg xlg">
             <nav-bar></nav-bar>
         </div>
         <div ng-cloak class="col-md-4 col-lg-4 col-xlg-4 col-xsm-12 col-sm-12">
             <filters></filters>
         </div>
-        <div ng-cloak class="col-lg-8 col-xlg-8 col-md-8 col-sm-12 col-xs-12 addPad">
+        <div ng-cloak class="col-lg-8 col-xlg-8 col-md-8 col-sm-12 col-xs-12">
             <groups></groups>
         </div>
         <br><!-- 
@@ -102,12 +102,13 @@ Example code for UI router.
 </script>
 
 <script src="src/js/apps.js"></script>
+<script src="src/services/schedule.service.js"></script>
+<script src="src/services/login.service.js"></script>
 <script src="src/js/nav-bar.component.js"></script>
 <script src="src/js/filters.component.js"></script>
 <script src="src/js/login.component.js"></script>
 <script src="src/js/calendar.component.js"></script>
 <script src="src/js/groups.component.js"></script>
 <script src="src/js/example.firebaseauth.component.js"></script>
-<script src="src/services/schedule.service.js"></script>
 </body>
 </html>

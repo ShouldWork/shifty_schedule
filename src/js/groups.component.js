@@ -4,30 +4,20 @@
             templateUrl: "src/html/groups.component.html",
             controller: groupsController
         });
-    function groupsController($firebaseObject,$scope,$firebaseArray,shiftyService,$timeout){
+    function groupsController($firebaseObject,$scope,$firebaseArray,shiftyService,$timeout,loginService){
         var groups = this,
-            srv = shiftyService; 
-        groups.techs = srv.techList;
-        groups.isLoggedIn = srv.isLoggedIn;
-        groups.getTime = getTime;
+            srv = shiftyService,
+            logSrv = loginService;
 
 
         $scope.$watch(function () {
-            return srv.isLoggedIn;
-        },           
-          function() {
-            groups.techs = [];
+            return groups.isLoggedIn = logSrv.isLoggedIn;
+        },function() {
             groups.techs = srv.techList;
-            groups.isLoggedIn = srv.isLoggedIn;
-            // console.log("Controller techs: " + groups.techs + " user: " + groups.isLoggedIn);
-        }, true);
-
-        function getTime(){
-            var date = new Date();
-            var dateObject = date.getFullYear() +'/'+ ('0' + (date.getMonth() + 1)).slice(-2) +'/'+ ('0' + date.getDate()).slice(-2);
-            return dateObject;
-        }      
-    var now = groups.getTime();
-    console.log(now);
+            console.log(groups.techs);
+            // if (groups.techs == undefined){
+            //     srv.getTechs();
+            // } 
+        });
     }
 })();

@@ -24,6 +24,8 @@
     		self.techList 	 = undefined; 
             self.getTime     = getTime; 
 
+            getTechs();
+            getFilters();
 
 
         function getTime(){
@@ -31,9 +33,6 @@
             var dateObject = date.getFullYear() +'/'+ ('0' + (date.getMonth() + 1)).slice(-2) +'/'+ ('0' + date.getDate()).slice(-2);
             return dateObject;
         }  
-
-        getTechs();
-        getFilters();
 
 		// Toast setup and functions
 		last = {
@@ -77,18 +76,18 @@
 		// getting lists
 		function getTechs(){
 			var techRef = firebase.database().ref().child('xactware/techs');
-            var data = {};
-            techRef.orderByKey().on("value", function(snapshot) {
-                data = snapshot.val();
-                // console.log(data);
-                console.log(self.techList = $firebaseArray(techRef));
-            })
+                self.techList = $firebaseArray(techRef);
+            // var data = {};
+            // techRef.orderByKey().on("value", function(snapshot) {
+            //     data = snapshot.val();
+            //     self.techList = $firebaseArray(techRef);
+            // })
 		    // console.log(self.techList = data);
    		 }		
 
    		 function getFilters(){
-			var filterRef = firebase.database().ref('xactware').child('filters');
-				console.log(self.filterList = $firebaseArray(filterRef));
+			var filterRef = firebase.database().ref().child('xactware/filters');
+				self.filterList = $firebaseArray(filterRef);
 
    		 }
 
@@ -141,8 +140,10 @@
 
         function getUser(){
             var user = $localStorage.user; 
-            self.isLoggedIn = user.isLoggedIn
-            console.log(user.isLoggedIn + " vs: " + self.isLoggedIn); 
+            if (user !== undefined){
+                self.isLoggedIn = user.isLoggedIn
+            }
+            // console.log(user.isLoggedIn + " vs: " + self.isLoggedIn); 
         }
 
         function loginSuccess(firebaseUser,msg) {

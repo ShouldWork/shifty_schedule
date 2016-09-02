@@ -4,8 +4,9 @@
             templateUrl: "src/html/filters.component.html",
             controller: filterController
         });
-    function filterController($firebaseArray,$mdToast,shiftyService,$state,$scope){
+    function filterController($firebaseArray,$mdToast,shiftyService,$state,$scope,loginService){
         var filter = this,
+            logSrv = loginService; 
         	srv = shiftyService;
         filter.addFilter = addFilter;
         filter.addFilterEnter = addFilterEnter;
@@ -48,18 +49,10 @@
       		return (key.which == 13) ? true : false;
       }
 
-      $scope.setTechsGroup = function() {
-          srv.setTechsGroup();
-      };    
-
       $scope.$watch(function () {
-          return srv.isLoggedIn;
-      },           
-      function() {
-          filter.filters = [];
-          filter.filters = srv.filterList;
-          filter.isLoggedIn = srv.isLoggedIn; 
-          // console.log("Controller techs: " + groups.techs + " user: " + groups.isLoggedIn);
-      }, true);
+          return filter.isLoggedIn = loginService.isLoggedIn;
+      },function() {
+              filter.filters = srv.filterList;
+      });
     }
 })();
