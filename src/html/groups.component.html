@@ -6,10 +6,10 @@
 			<!-- <span>{{ searchTerm }}</span> -->
 	</div>
 	<div class="animate-if col-xlg-12 lg md sm xsm flex-row-start calendarBox">
-	    <div ng-repeat="tech in $ctrl.techs | filter:searchTerm as results" class="animate-repeat row col-lg-3 xlg md sm xsm">
+	    <div ng-repeat="tech in $ctrl.techs | orderBy:'name' | filter:searchTerm as results " class="animate-repeat row col-lg-3 xlg md sm xsm">
 	        <div  class="techTile clearBtn">
 	        	<h1 ng-bind="tech.name"></h1>
-	        	<h2 ng-if="tech.level">Level: {{ tech.level }} </h2>
+	        	<h2 ng-if="tech.position">Position: {{ tech.position }} </h2>
 	        	<h2 ng-if="tech.supervisor">Supervisor: {{ tech.supervisor }}</h3>
 	        </div>
 	    </div>

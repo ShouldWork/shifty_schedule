@@ -309,6 +309,7 @@ margin: 1px;
     color: ghostWhite;
     padding: .75em;
     border: 1px solid transparent;
+    text-transform: capitalize;
 }
 .techTile:hover{
     box-shadow: 2px 5px 15px black;
