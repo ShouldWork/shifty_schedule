@@ -1,9 +1,9 @@
-<div>
+<div class="loginButton">
 	<!-- <span ng-bind="$ctrl.login"></span> -->
-    <div class="clearBtn" ng-if="!$ctrl.isLoggedIn">
-        <div ng-click="$ctrl.signIn('google')">Sign in!</div>
+    <div  class="clearBtn animate-if" ng-if="!$ctrl.isLoggedIn" ng-click="$ctrl.signIn('google')" >
+        <div>Sign in!</div>
     </div>
-    <div class="clearBtn" ng-if="$ctrl.isLoggedIn">
-        <div ng-click="$ctrl.logout()">Sign out!</div>
+    <div class="clearBtn animate-if" ng-if="$ctrl.isLoggedIn" ng-click="$ctrl.logout()">
+        <div>Sign out!</div>
     </div>
 </div>

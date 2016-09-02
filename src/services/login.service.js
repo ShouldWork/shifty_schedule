@@ -52,10 +52,11 @@
         		var deferred = $q.defer(),
         			currentTime = getTime(),
         			user = firebaseUser.user,
-        			userProfile = ref.child(user.uid);
+        			userProfile = firebaseUser.user.uid;
+                    console.log('login service');
         		ls.currentUser = setCurrentUser(user.displayName,user.email,user.photoURL,user.uid)
         		if(ls.currentUser.displayName !== undefined){
-        			userProfile.set(self.currentUser);
+        			setCurrentUser(self.currentUser);
         		}
         		deferred.resolve();
         		return deferred.promise;

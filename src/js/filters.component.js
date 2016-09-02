@@ -52,6 +52,7 @@
       $scope.$watch(function () {
           return filter.isLoggedIn = loginService.isLoggedIn;
       },function() {
+              srv.getFilters();
               filter.filters = srv.filterList;
       });
     }

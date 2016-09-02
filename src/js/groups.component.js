@@ -13,6 +13,7 @@
         $scope.$watch(function () {
             return groups.isLoggedIn = logSrv.isLoggedIn;
         },function() {
+            srv.getTechs();
             groups.techs = srv.techList;
             console.log(groups.techs);
             // if (groups.techs == undefined){

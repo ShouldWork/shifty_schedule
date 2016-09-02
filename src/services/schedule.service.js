@@ -77,6 +77,7 @@
 		function getTechs(){
 			var techRef = firebase.database().ref().child('xactware/techs');
                 self.techList = $firebaseArray(techRef);
+                console.log("shifty Service");
             // var data = {};
             // techRef.orderByKey().on("value", function(snapshot) {
             //     data = snapshot.val();

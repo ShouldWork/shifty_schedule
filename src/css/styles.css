@@ -36,7 +36,7 @@
 
 .header_banner{
     z-index: 1;
-
+    margin: 3em 0;
     overflow: hidden;
     border-bottom-left-radius: 20px;
     color: white;
@@ -130,17 +130,22 @@
 
 
 .loginBox{
+    position: absolute;
+    top: 5px;
+    right: 5px;
     border: 1px solid white;
     padding: .5em;
     overflow: hidden;
     align-self: flex-end;
+    width: 150px;
 }
+.loginButton{
+    position: absolute;
+    top: 0.1em;
+    border: none;
+    right: 0.1em;
 
-
-.loginButton:hover{
-    box-shadow: 2px 5px 15px black;
 }
-
 
 .filterBox{
     padding: 1em;
@@ -246,3 +251,26 @@ margin: 1px;
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
+
+
+
+
+/*animations*/
+
+
+.animate-if.ng-show, .animate-if.ng-hide {
+  transition:all .75s ease-in-out; 
+  
+}
+
+.animate-if.ng-show,
+.animate-if.ng-hide.ng-hide-active {
+  opacity:0;
+  /*top: 5em;*/
+}
+
+.animate-if.ng-hide,
+.animate-if.ng-show.ng-show-active {
+  opacity:1;
+}
+

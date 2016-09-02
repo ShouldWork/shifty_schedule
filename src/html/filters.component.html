@@ -1,4 +1,4 @@
-<div ng-if="$ctrl.isLoggedIn">
+<div class="animate-if" ng-hide="!$ctrl.isLoggedIn">
     <div class="flex-row-center filterBox">
     	<h1 class="col-xlg-12 lg md sm xsm boxTitle">Filters:</h1>
         <div  class="filtertile clearBtn" ng-repeat="filter in $ctrl.filters" ng-click="$ctrl.setListProperty(filter.$id)"ng-class="{filtertile_clicked: filter.set}">
@@ -13,11 +13,3 @@
         </label>
     </form>
 </div>
-<div class="col-xlg-12 lg md sm xsm flex-row calendarBox" ng-if="!$ctrl.isLoggedIn">
-    <div class="techTile">Login to see data!</div>
-</div>
-
-<!-- ng-class="{filtertile_clicked: filter.set}" -->
-<!--<div class="clearBtn" ng-click="$ctrl.addFilter('test',false)">-->
-    <!--<input placeHolder="Add filter" >Add filter</input>-->
-<!--</div>-->
