@@ -129,15 +129,66 @@
 }
 
 
-.loginBox{
+.accessBox{
+    overflow: hidden;
+    height: 4.5em;
+
+    border: 2px solid white;
+    width: 7.5em;
     position: absolute;
+    padding: .5em;
     top: 5px;
     right: 5px;
-    border: 1px solid white;
-    padding: .5em;
+    transition: all .5s ease-in;
+    border: 2px solid transparent;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.accessBox:hover{
+    width: 40vw;
+    border: 2px solid white;
+}
+.accessBox:hover .userImg{
+    opacity: 1;
+    display: block;
+}
+
+.accessBox:hover .usrName{
+    opacity: 1;
+    top: 0;
+}
+
+.accessBox:hover .usrLogin{
+    opacity: 1;
+    top: 1em;
+    left: 4.5em;
+}
+.userImg{
+    width: 3.5em;
+    height: 3.5em;
+    border: 2px solid rgba(250,249,255,0.7);
+    border-radius: 50%;
+    position: absolute;
+    margin: 0;
+    left: 0.5em;
+    opacity: 0;
     overflow: hidden;
-    align-self: flex-end;
-    width: 150px;
+    transition: all .5s ease-out;
+}
+.usrName , .usrLogin{
+    position: absolute;
+    left: 4.25em;
+    top: 5em;
+    font-size: 1em;
+    color: white;
+    text-shadow: 1px 2px solid black;
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+
+.usrLogin{
+    top: -1.5em;
 }
 .loginButton{
     position: absolute;
@@ -253,24 +304,4 @@ margin: 1px;
 }
 
 
-
-
-/*animations*/
-
-
-.animate-if.ng-show, .animate-if.ng-hide {
-  transition:all .75s ease-in-out; 
-  
-}
-
-.animate-if.ng-show,
-.animate-if.ng-hide.ng-hide-active {
-  opacity:0;
-  /*top: 5em;*/
-}
-
-.animate-if.ng-hide,
-.animate-if.ng-show.ng-show-active {
-  opacity:1;
-}
 

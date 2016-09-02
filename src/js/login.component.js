@@ -20,6 +20,8 @@
         function signIn(provider) {
             return logSrv.signIn(provider).then(function(){
                 login.isLoggedIn = logSrv.isLoggedIn;
+                login.currentUser = logSrv.currentUser;
+                console.log(login.currentUser);
                 shiftyService.showToast(login.loginMessages);
             });
         }

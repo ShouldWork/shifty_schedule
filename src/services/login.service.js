@@ -35,7 +35,7 @@
 	            var auth = $firebaseAuth();
 	            return auth.$signInWithPopup(provider)
 	            	.then(loginSuccess).then(function(){
-	            		console.log(ls.isLoggedIn = isLoggedIn());
+	            		ls.isLoggedIn = isLoggedIn();
 	            	})
 	            	.catch(loginError);
         	}

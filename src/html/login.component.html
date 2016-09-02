@@ -1,9 +1,20 @@
-<div class="loginButton">
-	<!-- <span ng-bind="$ctrl.login"></span> -->
-    <div  class="clearBtn animate-if" ng-if="!$ctrl.isLoggedIn" ng-click="$ctrl.signIn('google')" >
-        <div>Sign in!</div>
-    </div>
-    <div class="clearBtn animate-if" ng-if="$ctrl.isLoggedIn" ng-click="$ctrl.logout()">
-        <div>Sign out!</div>
-    </div>
+<div id="usercard" class="accessBox">
+	<div>
+		<div class="userImg">
+			<img ng-src="{{ $ctrl.currentUser.userImage }}"/>
+		</div>
+		<div>
+			<h2 class="usrName"> {{ $ctrl.currentUser.displayName }} </h2>
+			<h3 class="usrLogin"> {{ $ctrl.currentUser.loggedIn }} </h3>
+		</div>
+	</div>		
+	<div class="loginButton">
+		<!-- <span ng-bind="$ctrl.login"></span> -->
+	    <div  class="clearBtn animate-if" ng-if="!$ctrl.isLoggedIn" ng-click="$ctrl.signIn('google')" >
+	        <div>Sign in!</div>
+	    </div>
+	    <div class="clearBtn animate-if" ng-if="$ctrl.isLoggedIn" ng-click="$ctrl.logout()">
+	        <div>Sign out!</div>
+	    </div>
+	</div>
 </div>
