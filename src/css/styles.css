@@ -153,13 +153,13 @@
     right: 5px;
     transition: all .5s ease-in;
     border: 2px solid transparent;
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 25px;
 }
 
 .accessBox:hover{
     width: 40vw;
-    border: 2px solid white;
+    border-bottom: 2px solid white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .accessBox:hover .userImg{
     opacity: 1;
@@ -286,19 +286,18 @@ margin: 1px;
     padding: 1em;
 }
 
-
-
 .techTile{
     /*background: linear-gradient(-180deg,transparent,rgba(0,0,0,0.5),transparent);*/
-    margin: 1px;
+    margin: 0;
     transition: all .25s ease-out;
     color: ghostWhite;
     padding: 1em;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
 }
 .techTile:hover{
     box-shadow: 2px 5px 15px black;
     /*transform: rotate(7deg);*/
+    border: 1px solid ghostWhite;
     z-index: 200;
 }
 .techTile h1{font-size: 1.25em;padding: 0;margin: 0;}
