@@ -1,11 +1,14 @@
 <div id="usercard" class="accessBox">
 	<div>
-		<div class="userImg">
+		<div ng-if="$ctrl.isLoggedIn"class="userImg">
 			<img ng-src="{{ $ctrl.currentUser.userImage }}"/>
 		</div>
-		<div>
-			<h2 class="usrName"> {{ $ctrl.currentUser.displayName }} </h2>
+		<div ng-if="$ctrl.isLoggedIn">
+			<h2 class="usrName"> User: {{ $ctrl.currentUser.displayName }} </h2>
 			<h3 class="usrLogin"> {{ $ctrl.currentUser.loggedIn }} </h3>
+		</div>
+		<div ng-if="!$ctrl.isLoggedIn">
+			<h3 style="left: .5em" class="usrName">Sign in and check it out!</h3>
 		</div>
 	</div>		
 	<div class="loginButton">
