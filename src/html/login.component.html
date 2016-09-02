@@ -1,0 +1,9 @@
+<div>
+	<!-- <span ng-bind="$ctrl.login"></span> -->
+    <div class="clearBtn" ng-if="!$ctrl.isLoggedIn">
+        <div ng-click="$ctrl.signIn('google')">Sign in!</div>
+    </div>
+    <div class="clearBtn" ng-if="$ctrl.isLoggedIn">
+        <div ng-click="$ctrl.logout()">Sign out!</div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div ng-if="$ctrl.isLoggedIn">
+    <div class="flex-row-center filterBox">
+    	<h1 class="col-xlg-12 lg md sm xsm boxTitle">Filters:</h1>
+        <div  class="filtertile clearBtn" ng-repeat="filter in $ctrl.filters" ng-click="$ctrl.setListProperty(filter.$id)"ng-class="{filtertile_clicked: filter.set}">
+            <span> {{ filter.name }} </span>
+            <!--<h4> {{ filter.set }}</h4>-->
+        </div>
+    </div>
+    <form>
+        <label class="flex-row">
+            <input type="text" ng-model="$ctrl.newListName" ng-keypress="$ctrl.addFilterEnter($ctrl.newListName,false,$event)" class="addFilter">
+            <div class="clearBtn" ng-click="$ctrl.addFilter($ctrl.newListName,false)">Add</div>
+        </label>
+    </form>
+</div>
+<div class="col-xlg-12 lg md sm xsm flex-row calendarBox" ng-if="!$ctrl.isLoggedIn">
+    <div class="techTile">Login to see data!</div>
+</div>
+
+<!-- ng-class="{filtertile_clicked: filter.set}" -->
+<!--<div class="clearBtn" ng-click="$ctrl.addFilter('test',false)">-->
+    <!--<input placeHolder="Add filter" >Add filter</input>-->
+<!--</div>-->
