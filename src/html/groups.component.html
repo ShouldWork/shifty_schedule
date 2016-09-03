@@ -13,6 +13,7 @@
 	        	<h2 ng-if="tech.supervisor">Supervisor: {{ tech.supervisor }}</h3>
 	        </div>
 	    </div>
+		<div ng-if="results.length <= 0" class="techTile"><h1>Found zilch for '{{ searchTerm }}'</h2></div>
 	</div>
 </div>
 <div ng-show="!$ctrl.isLoggedIn" style="font-size: 3em" class="animate-if filterTile">
