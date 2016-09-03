@@ -1,8 +1,8 @@
 <div ng-if="$ctrl.isLoggedIn">
 	<div class="search-animate-class col-xlg-12 lg md sm xsm">
-		<label style="color: ghostWhite; text-shadow: 1px 2px 1px black;" for="searchBox"><h3>Search: </h3>
+		<label style="color: ghostWhite; text-shadow: 1px 2px 1px black;" for="searchBox">
+			<input ng-model="searchTerm" type="text" placeholder="Search..." id="searchBox" class="searchBox" />
 		</label>
-			<input ng-model="searchTerm" type="text" id="searchBox" />
 			<!-- <span>{{ searchTerm }}</span> -->
 	</div>
 	<div class="animate-if col-xlg-12 lg md sm xsm flex-row-start calendarBox">

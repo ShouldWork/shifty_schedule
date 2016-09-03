@@ -26,8 +26,8 @@
 	        		};
 	        		ls.isLoggedIn = true;
         		} else {
-        			ls.isLoggedIn = false;
-        			return currentUser = false; 
+        			ls.isLoggedIn = true;
+        			return currentUser = true; 
         		}
         	}
 

@@ -51,7 +51,7 @@
 .background{
     position: absolute;
 
-    background: transparent url('../resources/background/warped_wood_edited.jpg') right no-repeat;
+    background: transparent url('../resources/background/front_cycle.jpg') right no-repeat;
     background-size: cover;
     /*padding-bottom: 50vh;*/
     min-height: 100vh;
@@ -112,7 +112,8 @@
     background: linear-gradient(64deg,rgba(0,0,0,.55),rgba(0,0,0,0.2),rgba(0,0,0,0.45));
     padding: 0.5em;
     max-height: 70vh;
-    width: 65vw;
+    max-width: 65vw;
+    min-width: 25vw;
     
     overflow: auto;
     /*min-height: 70vh;*/
@@ -159,36 +160,34 @@
     width: 7.5em;
     max-width: 500px;
     position: absolute;
-    /*padding: .5em;*/
-    top: 5px;
-    right: 5px;
+    top: 1em;
+    left: 1em;
     transition: all .5s ease-in;
     border: 2px solid transparent;
 }
 
 .accessBox:hover{
-    width: 40vw;
+    overflow: visible;
+    height: 50vh;
     border-bottom: 2px solid white;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
+.accessBox:hover .usrLogin , .accessBox:hover .usrName{
+    opacity: 1;
+    bottom: 1.5em;
+    left: .5em;
+    width: 500px;
+    display: block;
+}
+
 .accessBox:hover .userImg {
     opacity: 1;
-    display: block;
+    bottom: .5em;
     transform: rotate(-1080deg);
-    z-index: 100;
 }
 
-.accessBox:hover .usrName{
-    opacity: 1;
-    top: 0;
-}
-
-.accessBox:hover .usrLogin{
-    opacity: 1;
-    top: 1.5em;
-    left: 4.5em;
-}
 .userImg{
     width: 3.5em;
     height: 3.5em;
@@ -197,23 +196,26 @@
     position: absolute;
     margin: 0;
     left: 0.5em;
+    bottom: 0.5em;
     opacity: 0;
     overflow: hidden;
     transition: all .75s ease-out;
 }
+
 .usrName , .usrLogin{
     position: absolute;
     left: 4.25em;
-    top: 5em;
+    bottom: 5em;
     font-size: 1em;
     color: white;
     text-shadow: 1px 2px black;
     opacity: 0;
     transition: all .5s ease-out;
+    display: none;
 }
 
 .infoBox{
-    right: 0;
+    left: 0;
     transition: all 1s ease-in;
 }
 
@@ -222,20 +224,19 @@
 }
 
 .usrLogin{
-    top: -1.5em;
+    bottom: -1.5em;
 }
 .loginButton{
     position: absolute;
     top: 1em;
     border: none;
-    right: 0.1em;
+    left: 0.1em;
     outline: 0;
     width: 100px;
     transition: all .25s ease-out;    
 }
 .loginButton:hover{
     border:none;
-    
     outline: 0;
 }
 
@@ -245,13 +246,12 @@
 
 .filterBox{
     padding: 1em;
-    height: 40%;
+    max-height: 30vh;
     overflow: auto;
-    align-self: flex-start;
 }
 
 .filtertile{
-margin: 1px;
+    margin: 1px;
     outline: 0;
     z-index: 15;
     border-radius: none;
@@ -273,16 +273,29 @@ margin: 1px;
     outline: 0;
 }
 
-.addFilter , .addFilter:active , .addFilter:hover, #searchBox{
+.searchBox{
+    transition: all .5s ease-in;
     /*background: linear-gradient(-90deg,transparent,rgba(0,0,0,0.15));*/
     background: transparent;
     outline: 0;
-    border: none;
+    border: 2px solid transparent;
     border-bottom: 2px solid black;
-    color: white;
-    text-shadow: 1px 2px 1px black;
-    font-size: 1.25em;
+    color: black;
+    font-size: 2em;
     padding: .25em;
+    margin: .5em 0;
+}
+
+/*.searchBox:focus{
+    background: linear-gradient(64deg,rgba(0,0,0,.55),rgba(0,0,0,0.2),rgba(0,0,0,0.45));
+}*/
+
+.searchBox:focus,
+.searchBox:hover{
+    color: White;
+    border: 2px solid black;
+    border-bottom: 2px solid green;
+    box-shadow: inset 2px 5px 15px rgba(0,0,0,0.30),5px 10px 25px rgba(0,0,0,0.10) 
 }
 
 .flex-row-start{
@@ -355,4 +368,12 @@ margin: 1px;
 
 .level2{
     color: blue;
+}
+
+
+.pageContainer{
+    overflow: auto;
+    max-height: 100vh;
+    max-width: 90vw;
+    padding-bottom: 2.5em;
 }

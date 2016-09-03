@@ -1,15 +1,18 @@
 <div class="animate-if" ng-hide="!$ctrl.isLoggedIn">
-    <div class="flex-row-center filterBox">
-    	<h1 class="col-xlg-12 lg md sm xsm boxTitle">Filters:</h1>
-        <div  class="filtertile clearBtn" ng-repeat="filter in $ctrl.filters" ng-click="$ctrl.setListProperty(filter.$id)"ng-class="{filtertile_clicked: filter.set}">
+     <h1 class="col-xlg-12 lg md sm xsm boxTitle">Filters:</h1>
+    <div class="flex-row-start noScrollBar filterBox">
+        <div  class="filtertile clearBtn animate-repeat"  ng-repeat="filter in $ctrl.filters | orderBy:'name' | filter:newFilter as results" ng-click="$ctrl.setListProperty(filter.$id)"ng-class="{filtertile_clicked: filter.set}">
             <span> {{ filter.name }} </span>
             <!--<h4> {{ filter.set }}</h4>-->
         </div>
+            <div ng-if="results.length <= 0" class="clearBtn" ng-click="$ctrl.addFilter($ctrl.newListName,false)">
+                <span> ADD </span>
+             </div>
     </div>
     <form>
-        <label class="flex-row">
-            <input type="text" ng-model="$ctrl.newListName" ng-keypress="$ctrl.addFilterEnter($ctrl.newListName,false,$event)" class="addFilter">
-            <div class="clearBtn" ng-click="$ctrl.addFilter($ctrl.newListName,false)">Add</div>
+        <h2 ng-if="results.length <= 0" >Nada. Create a '{{ newFilter }}' filter by pressing enter or clicking add</h2>
+        <label>
+            <input type="text" placeholder="Add filter" ng-model="newFilter" ng-keypress="$ctrl.addFilterEnter(newFilter,false,$event)" class="searchBox">
         </label>
     </form>
 </div>
