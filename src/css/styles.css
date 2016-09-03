@@ -51,7 +51,7 @@
 .background{
     position: absolute;
 
-    background: transparent url('../resources/background/front_cycle.jpg') right no-repeat;
+    background: transparent url('../resources/background/front_cycle.JPG') right no-repeat;
     background-size: cover;
     /*padding-bottom: 50vh;*/
     min-height: 100vh;
