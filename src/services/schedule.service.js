@@ -14,15 +14,11 @@
     		self.getToastMsg = getToastMsg; 
     		self.getTechs    = getTechs; 
     		self.getFilters  = getFilters; 
-    		// self.logout 	 = logout; 		
-    		// self.signIn 	 = signIn;
     		self.isLoggedIn  = false;
-            // self.getUser     = getUser(); 
             self.tags        = {a: true,b: false};
     		self.list 		 = undefined; 
     		self.filterList	 = undefined;
     		self.techList 	 = undefined; 
-            self.getTime     = getTime; 
 
             getTechs();
             getFilters();
@@ -91,106 +87,5 @@
 				self.filterList = $firebaseArray(filterRef);
 
    		 }
-
-
-   		 // authentication
-
-  //  	function logout(msg) {
-  //           var auth = $firebaseAuth();
-	 //        var firebaseUser = self.firebUser;
-  //           var message = self.getToastMsg(msg);
-  //           var providerUser = firebaseUser.user ? firebaseUser.user : firebaseUser;
-  //           var ref = firebase.database().ref("users");
-  //           var profileRef = ref.child(providerUser.uid);
-  //           console.log(profileRef);
-	 //    self.user = $firebaseObject(profileRef);
-	 //     if (self.user.displayName) {
-  //           var lastLogin = new Date(firebase.database.ServerValue.TIMESTAMP * 1000),
-  //               lastLogout = new Date(firebase.database.ServerValue.TIMESTAMP * 1000);
-	 //            // showToast("Logging out user... " + self.user.displayName + ". Last logout: " + lastLogout,1500);
-	 //            profileRef.child('lastLogout').set(lastLogout + 'Updated by Blake').then(function () {
-	 //                showToast(self.user.displayName + "'s profile updated.");
-	 //            }, function () {
-	 //                showToast("Logged out: This toast: " + self.user.diplayName);
-	 //            });
-	 //    	} 
-  //           auth.$signOut();
-  //           self.showToast( message + self.user.displayName);
-  //           self.isLoggedIn = false;
-  //           $localStorage.user = {
-  //           	isLoggedIn: self.isLoggedIn,
-  //           	displayName: false
-  //           };
-  //       };
-
-  //       function signIn(provider,msg) {
-  //           var auth = $firebaseAuth();
-  //           return auth.$signInWithPopup(provider)
-  //           	.then(loginSuccess)
-  //           	.then(function(){
-  //               console.log("Second then")
-	 //            	self.isLoggedIn = true;
-	              
-	 //              $localStorage.user = {
-	 //                	displayName: self.userLoggedIn,
-	 //                	isLoggedIn: self.isLoggedIn
-	 //                };
-  //           	})
-  //           	.catch(loginError);
-  //       }
-
-  //       function getUser(){
-  //           var user = $localStorage.user; 
-  //           if (user !== undefined){
-  //               self.isLoggedIn = user.isLoggedIn
-  //           }
-  //           // console.log(user.isLoggedIn + " vs: " + self.isLoggedIn); 
-  //       }
-
-  //       function loginSuccess(firebaseUser,msg) {
-  //           var deferred = $q.defer();
-  //           // showToast(firebaseUser);
-  //           console.log(msg);
-  //           self.firebUser = firebaseUser; 
-  //           var providerUser = firebaseUser.user ? firebaseUser.user : firebaseUser;
-  //           var ref = firebase.database().ref("users");
-  //           var profileRef = ref.child(providerUser.uid);
-  //           self.user = $firebaseObject(profileRef);
-           
-  //           self.user.$loaded().then(function () {
-  //           	var now = self.getTime();
-  //               if (!self.user.displayName) {
-  //                   profileRef.set({
-  //                       filterColor: 'Blue',
-  //                       displayName: providerUser.displayName || providerUser.email,
-  //                       email: providerUser.email,
-  //                       photoURL: providerUser.photoURL,
-  //                       lastLogin: now,
-  //                       lastLogout: firebase.database.ServerValue.TIMESTAMP,
-  //                       active: true
-  //                   }).then(function () {
-  //                       showToast(self.user.displayName + "'s profile updated.",1500);
-  //                   }, function () {
-  //                       showToast("This toast: " + self.user.diplayName,1500);
-  //                   });
-  //               }
-  //               self.userLoggedIn  = providerUser.displayName; 
-		// // $localStorage.user = self.userLoggedIn;
-  //               deferred.resolve();
-  //           });
-  //           return deferred.promise;
-  //       }
-
-  //       function loginError(error) {
-  //           showToast("Authentication failed:", error);
-  //       }
     }
 }());
-
-			//   var data = snapshot.val();
-			//   // data equals { "name": { "first": "Fred", "last": "Flintstone" }, "age": 53 }
-			//   console.log(data);
-			//   console.log(data[0].name);  // "Fred"
-			//   console.log(data.level);  // 53
-			// });
-     	// };

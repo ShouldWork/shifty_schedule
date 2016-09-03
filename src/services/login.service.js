@@ -52,12 +52,24 @@
         		var deferred = $q.defer(),
         			currentTime = getTime(),
         			user = firebaseUser.user,
-        			userProfile = firebaseUser.user.uid;
-                    console.log('login service');
+        			userProfile = firebaseUser.user.uid,
+                    ref = firebase.database().ref('users');
         		ls.currentUser = setCurrentUser(user.displayName,user.email,user.photoURL,user.uid)
         		if(ls.currentUser.displayName !== undefined){
-        			setCurrentUser(self.currentUser);
+        			setCurrentUser(ls.currentUser);
         		}
+                self.user = $firebaseObject(ref);
+                self.user.$loaded().then(function(){
+                    ref.set({
+                        displayName: user.displayName,
+                        email: user.email,
+                        photoURL: user.photoURL,
+                        lastLogin: getTime(),
+                        active: true
+                    }).then(function(){
+                        shiftyService.showToast("User updated!",1500)
+                    })
+                })
         		deferred.resolve();
         		return deferred.promise;
         	}
