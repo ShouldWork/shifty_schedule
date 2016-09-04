@@ -1,18 +1,19 @@
 <div class="animate-if" ng-hide="!$ctrl.isLoggedIn">
-     <h1 class="col-xlg-12 lg md sm xsm boxTitle">Filters:</h1>
+    <form>
+        <md-input-container>
+            <label>Search/Add filters</label>
+            <input type="text" ng-model="$ctrl.newFilterName" ng-keypress="$ctrl.addFilterEnter($ctrl.newFilterName,false,$event)" class="searchBox">
+        </md-input-container>
+        <h2 style="color: ghostWhite" ng-if="results.length <= 0" >Nada. Create a '{{ newFilter }}' filter by pressing enter or clicking add</h2>
+    </form>
+     <!-- <h1 class="col-xlg-12 lg md sm xsm boxTitle">Filters:</h1> -->
     <div class="flex-row-start noScrollBar filterBox">
-        <div  class="filtertile clearBtn animate-repeat"  ng-repeat="filter in $ctrl.filters | orderBy:'name' | filter:newFilter as results" ng-click="$ctrl.setListProperty(filter.$id)"ng-class="{filtertile_clicked: filter.set}">
+        <div  class="filtertile clearBtn animate-repeat"  ng-repeat="filter in $ctrl.filters | orderBy:'name' | filter:$ctrl.newFilterName as results" ng-click="$ctrl.setListProperty(filter.$id)"ng-class="{filtertile_clicked: filter.set}">
             <span> {{ filter.name }} </span>
             <!--<h4> {{ filter.set }}</h4>-->
         </div>
-        <div ng-if="results.length <= 0" class="clearBtn" ng-click="$ctrl.addFilter($ctrl.newListName,false)">
+        <div ng-if="results.length <= 0" class="clearBtn" ng-click="$ctrl.addFilter($ctrl.newFilterName,false)">
             <span> ADD </span>
         </div>
     </div>
-    <form>
-        <label>
-            <input type="text" placeholder="Add filter" ng-model="newFilter" ng-keypress="$ctrl.addFilterEnter(newFilter,false,$event)" class="searchBox">
-        </label>
-        <h2 style="color: ghostWhite" ng-if="results.length <= 0" >Nada. Create a '{{ newFilter }}' filter by pressing enter or clicking add</h2>
-    </form>
 </div>

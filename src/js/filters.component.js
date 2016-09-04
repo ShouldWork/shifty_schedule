@@ -12,10 +12,10 @@
         filter.addFilterEnter = addFilterEnter;
         filter.setListProperty = setListProperty;
 		    filter.showToast = srv.showToast;
-		    filter.newListName = "";
+		    filter.newFilterName = "";
 
     function addFilter(name,set){
-			  filter.showToast("Added filter " + filter.newListName);
+			  filter.showToast("Added filter " + filter.newFilterName);
       	var ref = firebase.database().ref().child("xactware/filters"),
             dbFilters = $firebaseArray(ref);
 			  dbFilters.$add({ 
@@ -26,7 +26,7 @@
       				var id = ref.key,
       					  index = dbFilters.$indexFor(id);
 		    });
-			filter.newListName = "";
+			filter.newFilterName = "";
 		}
 
 		function addFilterEnter(name,set,key){
