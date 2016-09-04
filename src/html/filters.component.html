@@ -5,14 +5,14 @@
             <span> {{ filter.name }} </span>
             <!--<h4> {{ filter.set }}</h4>-->
         </div>
-            <div ng-if="results.length <= 0" class="clearBtn" ng-click="$ctrl.addFilter($ctrl.newListName,false)">
-                <span> ADD </span>
-             </div>
+        <div ng-if="results.length <= 0" class="clearBtn" ng-click="$ctrl.addFilter($ctrl.newListName,false)">
+            <span> ADD </span>
+        </div>
     </div>
     <form>
-        <h2 ng-if="results.length <= 0" >Nada. Create a '{{ newFilter }}' filter by pressing enter or clicking add</h2>
         <label>
             <input type="text" placeholder="Add filter" ng-model="newFilter" ng-keypress="$ctrl.addFilterEnter(newFilter,false,$event)" class="searchBox">
         </label>
+        <h2 style="color: ghostWhite" ng-if="results.length <= 0" >Nada. Create a '{{ newFilter }}' filter by pressing enter or clicking add</h2>
     </form>
 </div>
