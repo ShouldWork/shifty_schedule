@@ -395,6 +395,6 @@ md-input-container label{
 }
 md-input-container:not(.md-input-invalid).md-input-has-value label,
 md-input-container:not(.md-input-invalid).md-input-focused label{
-    color: white;
-    font-size: .5em;
+    color: rgba(200,255,240,0.50);
+    /*font-size: .5em;*/
 }
