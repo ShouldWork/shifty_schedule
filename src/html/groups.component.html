@@ -1,11 +1,11 @@
 <div  class="animate-show" ng-hide="!$ctrl.isLoggedIn">
+	<div class="search-animate-class col-xlg-12 lg md sm xsm">
+		<md-input-container>
+			<label>Search</label>
+			<input ng-model="searchTerm" type="text" id="searchBox" class="searchBox" />
+		</md-input-container>	
+	</div>
 	<div class="animate-if col-xlg-12 lg md sm xsm flex-row-start calendarBox">
-		<div style="margin-right: 34%; margin-top: 4em; margin-bottom: 0" class="search-animate-class col-xlg-12 lg md sm xsm">
-			<md-input-container>
-				<label>Search</label>
-				<input ng-model="searchTerm" type="text" id="searchBox" class="searchBox" />
-			</md-input-container>	
-		</div>
 	    <div ng-repeat="tech in $ctrl.techs | orderBy:'name' | filter:searchTerm as results " class="animate-repeat row col-lg-3 xlg md sm xsm">
 	        <div  class="techTile clearBtn">
 	        	<h1 ng-bind="tech.name"></h1>
