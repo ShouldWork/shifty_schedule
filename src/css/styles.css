@@ -385,12 +385,8 @@ md-input-container label{
 }
 md-input-container:not(.md-input-invalid).md-input-has-value label,
 md-input-container:not(.md-input-invalid).md-input-focused label{
-<<<<<<< HEAD
     color: white;
-    /*font-size: 1em;*/
-=======
     color: rgba(169,169,169,0.75);
-    /*font-size: .5em;*/
 }
 
 md-input-container input{
@@ -404,5 +400,4 @@ md-input-container input{
     text-decoration: none;
     margin: 1px;
     padding: 0;
->>>>>>> 641cee105cdc39a366c76e8d78e6491a6e09defa
 }
