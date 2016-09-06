@@ -19,17 +19,25 @@
 
         function signIn(provider) {
             return logSrv.signIn(provider).then(function(){
-                login.isLoggedIn = logSrv.isLoggedIn;
                 login.currentUser = logSrv.currentUser;
-                console.log(login.currentUser);
+                login.isLoggedIn = logSrv.isLoggedIn; 
                 shiftyService.showToast(login.loginMessages);
             });
         }
 
         function logout() {
-            login.isLoggedIn = false; 
             logSrv.signOut(login.logoutMessages);
+            login.isLoggedIn = logSrv.isLoggedIn;
+            console.log(login.currentUser)
+
         }
+
+        $scope.$watch(function () {
+            return login.isLoggedIn = logSrv.isLoggedIn;
+        },function(){
+            login.currentUser = logSrv.currentUser;
+            console.log(login.currentUser)
+        });
 
     }
 })();

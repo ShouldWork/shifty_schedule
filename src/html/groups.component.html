@@ -1,4 +1,4 @@
-<div ng-if="$ctrl.isLoggedIn">
+<div  class="animate-show" ng-hide="!$ctrl.isLoggedIn">
 	<div class="animate-if col-xlg-12 lg md sm xsm flex-row-start calendarBox">
 		<div style="margin-right: 34%; margin-top: 4em; margin-bottom: 0" class="search-animate-class col-xlg-12 lg md sm xsm">
 			<md-input-container>
@@ -13,9 +13,9 @@
 	        	<h2 ng-if="tech.supervisor">Supervisor: {{ tech.supervisor }}</h3>
 	        </div>
 	    </div>
-		<div ng-if="results.length <= 0" class="techTile"><h1>Found zilch for '{{ searchTerm }}'</h2></div>
+		<div ng-show="results.length <= 0" class="animate-show techTile"><h1>Found zilch for '{{ searchTerm }}'</h2></div>
 	</div>
 </div>
-<div ng-show="!$ctrl.isLoggedIn" style="font-size: 3em" class="animate-if filterTile">
+<div ng-show="!$ctrl.isLoggedIn" style="font-size: 3em" class="animate-show filterTile">
 	<span>Please sign in</span>
 </div>

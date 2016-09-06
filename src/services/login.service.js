@@ -11,24 +11,35 @@
         	// ls.signOut();
         	ls.isLoggedIn  = isLoggedIn();
         	ls.currentUser = setCurrentUser();
+            ls.authDataCheck = authDataCheck();
 
 
+            function authDataCheck(){
+                firebase.auth().onAuthStateChanged(function(user){
+                    if (user){
+                        console.log("user is " + user.displayName)
+                    }else{
+                        console.log("failed")
+                    }
+                })
+            }
 
-
-        	function setCurrentUser(name,email,userImg,uid){
-        		if (name){
-	      			return currentUser = {
-	        			displayName: name,
-	        			email: email,
-	        			userImage: userImg,
-	        			uid: uid,
-	        			loggedIn: getTime()
-	        		};
-	        		ls.isLoggedIn = true;
-        		} else {
-        			ls.isLoggedIn = true;
-        			return currentUser = true; 
-        		}
+        	function setCurrentUser(){
+                var user = firebase.auth().currentUser,
+                    name , email, photoURL, uid;
+                if (user !== null){
+                    ls.currentUser = {
+                        name: user.displayName,
+                        email: user.email,
+                        photoURL: user.photoURL,
+                        uid: user.uid
+                    };
+                    ls.isLoggedIn = true;
+                    console.log(ls.currentUser) 
+                } else{
+                    ls.currentUser = undefined;
+                    ls.isLoggedIn = false; 
+                }
         	}
 
         	function signIn(provider){
@@ -45,19 +56,16 @@
         		auth.$signOut();
         		ls.currentUser = undefined;
         		ls.isLoggedIn = isLoggedIn();
-        		console.log(self.isLoggedIn)
+        		// console.log(self.isLoggedIn)
         	}
 
         	function loginSuccess(firebaseUser){
         		var deferred = $q.defer(),
         			currentTime = getTime(),
         			user = firebaseUser.user,
-        			userProfile = firebaseUser.user.uid,
-                    ref = firebase.database().ref('users');
-        		ls.currentUser = setCurrentUser(user.displayName,user.email,user.photoURL,user.uid)
-        		if(ls.currentUser.displayName !== undefined){
-        			setCurrentUser(ls.currentUser);
-        		}
+        			userProfile = user.uid,
+                    ref = firebase.database().ref('users/' + userProfile);
+                setCurrentUser();
                 self.user = $firebaseObject(ref);
                 self.user.$loaded().then(function(){
                     ref.set({
@@ -75,12 +83,18 @@
         	}
 
         	function loginError(error) {
-            	console.log("Authentication failed:", error);
+            	// console.log("Authentication failed:", error);
         	}
 
         	function isLoggedIn(){
-        		var isloggedin= (ls.isLoggedIn) ? false : true;
-        		return isloggedin;
+                firebase.auth().onAuthStateChanged(function(user){
+                    if (user){
+                        setCurrentUser();
+                        return ls.isLoggedIn = true;
+                    }else{
+                        return ls.isLoggedIn = false; 
+                    }
+                });
         	}
 
         	function getTime(){
