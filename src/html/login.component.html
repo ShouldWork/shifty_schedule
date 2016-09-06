@@ -1,24 +1,22 @@
-<div id="usercard" class="accessBox">
-	<div class="">
-		<div ng-if="$ctrl.isLoggedIn"class="userImg">
-			<img ng-src="{{ $ctrl.currentUser.userImage }}"/>
-		</div>
-		<div ng-if="$ctrl.isLoggedIn">
-			<h2 class="usrName"> {{ $ctrl.currentUser.displayName }} </h2>
-			<h3 class="usrLogin"> {{ $ctrl.currentUser.loggedIn }} </h3>
-		</div>
-		<div ng-if="!$ctrl.isLoggedIn">
-			<h3 class="usrName">Sign in and check it out!</h3>
-		</div>
-	</div>		
-	<div style="border: none;"class="clearBtn">
-		<!-- <span ng-bind="$ctrl.login"></span> -->
-	    <div  class="loginButton animate-if" ng-if="!$ctrl.isLoggedIn" ng-click="$ctrl.signIn('google')" >
-	        <div>Sign in</div>
-	    </div>
+<div style="border: none;">
 
-	    <div class="loginButton animate-if" ng-if="$ctrl.isLoggedIn" ng-click="$ctrl.logout()">
-	        <div> Sign out </div>
-	    </div>
-	</div>
+    <div  class="animate-show" ng-show="!$ctrl.isLoggedIn" ng-click="$ctrl.signIn('google')" >
+        <span class="smallTitle">Sign in</span>
+    </div>
+
+    <div class="animate-show" ng-show="$ctrl.isLoggedIn" ng-click="$ctrl.logout()">
+    	<div>
+        	<div class="userImg">
+        		<img ng-src="{{ $ctrl.currentUser.photoURL }}"/>
+				<div class="accessBox">
+				<div ng-show="$ctrl.isLoggedIn" class="animate-show">
+					<h2 class="usrName"> {{ $ctrl.currentUser.displayName }} </h2>
+					<h3 class="usrLogin"> {{ $ctrl.currentUser.loggedIn }} </h3>
+				</div>
+				<div ng-show="!$ctrl.isLoggedIn" class="animate-show">
+					<h3 class="usrName">Sign in and check it out!</h3>
+				</div>
+			</div>		
+        </div>
+    </div>
 </div>
