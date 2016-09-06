@@ -32,7 +32,8 @@
                         name: user.displayName,
                         email: user.email,
                         photoURL: user.photoURL,
-                        uid: user.uid
+                        uid: user.uid,
+                        today: getTime()
                     };
                     ls.isLoggedIn = true;
                     console.log(ls.currentUser) 
