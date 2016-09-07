@@ -1,6 +1,14 @@
-
+<div layout="row" ng-cloak>
+	<section layout="row">
+		<md-nav-bar hide-xs hide-sm md-selected-nav-item="currentNavItem">
+		  <div ng-repeat="button in $ctrl.buttons">
+		  	<md-nav-item md-nav-click="goto('page1')" name="{{ button.text }}">{{ button.text }}</md-nav-item>
+		  </div>
+		</md-nav-bar>
+	</section>
+</div>
 <div layout="column" style="height: 500px" ng-cloak>
-	<section layout="row" flex>
+	<section layout="row" flex hide-md hide-lg>
 		<md-sidenav md-disable-backdrop class="md-sidenav-left" md-component-id="left"  md-whiteframe="4">
 			<md-toolbar class="md-theme-indigo">
 				<h1 class="md-toolbar-tools" ng-click="$ctrl.toggleLeft()">Sidenav Left</h1>

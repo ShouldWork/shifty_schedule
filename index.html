@@ -23,9 +23,11 @@
 </head>
 <body class="noScrollBar">
 
-    <div layout="column" class="zero background">
-        <div flex="33" flex-md="{{ vm.box1Width }}" layout-md="row" class="one"><nav-bar></nav-bar></div>
-        <div flex="33" flex-md="{{ vm.direction }}" layout-md="row" class="two"></div>
+    <div layout-md="row" class="zero background">
+        <div flex="66" layout-md="row">
+            <nav-bar></nav-bar>
+        </div>            
+        <div flex="33" flex-md="{{ vm.direction }}" layout-md="row"></div>
    </div>
 <!-- <div class="background"></div> -->
 <!-- <div ng-cloak class="background">
