@@ -4,8 +4,12 @@
             templateUrl: "src/html/nav-bar.component.html",
             controller: navController
         });
-        function navController($firebaseObject,$scope,$firebaseArray){
+        function navController($firebaseObject,$scope,$firebaseArray,$mdSidenav,loginService){
         	var nav = this;
+        	var logSrv = loginService;
             nav.buttons = [{text: "Home"},{text: "Calendar"},{text: "Groups"},{text: "About"}];
+            nav.toggleLeft = function() {
+               $mdSidenav('left').toggle();
+             };
         }
 })();

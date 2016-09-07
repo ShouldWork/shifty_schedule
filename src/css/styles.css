@@ -199,6 +199,7 @@
     transition: all .5s ease-in;
     float: left;
     margin-top: 4em;
+    padding: .5em;
 }
 
 .usrName , .usrLogin{
@@ -221,6 +222,7 @@
     overflow: auto;
     position: relative;
     top: -2em;
+    border-bottom: 2px solid rgb(204,125,0);
 }
 
 .filtertile{
@@ -250,14 +252,9 @@
 .searchBox{
     transition: all .5s ease-in;
     /*background: linear-gradient(-90deg,transparent,rgba(0,0,0,0.15));*/
-    background: transparent;
     outline: 0;
-    border: 2px solid transparent;
-    border-bottom: 2px solid black;
     color: ghostWhite;
     font-size: 2em;
-    padding: .25em;
-    margin: .25em 0;
 }
 
 /*.searchBox:focus{
@@ -265,10 +262,11 @@
 }*/
 
 .searchBox:focus,
-.searchBox:hover{
+.searchBox:hover,
+.searchBox:active{
     color: White;
     outline: 0;
-    border-color: green;
+    border-color: rgb(204,125,0);
     text-shadow: 1px 2px 2px black;
     /*border: none;*/
     /*border: 2px solid black;*/
@@ -303,7 +301,7 @@
 .techTile{
     /*background: linear-gradient(-180deg,transparent,rgba(0,0,0,0.5),transparent);*/
     margin: 0;
-    transition: all .25s ease-out;
+    transition: all .5s ease-out;
     color: ghostWhite;
     padding: .75em;
     border: none;
@@ -360,7 +358,7 @@
 
 
 md-input-container label{
-    font-size: 2em;
+    font-size: 1.5em;
     color: ghostWhite;
     text-shadow: 1px 2px 2px black;
 }
@@ -371,7 +369,7 @@ md-input-container:not(.md-input-invalid).md-input-focused label{
 }
 
 md-input-container input{
-    border-color: green;
+    border-color: rgba(204,125,0);
 }
 
 
@@ -381,4 +379,8 @@ md-input-container input{
     text-decoration: none;
     margin: 1px;
     padding: 0;
+}
+
+.md-content.md-default-theme, .md-content{
+    background-color: transparent;
 }

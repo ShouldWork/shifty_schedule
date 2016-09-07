@@ -11,8 +11,8 @@
     	<div class="loginbox">
     		<img class="userImg" ng-src="{{ $ctrl.currentUser.photoURL }}"/>
 			<div class="animate-show infoBox">
-				<h2 class="usrName"> Name: {{ $ctrl.currentUser.name }} </h2>
-				<h3 class="usrLogin"> Date: {{ $ctrl.currentUser.today }} </h3>
+				<h2 class="usrName"> {{ $ctrl.currentUser.name }} </h2>
+				<!-- <h3 class="usrLogin"> Date: {{ $ctrl.currentUser.today }} </h3> -->
 				<span class="smallTitle" ng-click="$ctrl.logout()">Sign Out</span>
 			</div>
 		</div>		

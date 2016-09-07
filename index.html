@@ -23,21 +23,16 @@
 </head>
 <body class="noScrollBar">
 
-
+    <div layout="column" class="zero background">
+        <div flex="33" flex-md="{{ vm.box1Width }}" layout-md="row" class="one"><nav-bar></nav-bar></div>
+        <div flex="33" flex-md="{{ vm.direction }}" layout-md="row" class="two"></div>
+   </div>
 <!-- <div class="background"></div> -->
-<div ng-cloak class="background">
-    <div ng-cloak class="pageContainer container">
-        
-        <div  class="container">
-            <div class="col-xlg-2">
-                <login></login>
-            </div>
-
-            <div ng-cloak class="col-md-10 xs sm lg xlg">
-                <nav-bar></nav-bar>
-            </div>
-        </div>
-
+<!-- <div ng-cloak class="background">
+    <div ng-cloak class="pageContainer npScrollBar">
+    <div ng-cloak class="col-md-10 xs sm lg xlg">
+        <nav-bar></nav-bar>
+    </div>
         <div class="container">
             <div ng-cloak class="col-md-4 col-lg-4 col-xlg-4 col-xsm-12 col-sm-12">
                 <filters></filters>
@@ -47,7 +42,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
 

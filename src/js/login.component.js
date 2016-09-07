@@ -28,7 +28,7 @@
         function logout() {
             logSrv.signOut(login.logoutMessages);
             login.isLoggedIn = logSrv.isLoggedIn;
-            console.log(login.currentUser)
+            // console.log(login.currentUser)
 
         }
 
@@ -36,7 +36,7 @@
             return login.isLoggedIn = logSrv.isLoggedIn;
         },function(){
             login.currentUser = logSrv.currentUser;
-            console.log(login.currentUser)
+            // console.log(login.currentUser)
         });
 
     }

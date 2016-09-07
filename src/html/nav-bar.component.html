@@ -1,4 +1,24 @@
-<div class="header_banner">
+
+<div layout="column" style="height: 500px" ng-cloak>
+	<section layout="row" flex>
+		<md-sidenav md-disable-backdrop class="md-sidenav-left" md-component-id="left"  md-whiteframe="4">
+			<md-toolbar class="md-theme-indigo">
+				<h1 class="md-toolbar-tools" ng-click="$ctrl.toggleLeft()">Sidenav Left</h1>
+			</md-toolbar>
+
+			<md-content>
+				<md-content layout-padding ng-repeat="button in $ctrl.buttons" class="navButton">
+				<div> {{ button.text }} </div>
+			</md-content>
+		</md-sidenav>
+		<div>
+			<md-button ng-click="$ctrl.toggleLeft()" class="md-primary">Menu</md-button>
+		</div>
+	</section>
+</div>
+
+
+<!-- <div class="header_banner">
 	<div  id="navButtonContainer" class="col-md-8 xlg lg sm xsm flex-row-start">
 		<div ng-repeat="button in $ctrl.buttons" class="navButton clearBtn">
 			<span> {{ button.text }} </span>
@@ -6,3 +26,4 @@
     </div>
 </div>
 
+ -->

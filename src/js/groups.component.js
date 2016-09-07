@@ -15,7 +15,7 @@
         },function() {
             srv.getTechs();
             groups.techs = srv.techList;
-            console.log(groups.techs);
+            // console.log(groups.techs);
             // if (groups.techs == undefined){
             //     srv.getTechs();
             // } 
