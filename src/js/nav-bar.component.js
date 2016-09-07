@@ -7,6 +7,7 @@
         function navController($firebaseObject,$scope,$firebaseArray,$mdSidenav,loginService){
         	var nav = this;
         	var logSrv = loginService;
+            nav.isLoggedIn = logSrv.isLoggedIn;
             nav.buttons = [{text: "Home"},{text: "Calendar"},{text: "Groups"},{text: "About"}];
             nav.toggleLeft = function() {
                $mdSidenav('left').toggle();

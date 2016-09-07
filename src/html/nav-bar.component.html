@@ -1,17 +1,39 @@
 <div layout="row" ng-cloak>
 	<section layout="row">
-		<md-nav-bar hide-xs hide-sm md-selected-nav-item="currentNavItem">
+		<md-nav-bar hide-xs hide-sm hide-md md-selected-nav-item="currentNavItem">
 		  <div ng-repeat="button in $ctrl.buttons">
 		  	<md-nav-item md-nav-click="goto('page1')" name="{{ button.text }}">{{ button.text }}</md-nav-item>
 		  </div>
 		</md-nav-bar>
 	</section>
 </div>
+
+<md-fab-toolbar md-fab-top-right md-direction="left">
+  <md-fab-trigger>
+    <md-button aria-label="Add...">zzzasdf<md-icon icon="../resources/icons/bars.svg"></md-icon></md-button>
+  </md-fab-trigger>
+
+  <md-toolbar>
+   <md-fab-actions>
+     <md-button aria-label="Add User">
+       <md-icon icon="../resources/icons/bars.svg">asdf</md-icon>
+     </md-button>
+
+     <md-button aria-label="Add Group">
+       <md-icon icon="../resources/icons/bars.svg">ddddd</md-icon>
+     </md-button>
+   </md-fab-actions>
+  </md-toolbar>
+</md-fab-toolbar>
+
+
 <div layout="column" style="height: 500px" ng-cloak>
-	<section layout="row" flex hide-md hide-lg>
-		<md-sidenav md-disable-backdrop class="md-sidenav-left" md-component-id="left"  md-whiteframe="4">
+	<section layout="row" flex hide-lg>
+		<md-sidenav class="md-sidenav-left" md-component-id="left"  md-whiteframe="4">
 			<md-toolbar class="md-theme-indigo">
-				<h1 class="md-toolbar-tools" ng-click="$ctrl.toggleLeft()">Sidenav Left</h1>
+				<div class="md-toolbar-tools" ng-click="$ctrl.toggleLeft()">
+					<login></login>
+				</div>
 			</md-toolbar>
 
 			<md-content>

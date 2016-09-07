@@ -1,20 +1,32 @@
-<div style="border: none;">
+<md-chips ng-model="myItems" md-max-chips="5">
+  <md-autocomplete ng-hide="myItems.length > 5" ...></md-autocomplete>
+</md-chips>
+
+
+
+
+
+
+
+
+
+<!-- <div style="border: none;">
 
     <div  class="animate-show" ng-show="!$ctrl.isLoggedIn" ng-click="$ctrl.signIn('google')" >
         <span class="smallTitle">Sign in</span>
     </div>
 	<div ng-show="!$ctrl.isLoggedIn" class="animate-show">
-		<h3 class="usrName">Sign in and check it out!</h3>
+		<h3 class="usrName smallTitle">Sign in and check it out!</h3>
 	</div>
 
     <div class="animate-show" ng-show="$ctrl.isLoggedIn">
     	<div class="loginbox">
     		<img class="userImg" ng-src="{{ $ctrl.currentUser.photoURL }}"/>
 			<div class="animate-show infoBox">
-				<h2 class="usrName"> {{ $ctrl.currentUser.name }} </h2>
+				<h2 class="usrName"> {{ $ctrl.currentUser.name }} </h2> -->
 				<!-- <h3 class="usrLogin"> Date: {{ $ctrl.currentUser.today }} </h3> -->
-				<span class="smallTitle" ng-click="$ctrl.logout()">Sign Out</span>
+<!-- 				<span class="smallTitle" ng-click="$ctrl.logout()">Sign Out</span>
 			</div>
 		</div>		
     </div>
-</div>
+</div> -->
