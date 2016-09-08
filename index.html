@@ -14,6 +14,7 @@
     
     <link href='https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -21,14 +22,69 @@
     <link rel="stylesheet" href="src/css/styles.css">
     <link rel="stylesheet" href="src/css/animations.css">
 </head>
-<body class="noScrollBar">
+<!-- <body class="layout-row" layout="row" style="overflow:hidden">
+    <nav-bar></nav-bar>
+    <div layout="row" class="zero background">
+        <div style="background: blue; width: 100px"></div>
+    </div> -->
 
-    <div layout-md="row" class="zero background">
-        <div flex="66" layout-md="row">
-            <nav-bar></nav-bar>
-        </div>            
-        <div flex="33" flex-md="{{ vm.direction }}" layout-md="row"></div>
-   </div>
+     <body class="layout-column noScrollBar" layout="column">
+       <div class="background">
+            <div class="pageContainer noScrollBar">
+                <div class="layout-column" layout="row">
+                    <nav-bar></nav-bar>
+                <div style="margin-top: 2em" class="addPad layout-row" layout="row" layout-md="column">
+                    <div flex="40" layout="column" layout-md="column">
+                        <filters></filters>
+                        <filters></filters>
+                    </div>
+                    <div flex="60" class="layout-row" layout="row">
+                        <groups></groups>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Angular Material requires Angular.js Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
+        <script src="node_modules/angular-material/angular-material.js"></script>
+
+
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+        <!-- AngularFire -->
+        <script src="https://cdn.firebase.com/libs/angularfire/2.0.2/angularfire.min.js"></script>
+
+
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyCVIUcqy1Z6piiRjoYN8qXkSDyRzN-_l0A",
+                authDomain: "shifty-4d692.firebaseapp.com",
+                databaseURL: "https://shifty-4d692.firebaseio.com",
+                storageBucket: "shifty-4d692.appspot.com"
+            };
+            firebase.initializeApp(config);
+        </script>
+
+        <script src="src/js/apps.js"></script>
+        <script src="src/services/schedule.service.js"></script>
+        <script src="src/services/login.service.js"></script>
+        <script src="src/js/nav-bar.component.js"></script>
+        <script src="src/js/filters.component.js"></script>
+        <script src="src/js/login.component.js"></script>
+        <script src="src/js/calendar.component.js"></script>
+        <script src="src/js/groups.component.js"></script>
+        <script src="src/js/example.firebaseauth.component.js"></script>
+    </body>
+</html>
+
+
+
 <!-- <div class="background"></div> -->
 <!-- <div ng-cloak class="background">
     <div ng-cloak class="pageContainer npScrollBar">
@@ -69,50 +125,3 @@ Example code for UI router.
  -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Angular Material requires Angular.js Libraries -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
-<script src="node_modules/angular-material/angular-material.js"></script>
-
-
-<!-- Firebase -->
-<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
-<!-- AngularFire -->
-<script src="https://cdn.firebase.com/libs/angularfire/2.0.2/angularfire.min.js"></script>
-
-
-<script>
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyCVIUcqy1Z6piiRjoYN8qXkSDyRzN-_l0A",
-        authDomain: "shifty-4d692.firebaseapp.com",
-        databaseURL: "https://shifty-4d692.firebaseio.com",
-        storageBucket: "shifty-4d692.appspot.com"
-    };
-    firebase.initializeApp(config);
-</script>
-
-<script src="src/js/apps.js"></script>
-<script src="src/services/schedule.service.js"></script>
-<script src="src/services/login.service.js"></script>
-<script src="src/js/nav-bar.component.js"></script>
-<script src="src/js/filters.component.js"></script>
-<script src="src/js/login.component.js"></script>
-<script src="src/js/calendar.component.js"></script>
-<script src="src/js/groups.component.js"></script>
-<script src="src/js/example.firebaseauth.component.js"></script>
-</body>
-</html>

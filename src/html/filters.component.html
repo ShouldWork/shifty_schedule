@@ -1,19 +1,21 @@
-<div class="animate-show" ng-hide="!$ctrl.isLoggedIn">
-    <form>
-        <md-input-container>
-            <label>Search/Add filters</label>
-            <input type="text" ng-model="$ctrl.newFilterName" ng-keypress="$ctrl.addFilterEnter($ctrl.newFilterName,false,$event)" class="searchBox">
-        </md-input-container>
-        <div ng-show="results.length <= 0" class="animate-show clearBtn" ng-click="$ctrl.addFilter($ctrl.newFilterName,false)">
-            <span> ADD </span>
-        </div>
-        <h2 style="color: ghostWhite" ng-show="results.length <= 0" class="animate-show">Nada. Create a '{{ $ctrl.newFilterName }}' filter by pressing enter or clicking add</h2>
-    </form>                                                                      
-     <!-- <h1 class="col-xlg-12 lg md sm xsm boxTitle">Filters:</h1> -->
-    <div class="flex-row-start noScrollBar filterBox">
-        <div  class="filtertile clearBtn animate-repeat"  ng-repeat="filter in $ctrl.filters | orderBy:'name' | filter:$ctrl.newFilterName as results" ng-click="$ctrl.setListProperty(filter.$id)"ng-class="{filtertile_clicked: filter.set}">
-            <span> {{ filter.name }} </span>
-            <!--<h4> {{ filter.set }}</h4>-->
+<div class="addPad" style="margin-bottom: 2em; overflow: hidden;" ng-hide="!$ctrl.isLoggedIn">   
+    <md-input-container>
+        <label>Search/Add filters</label>
+        <input type="text" ng-model="$ctrl.newFilterName" ng-keypress="$ctrl.addFilterEnter($ctrl.newFilterName,false,$event)">
+    </md-input-container>
+    <div class="animate-show filterBox noScrollBar">
+        <form>
+            <div ng-show="results.length <= 0" class="animate-show clearBtn" ng-click="$ctrl.addFilter($ctrl.newFilterName,false)">
+                <span> ADD </span>
+            </div>
+            <h2 style="color: ghostWhite" ng-show="results.length <= 0" class="animate-show">Nada. Create a '{{ $ctrl.newFilterName }}' filter by pressing enter or clicking add</h2>
+        </form>                                                                      
+         <!-- <h1 class="col-xlg-12 lg md sm xsm boxTitle">Filters:</h1> -->
+        <div class="flex-row-start">
+            <div  class="filtertile clearBtn animate-repeat"  ng-repeat="filter in $ctrl.filters | orderBy:'name' | filter:$ctrl.newFilterName as results" ng-click="$ctrl.setListProperty(filter.$id)"ng-class="{filtertile_clicked: filter.set}">
+                <span> {{ filter.name }} </span>
+                <!--<h4> {{ filter.set }}</h4>-->
+            </div>
         </div>
     </div>
 </div>

@@ -1,12 +1,12 @@
-<div  class="animate-show" ng-hide="!$ctrl.isLoggedIn">
-	<div class="search-animate-class col-xlg-12 lg md sm xsm">
+<div  class="animate-show" ng-hide="!$ctrl.isLoggedIn" style="background: linear-gradient(64deg,rgba(204,125,0,0),rgba(204,125,0,0.3),rgba(204,125,0,0.6));">
+	<div class="search-animate-class">
 		<md-input-container>
 			<label>Search</label>
 			<input ng-model="searchTerm" type="text" id="searchBox" class="searchBox" />
 		</md-input-container>	
 	</div>
-	<div class="animate-if col-xlg-12 lg md sm xsm flex-row-start calendarBox">
-	    <div ng-repeat="tech in $ctrl.techs | orderBy:'name' | filter:searchTerm as results " class="animate-repeat row col-lg-3 xlg md sm xsm">
+	<div layout="row" flex layout-wrap class="layout-row animate-if calendarBox">
+	    <div  flex="33" ng-repeat="tech in $ctrl.techs | orderBy:'name' | filter:searchTerm as results " class="animate-repeat">
 	        <div  class="techTile clearBtn">
 	        	<h1 ng-bind="tech.name"></h1>
 	        	<h2 ng-if="tech.position">Position: {{ tech.position }} </h2>
@@ -16,6 +16,6 @@
 		<div ng-show="results.length <= 0" class="animate-show techTile"><h1>Found zilch for '{{ searchTerm }}'</h2></div>
 	</div>
 </div>
-<div ng-show="!$ctrl.isLoggedIn" style="font-size: 3em" class="animate-show filterTile">
+<div ng-show="!$ctrl.isLoggedIn" style="font-size: 3em; width: 50vw" class="animate-show filterTile">
 	<span>Please sign in</span>
 </div>

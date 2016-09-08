@@ -64,19 +64,20 @@
 
 
 .navButton{
-    border: 2px solid rgba(0,0,10,0.75);
-    background: linear-gradient(165deg,transparent,rgba(95,54,20,0.3),rgba(95,54,200,.2));
-    box-shadow: none;
+    border-left: 2px solid rgba(0,0,10,0.75);
+    /*background: linear-gradient(34deg,rgba(204,125,0,0),rgba(204,125,0,0.3),rgba(204,125,0,0.4));*/
+    /*background: linear-gradient(34deg,rgba(204,125,0,1),rgba(204,125,0,0.3),rgba(204,125,0,0.4));*/
+    background: transparent;
+    color: white;
+    text-align: left;
+    transition: all .25s ease-in;
+    min-width: 80%;
 }
 
 .navButton:hover{
-    font-style: bold;
-    border: 2px solid white;
-    color: white;
-    /*background: linear-gradient(165deg,transparent,rgba(95,54,20,0.3),rgba(95,54,200,.2));*/
-    background: transparent;
-    /*background: linear-gradient(-183deg,rgba(0,0,0,0.10),rgba(0,0,0,0.30));*/
-    box-shadow: 2px 5px 15px black;
+    border-left: 15px solid rgba(0,0,0,0.75);
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
 }
 
 .flex-row{
@@ -98,7 +99,7 @@
 
 
 .calendarBox{
-    background: linear-gradient(64deg,rgba(204,125,0,0),rgba(204,125,0,0.3),rgba(204,125,0,0.6));
+    /*background: linear-gradient(64deg,rgba(204,125,0,0),rgba(204,125,0,0.3),rgba(204,125,0,0.6));*/
     /*background: linear-gradient(64deg,rgba(0,0,0,.55),rgba(0,0,0,0.2),rgba(0,0,0,0.45));*/
     padding: 0.5em;
     max-height: 70vh;
@@ -145,31 +146,22 @@
 .loginbox{
     /*background-color: green;*/
     height: 3.5em;
-    width: 3.5em;
+    width: 100%;
     overflow: hidden;
     transition: all .5s ease-in;
 }
 
-.loginbox:hover{
-    width: 500px;
-}
-
-.loginbox:hover .infoBox{
-    opacity: 1;
-    margin-top: 0;
-}
 .userImg{
-    width: 3.5em;
-    height: 3.5em;
-    border: 2px solid rgba(250,249,255,0.7);
+    margin: 5px;
+    width: 2.5em;
+    height: 2.5em;
     border-radius: 50%;
     overflow: hidden;
     transition: all .75s ease-out;
-    float: left;
 }
 
 .userImg:hover {
-    transform: rotate(-1080deg);
+    transform: rotate(-360deg);
 }
 
 
@@ -184,11 +176,18 @@
 }
 
 .infoBox{
-    opacity: 0;
-    transition: all .5s ease-in;
-    float: left;
-    margin-top: 4em;
-    padding: .5em;
+    opacity: 1;
+    /*margin-top: 4em;*/
+    /*float: right;*/
+    transition: all 1.5s ease-in;
+    font-size: .75em;
+    text-align: center;
+    padding: 5px;
+    /*padding-top: 10px;*/
+}
+.infoBox p{
+    padding: 0;
+    margin: 0;
 }
 
 .usrName , .usrLogin{
@@ -207,11 +206,11 @@
 
 .filterBox{
     padding: 1em;
-    max-height: 30vh;
+    max-height: 25vh;
     overflow: auto;
     position: relative;
     top: -2em;
-    border-bottom: 2px solid rgb(204,125,0);
+    /*border-bottom: 2px solid rgb(204,125,0);*/
 }
 
 .filtertile{
@@ -219,16 +218,16 @@
     outline: 0;
     z-index: 15;
     border-radius: none;
-    border: 1px solid rgba(95,54,20,0);
+    border: 2px solid rgba(95,54,20,0);
     font-size: 1.25em;
-    box-shadow: 0 0 10px rgba(205,88,22,0.75);
-    background: linear-gradient(34deg,rgba(204,125,0,0),rgba(204,125,0,0.3),rgba(204,125,0,0.4));
+    /*box-shadow: 0 0 10px rgba(205,88,22,0.75);*/
+    /*background: linear-gradient(34deg,rgba(204,125,0,0),rgba(204,125,0,0.3),rgba(204,125,0,0.4));*/
     /*background: linear-gradient(165deg,transparent,rgba(204,88,26,0.53),rgba(204,88,66,.2));*/
 }
 .filtertile:hover{
     box-shadow: 2px 5px 10px rgba(0,0,0,0.65);
     z-index: 20;
-    border: 1px solid ghostWhite;
+    border: 2px solid ghostWhite;
     border-radius: 5px;
     /*transform: rotate(-7deg);*/
 }
@@ -364,10 +363,11 @@ md-input-container input{
 
 .smallTitle{
     color: ghostWhite;
-    font-size: 1em;
+    font-size: .75em;
     text-decoration: none;
-    margin: 1px;
+    margin: 0;
     padding: 0;
+    float:right;
 }
 
 .md-content.md-default-theme, .md-content{
@@ -379,3 +379,43 @@ md-input-container input{
 .md-button.md-primary{
     color: white;
 }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+
+
+.testClass{
+    min-height: 10em;
+    min-width: 10em;
+    background: blue;
+}
+
+
+
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width:767px) {
+  body,.navButton,.md-button{font-size: 12px;}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:768px) {
+  body,.navButton,.md-button{font-size: 35px;}
+  .navButton{padding: 1.5em;}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:992px) {
+  body,.navButton,.md-button {font-size: 15px;}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:1200px) {
+  body,.navButton,.md-button {font-size: 20px;}
+}
+

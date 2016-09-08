@@ -8,6 +8,7 @@
         	var nav = this;
         	var logSrv = loginService;
             nav.isLoggedIn = logSrv.isLoggedIn;
+            nav.currentUser = logSrv.currentUser;
             nav.buttons = [{text: "Home"},{text: "Calendar"},{text: "Groups"},{text: "About"}];
             nav.toggleLeft = function() {
                $mdSidenav('left').toggle();

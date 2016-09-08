@@ -27,11 +27,13 @@
 
 .animate-show.ng-hide-add, .animate-show.ng-hide-remove {
   transition: all ease-out 0.5s;
+  max-height: 30px;
 }
 
 .animate-show.ng-hide {
   line-height: 0;
   opacity: 0;
+  max-height: 0;
 }
 
 .check-element {
